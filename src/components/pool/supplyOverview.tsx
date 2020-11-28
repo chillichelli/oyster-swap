@@ -1,100 +1,67 @@
-import React, { useEffect, useMemo, useRef } from "react";
-import { PoolInfo } from "../../models";
-import { useEnrichedPools } from "./../../context/market";
-import echarts from "echarts";
-import { formatNumber, formatUSD } from "../../utils/utils";
+import React, { useMemo } from 'react';
+import { PoolInfo } from '../../models';
+import { useEnrichedPools } from '../../context/market';
+import { Divider, Grid, Typography } from '@material-ui/core';
 
 export const SupplyOverview = (props: { pool?: PoolInfo }) => {
-  const { pool } = props;
-  const pools = useMemo(() => (pool ? [pool] : []), [pool]);
-  const enriched = useEnrichedPools(pools);
-  const chartDiv = useRef<HTMLDivElement>(null);
+	const { pool } = props;
+	const pools = useMemo(() => (pool ? [pool] : []), [pool]);
+	const enriched = useEnrichedPools(pools);
 
-  // dispose chart
-  useEffect(() => {
-    const div = chartDiv.current;
-    return () => {
-      let instance = div && echarts.getInstanceByDom(div);
-      instance && instance.dispose();
-    };
-  }, []);
+	if (enriched.length === 0) {
+		return null;
+	}
 
-  useEffect(() => {
-    if (!chartDiv.current || enriched.length === 0) {
-      return;
-    }
+	return (
+		<Grid container>
+			<Grid item xs>
+				<Grid item xs={12}>
+					<Grid container justify="flex-start">
+						<Grid item xs={12}>
+							<Typography align="left" variant="caption">
+								$
+								{enriched[0].liquidityBinUsd.toLocaleString('en-US', {
+									minimumFractionDigits: 2,
+									maximumFractionDigits: 2,
+								})}
+							</Typography>
+							<Typography align="left" variant="caption" component="p">
+								{enriched[0].liquidityB.toLocaleString('en-US', {
+									minimumFractionDigits: 2,
+									maximumFractionDigits: 2,
+								})}{' '}
+								{enriched[0].names[1]}
+							</Typography>
+						</Grid>
+					</Grid>
+				</Grid>
+			</Grid>
 
-    let instance = echarts.getInstanceByDom(chartDiv.current);
-    if (!instance) {
-      instance = echarts.init(chartDiv.current as any);
-    }
-
-    const data = [
-      {
-        name: enriched[0].names[0],
-        value: enriched[0].liquidityAinUsd,
-        tokens: enriched[0].liquidityA,
-      },
-      {
-        name: enriched[0].names[1],
-        value: enriched[0].liquidityBinUsd,
-        tokens: enriched[0].liquidityB,
-      },
-    ];
-
-    instance.setOption({
-      tooltip: {
-        trigger: "item",
-        formatter: function (params: any) {
-          var val = formatUSD.format(params.value);
-          var tokenAmount = formatNumber.format(params.data.tokens);
-          return `${params.name}: \n${val}\n(${tokenAmount})`;
-        },
-      },
-      series: [
-        {
-          name: "Liquidity",
-          type: "pie",
-          top: 0,
-          bottom: 0,
-          left: 0,
-          right: 0,
-          animation: false,
-          label: {
-            fontSize: 14,
-            show: true,
-            formatter: function (params: any) {
-              var val = formatUSD.format(params.value);
-              var tokenAmount = formatNumber.format(params.data.tokens);
-              return `{c|${params.name}}\n{r|${tokenAmount}}\n{r|${val}}`;
-            },
-            rich: {
-              c: {
-                color: "#999",
-                lineHeight: 22,
-                align: "center",
-              },
-              r: {
-                color: "#999",
-                align: "right",
-              },
-            },
-            color: "rgba(255, 255, 255, 0.5)",
-          },
-          itemStyle: {
-            normal: {
-              borderColor: "#000",
-            },
-          },
-          data,
-        },
-      ],
-    });
-  }, [enriched]);
-
-  if (enriched.length === 0) {
-    return null;
-  }
-
-  return <div ref={chartDiv} style={{ height: 150, width: "100%" }} />;
+			<Grid item>
+				<Divider orientation="vertical" />
+			</Grid>
+			<Grid item xs>
+				<Grid item xs={12}>
+					<Grid container justify="flex-start">
+						<Grid item xs={12}>
+							<Typography align="right" variant="caption" component="p">
+								$
+								{enriched[0].liquidityAinUsd.toLocaleString('en-US', {
+									minimumFractionDigits: 2,
+									maximumFractionDigits: 2,
+								})}
+							</Typography>
+							<Typography align="right" variant="caption" component="p">
+								{enriched[0].liquidityA.toLocaleString('en-US', {
+									minimumFractionDigits: 2,
+									maximumFractionDigits: 2,
+								})}{' '}
+								{enriched[0].names[0]}
+							</Typography>
+						</Grid>
+					</Grid>
+				</Grid>
+			</Grid>
+		</Grid>
+	);
 };

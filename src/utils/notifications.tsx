@@ -1,33 +1,28 @@
-import React from "react";
-import { notification } from "antd";
-// import Link from '../components/Link';
+import { Grid, Typography } from '@material-ui/core';
+import React from 'react';
+import SnackbarUtils from './snackbarUtils';
 
 export function notify({
-  message = "",
-  description = undefined as any,
-  txid = "",
-  type = "info",
-  placement = "bottomLeft",
+	message = '',
+	type = 'info',
+	action = undefined as any,
+	description = undefined as any,
+	txid = '',
+	placement = 'bottomLeft',
 }) {
-  if (txid) {
-    //   <Link
-    //     external
-    //     to={'https://explorer.solana.com/tx/' + txid}
-    //     style={{ color: '#0000ff' }}
-    //   >
-    //     View transaction {txid.slice(0, 8)}...{txid.slice(txid.length - 8)}
-    //   </Link>
+	let msg: string | React.ReactNode = message;
+	if (description) {
+		msg = (
+			<Grid container>
+				<Grid item xs={12}>
+					<Typography variant="subtitle1">{message}</Typography>
+				</Grid>
+				<Grid item xs={12}>
+					<Typography color="textPrimary">{description}</Typography>
+				</Grid>
+			</Grid>
+		);
+	}
 
-    description = <></>;
-  }
-  (notification as any)[type]({
-    message: <span style={{ color: "black" }}>{message}</span>,
-    description: (
-      <span style={{ color: "black", opacity: 0.5 }}>{description}</span>
-    ),
-    placement,
-    style: {
-      backgroundColor: "white",
-    },
-  });
+	(SnackbarUtils as any)[type](msg, action);
 }
