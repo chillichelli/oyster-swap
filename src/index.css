@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: blur(70px)) or (backdrop-filter: blur(70px))) {
+  .backdrop-blur {
+    -webkit-backdrop-filter: blur(70px);
+    backdrop-filter: blur(70px);
+  }
+}

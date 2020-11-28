@@ -1,0 +1,436 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2020-11-27 15:46+0100\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ko\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/components/trade/index.tsx:296
+msgid ""
+"A portion of each trade ({0}%) goes to liquidity\n"
+"providers as a protocol incentive."
+msgstr ""
+
+#: src/components/TopPairs.tsx:84
+msgid "APY"
+msgstr ""
+
+#: src/utils/pools.tsx:509
+msgid "Accounts created"
+msgstr ""
+
+#: src/components/pool/add.tsx:107
+#: src/components/pool/view.tsx:64
+msgid "Add Liquidity"
+msgstr ""
+
+#: src/utils/pools.tsx:317
+#: src/utils/pools.tsx:517
+msgid "Adding Liquidity..."
+msgstr ""
+
+#: src/components/pool/add.tsx:80
+msgid "Adding liquidity cancelled."
+msgstr ""
+
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:110
+#: src/components/TopPairs.tsx:88
+msgid "Address"
+msgstr ""
+
+#: src/components/pool/address.tsx:72
+msgid "Addresses"
+msgstr ""
+
+#: src/components/charts/TopPairs.tsx:89
+#~ msgid "Annual Percentage Yield"
+#~ msgstr ""
+
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:104
+msgid "Approx. APY (24h)"
+msgstr ""
+
+#: src/components/currencyInput/index.tsx:126
+msgid "Balance"
+msgstr ""
+
+#: src/components/appBar/index.tsx:70
+msgid "Charts"
+msgstr ""
+
+#: src/components/appBar/right.tsx:17
+msgid "Connect"
+msgstr ""
+
+#: src/components/labels.tsx:8
+msgid "Connect Wallet"
+msgstr ""
+
+#: src/components/pool/view.tsx:72
+msgid "Connect to a wallet to view your liquidity"
+msgstr ""
+
+#: src/components/pool/config.tsx:58
+msgid "Constant Product"
+msgstr ""
+
+#: src/components/labels.tsx:3
+msgid "Create Liquidity Pool"
+msgstr ""
+
+#: src/utils/pools.tsx:452
+msgid "Creating new pool..."
+msgstr ""
+
+#: src/components/pool/config.tsx:54
+msgid "Curve Type"
+msgstr ""
+
+#: src/utils/wallet.tsx:48
+msgid "Disconnected from wallet"
+msgstr ""
+
+#: src/components/labels.tsx:10
+msgid "Enter an amount"
+msgstr ""
+
+#: src/components/pool/quickView.tsx:73
+msgid "Fees"
+msgstr ""
+
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:98
+#: src/components/TopPairs.tsx:71
+#: src/screens/ChartsScreen.tsx:94
+msgid "Fees (24h)"
+msgstr ""
+
+#: src/components/charts/index.tsx:54
+#~ msgid "Filter"
+#~ msgstr ""
+
+#: src/components/pool/config.tsx:61
+msgid "Flat"
+msgstr ""
+
+#: src/components/trade/index.tsx:94
+msgid "From"
+msgstr ""
+
+#: src/components/appBar/index.tsx:82
+msgid "Help"
+msgstr ""
+
+#: src/components/pool/add.tsx:125
+#: src/components/pool/add.tsx:144
+msgid "Input"
+msgstr ""
+
+#: src/components/labels.tsx:4
+msgid "Insufficient {tokenName} funds"
+msgstr ""
+
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:80
+msgid "LP Supply"
+msgstr ""
+
+#: src/components/pool/config.tsx:36
+msgid "LPs Trading Fee"
+msgstr ""
+
+#: src/components/TopPairs.tsx:45
+#: src/components/TopTokens.tsx:39
+#: src/components/pool/quickView.tsx:70
+#: src/screens/ChartsScreen.tsx:74
+msgid "Liquidity"
+msgstr ""
+
+#: src/components/OwnedPoolTable/index.tsx:15
+msgid "Liquidity Pool"
+msgstr ""
+
+#: src/utils/pools.tsx:55
+msgid "Liquidity Returned. Thank you for your support."
+msgstr ""
+
+#: src/components/pool/view.tsx:36
+msgid "Liquidity provider rewards"
+msgstr ""
+
+#: src/components/pool/add.tsx:112
+#: src/components/pool/view.tsx:44
+msgid "Liquidity providers earn a fixed percentage fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
+msgstr ""
+
+#: src/components/trade/index.tsx:209
+msgid "Minimum Received"
+msgstr ""
+
+#: src/components/TopPairs.tsx:17
+#: src/components/TopTokens.tsx:16
+msgid "Name"
+msgstr ""
+
+#: src/components/settings.tsx:51
+msgid "Network"
+msgstr ""
+
+#: src/components/pool/view.tsx:82
+msgid "No liquidity found"
+msgstr ""
+
+#: src/components/pool/quickView.tsx:62
+msgid "No liquidity found."
+msgstr ""
+
+#: src/utils/pools.tsx:395
+msgid "Not possible"
+msgstr ""
+
+#: src/components/settings.tsx:88
+msgid "Off"
+msgstr ""
+
+#: src/components/settings.tsx:85
+msgid "On"
+msgstr ""
+
+#: src/components/pool/config.tsx:42
+msgid "Owner Trading Fee"
+msgstr ""
+
+#: src/utils/solong_adapter.tsx:36
+msgid "Please install solong wallet from Chrome"
+msgstr ""
+
+#: src/utils/pools.tsx:459
+msgid "Please review inputs."
+msgstr ""
+
+#: src/utils/pools.tsx:28
+#: src/utils/pools.tsx:318
+#: src/utils/pools.tsx:453
+#: src/utils/pools.tsx:518
+msgid "Please review transactions to approve."
+msgstr ""
+
+#: src/components/pool/add.tsx:79
+#: src/components/pool/remove.tsx:31
+#: src/components/trade/index.tsx:80
+msgid "Please try again and approve transactions from your wallet"
+msgstr ""
+
+#: src/components/appBar/index.tsx:62
+#: src/components/pool/quickView.tsx:67
+msgid "Pool"
+msgstr ""
+
+#: src/utils/pools.tsx:359
+#: src/utils/pools.tsx:547
+msgid "Pool Funded. Happy trading."
+msgstr ""
+
+#: src/components/pool/card.tsx:78
+#~ msgid "Pool Liquidity"
+#~ msgstr ""
+
+#: src/utils/pools.tsx:68
+msgid "Pool doesn't exist."
+msgstr ""
+
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:66
+msgid "Pool liquidity"
+msgstr ""
+
+#: src/components/labels.tsx:5
+msgid "Pool {tokenA}/{tokenB} doesn't exist"
+msgstr ""
+
+#: src/components/trade/index.tsx:141
+msgid "Price"
+msgstr ""
+
+#: src/components/labels.tsx:6
+msgid "Provide Liquidity"
+msgstr ""
+
+#: src/components/pool/remove.tsx:43
+msgid "Remove"
+msgstr ""
+
+#: src/utils/pools.tsx:27
+msgid "Removing Liquidity..."
+msgstr ""
+
+#: src/components/pool/remove.tsx:32
+msgid "Removing liquidity cancelled."
+msgstr ""
+
+#: src/screens/ChartsScreen.tsx:116
+#: src/screens/ChartsScreen.tsx:134
+msgid "See All"
+msgstr ""
+
+#: src/components/labels.tsx:9
+msgid "Select a token"
+msgstr ""
+
+#: src/components/pool/add.tsx:212
+msgid "Share of pool"
+msgstr ""
+
+#: src/components/settings.tsx:41
+msgid "Slippage"
+msgstr ""
+
+#: src/components/trade/index.tsx:127
+msgid "Slippage Tolerance"
+msgstr ""
+
+#: src/utils/solong_adapter.tsx:35
+msgid "Solong Error"
+msgstr ""
+
+#: src/screens/ChartsScreen.tsx:27
+msgid "Statistics"
+msgstr ""
+
+#: src/components/TopPairs.tsx:57
+#~ msgid "Supply"
+#~ msgstr ""
+
+#: src/components/appBar/index.tsx:54
+#: src/components/labels.tsx:7
+msgid "Swap"
+msgstr ""
+
+#: src/components/layout/FormBase.tsx:35
+msgid "Swap is unaudited software. Use at your own risk"
+msgstr ""
+
+#: src/utils/pools.tsx:69
+msgid "Swap trade cancelled"
+msgstr ""
+
+#: src/components/trade/index.tsx:81
+msgid "Swap trade cancelled."
+msgstr ""
+
+#: src/components/charts/TopTokens.tsx:40
+#~ msgid "Symbol"
+#~ msgstr ""
+
+#: src/components/trade/index.tsx:268
+msgid "The difference between the market price and estimated price due to trade size."
+msgstr ""
+
+#: src/components/trade/index.tsx:114
+msgid "To (Estimate)"
+msgstr ""
+
+#: src/components/settings.tsx:79
+msgid "Toggle dark mode"
+msgstr ""
+
+#: src/screens/ChartsScreen.tsx:108
+#: src/screens/PairsScreen.tsx:20
+msgid "Top Pairs"
+msgstr ""
+
+#: src/screens/ChartsScreen.tsx:126
+#: src/screens/TokensScreen.tsx:20
+msgid "Top Tokens"
+msgstr ""
+
+#: src/components/appBar/index.tsx:76
+msgid "Trade"
+msgstr ""
+
+#: src/utils/pools.tsx:104
+msgid "Trade executed."
+msgstr ""
+
+#: src/components/settings.tsx:33
+msgid "Transaction Settings"
+msgstr ""
+
+#: src/components/pool/add.tsx:77
+msgid "Transaction failed"
+msgstr ""
+
+#: src/utils/connection.tsx:171
+msgid "Transaction failed..."
+msgstr ""
+
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:86
+msgid "Value per token"
+msgstr ""
+
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:92
+#: src/components/TopPairs.tsx:64
+#: src/components/TopTokens.tsx:45
+#: src/screens/ChartsScreen.tsx:84
+msgid "Volume (24h)"
+msgstr ""
+
+#: src/components/settings.tsx:65
+msgid "Wallet"
+msgstr ""
+
+#: src/utils/wallet.tsx:37
+#: src/utils/wallet.tsx:47
+msgid "Wallet update"
+msgstr ""
+
+#: src/components/pool/config.tsx:48
+msgid "Withdraw Fee"
+msgstr ""
+
+#: src/utils/pools.tsx:458
+msgid "You need to have balance for all legs in the basket..."
+msgstr ""
+
+#: src/components/trade/index.tsx:240
+msgid "You transaction will revert if there is a large, unfavorable price movement before it is confirmed."
+msgstr ""
+
+#: src/components/pool/quickView.tsx:60
+msgid "Your Liquidity"
+msgstr ""
+
+#: src/components/OwnedPoolTable/index.tsx:24
+msgid "Your fees (24h)"
+msgstr ""
+
+#: src/components/OwnedPoolTable/index.tsx:18
+#: src/components/pool/view.tsx:58
+msgid "Your liquidity"
+msgstr ""
+
+#: src/components/OwnedPoolTable/index.tsx:21
+msgid "Your quantity"
+msgstr ""
+
+#: src/utils/connection.tsx:177
+#: src/utils/pools.tsx:58
+#: src/utils/pools.tsx:107
+#: src/utils/pools.tsx:362
+#: src/utils/pools.tsx:511
+#: src/utils/pools.tsx:550
+#: src/utils/wallet.tsx:39
+msgid "explorer"
+msgstr ""
+
+#: src/components/pool/add.tsx:202
+#: src/components/pool/add.tsx:207
+#: src/components/trade/index.tsx:152
+#: src/components/trade/index.tsx:163
+msgid "per"
+msgstr ""

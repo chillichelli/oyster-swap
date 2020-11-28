@@ -1,166 +1,144 @@
-import { useCallback, useState } from "react";
-import { MintInfo } from "@solana/spl-token";
+import { useCallback, useState } from 'react';
+import { MintInfo } from '@solana/spl-token';
 
-import { PoolInfo, TokenAccount } from "./../models";
+import { PoolInfo, TokenAccount } from '../models';
 
 export interface KnownToken {
-  tokenSymbol: string;
-  tokenName: string;
-  icon: string;
-  mintAddress: string;
+	tokenSymbol: string;
+	tokenName: string;
+	icon: string;
+	mintAddress: string;
 }
 
 export type KnownTokenMap = Map<string, KnownToken>;
 
 export function useLocalStorageState(key: string, defaultState?: string) {
-  const [state, setState] = useState(() => {
-    // NOTE: Not sure if this is ok
-    const storedState = localStorage.getItem(key);
-    if (storedState) {
-      return JSON.parse(storedState);
-    }
-    return defaultState;
-  });
+	const [state, setState] = useState(() => {
+		// NOTE: Not sure if this is ok
+		const storedState = localStorage.getItem(key);
+		if (storedState) {
+			return JSON.parse(storedState);
+		}
+		return defaultState;
+	});
 
-  const setLocalStorageState = useCallback(
-    (newState) => {
-      const changed = state !== newState;
-      if (!changed) {
-        return;
-      }
-      setState(newState);
-      if (newState === null) {
-        localStorage.removeItem(key);
-      } else {
-        localStorage.setItem(key, JSON.stringify(newState));
-      }
-    },
-    [state, key]
-  );
+	const setLocalStorageState = useCallback(
+		newState => {
+			const changed = state !== newState;
+			if (!changed) {
+				return;
+			}
+			setState(newState);
+			if (newState === null) {
+				localStorage.removeItem(key);
+			} else {
+				localStorage.setItem(key, JSON.stringify(newState));
+			}
+		},
+		[state, key]
+	);
 
-  return [state, setLocalStorageState];
+	return [state, setLocalStorageState];
 }
 
 // shorten the checksummed version of the input address to have 4 characters at start and end
 export function shortenAddress(address: string, chars = 4): string {
-  return `${address.slice(0, chars)}...${address.slice(-chars)}`;
+	return `${address.slice(0, chars)}...${address.slice(-chars)}`;
 }
 
-export function getTokenName(
-  map: KnownTokenMap,
-  mintAddress: string,
-  shorten = true,
-  length = 5,
-): string {
-  const knownSymbol = map.get(mintAddress)?.tokenSymbol;
-  if (knownSymbol) {
-    return knownSymbol;
-  }
+export function getTokenName(map: KnownTokenMap, mintAddress: string, shorten = true, length = 5): string {
+	const knownSymbol = map.get(mintAddress)?.tokenSymbol;
+	if (knownSymbol) {
+		return knownSymbol;
+	}
 
-  return shorten ? `${mintAddress.substring(0, length)}...` : mintAddress;
+	return shorten ? `${mintAddress.substring(0, length)}...` : mintAddress;
 }
 
-export function getTokenIcon(
-  map: KnownTokenMap,
-  mintAddress: string
-): string | undefined {
-  return map.get(mintAddress)?.icon;
+export function getTokenIcon(map: KnownTokenMap, mintAddress: string): string | undefined {
+	return map.get(mintAddress)?.icon;
 }
 
-export function getPoolName(
-  map: KnownTokenMap,
-  pool: PoolInfo,
-  shorten = true
-) {
-  const sorted = pool.pubkeys.holdingMints.map((a) => a.toBase58()).sort();
-  return sorted.map((item) => getTokenName(map, item, shorten)).join("/");
+export function getPoolName(map: KnownTokenMap, pool: PoolInfo, shorten = true) {
+	const sorted = pool.pubkeys.holdingMints.map(a => a.toBase58()).sort();
+	return sorted.map(item => getTokenName(map, item, shorten)).join('/');
 }
 
 export function isKnownMint(map: KnownTokenMap, mintAddress: string) {
-  return !!map.get(mintAddress);
+	return !!map.get(mintAddress);
 }
 
-export const STABLE_COINS = new Set(["USDC", "wUSDC", "USDT"]);
+export const STABLE_COINS = new Set(['USDC', 'wUSDC', 'USDT']);
 
 export function chunks<T>(array: T[], size: number): T[][] {
-  return Array.apply<number, T[], T[][]>(
-    0,
-    new Array(Math.ceil(array.length / size))
-  ).map((_, index) => array.slice(index * size, (index + 1) * size));
+	return Array.apply<number, T[], T[][]>(0, new Array(Math.ceil(array.length / size))).map((_, index) =>
+		array.slice(index * size, (index + 1) * size)
+	);
 }
 
-export function convert(
-  account?: TokenAccount | number,
-  mint?: MintInfo,
-  rate: number = 1.0
-): number {
-  if (!account) {
-    return 0;
-  }
+export function convert(account?: TokenAccount | number, mint?: MintInfo, rate: number = 1.0): number {
+	if (!account) {
+		return 0;
+	}
 
-  const amount =
-    typeof account === "number" ? account : account.info.amount?.toNumber();
+	const amount = typeof account === 'number' ? account : account.info.amount?.toNumber();
 
-  const precision = Math.pow(10, mint?.decimals || 0);
-  return (amount / precision) * rate;
+	const precision = Math.pow(10, mint?.decimals || 0);
+	return (amount / precision) * rate;
 }
 
-var SI_SYMBOL = ["", "k", "M", "G", "T", "P", "E"];
+var SI_SYMBOL = ['', 'k', 'M', 'G', 'T', 'P', 'E'];
 
 const abbreviateNumber = (number: number, precision: number) => {
-  let tier = (Math.log10(number) / 3) | 0;
-  let scaled = number;
-  let suffix = SI_SYMBOL[tier];
-  if (tier !== 0) {
-    let scale = Math.pow(10, tier * 3);
-    scaled = number / scale;
-  }
+	let tier = (Math.log10(number) / 3) | 0;
+	let scaled = number;
+	let suffix = SI_SYMBOL[tier];
+	if (tier !== 0) {
+		let scale = Math.pow(10, tier * 3);
+		scaled = number / scale;
+	}
 
-  return scaled.toFixed(precision) + suffix;
+	return scaled.toFixed(precision) + suffix;
 };
 
 const format = (val: number, precision: number, abbr: boolean) =>
-  abbr ? abbreviateNumber(val, precision) : val.toFixed(precision);
+	abbr ? abbreviateNumber(val, precision) : val.toFixed(precision);
 
 export function formatTokenAmount(
-  account?: TokenAccount,
-  mint?: MintInfo,
-  rate: number = 1.0,
-  prefix = "",
-  suffix = "",
-  precision = 6,
-  abbr = false
+	account?: TokenAccount,
+	mint?: MintInfo,
+	rate: number = 1.0,
+	prefix = '',
+	suffix = '',
+	precision = 6,
+	abbr = false
 ): string {
-  if (!account) {
-    return "";
-  }
+	if (!account) {
+		return '';
+	}
 
-  return `${[prefix]}${format(
-    convert(account, mint, rate),
-    precision,
-    abbr
-  )}${suffix}`;
+	return `${[prefix]}${format(convert(account, mint, rate), precision, abbr)}${suffix}`;
 }
 
-export const formatUSD = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
+export const formatUSD = new Intl.NumberFormat('en-US', {
+	style: 'currency',
+	currency: 'USD',
 });
 
-export const formatNumber = new Intl.NumberFormat("en-US", {
-  style: "decimal",
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2,
+export const formatNumber = new Intl.NumberFormat('en-US', {
+	style: 'decimal',
+	minimumFractionDigits: 2,
+	maximumFractionDigits: 2,
 });
 
-export const formatPct = new Intl.NumberFormat("en-US", {
-  style: "percent",
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2,
+export const formatPct = new Intl.NumberFormat('en-US', {
+	style: 'percent',
+	minimumFractionDigits: 2,
+	maximumFractionDigits: 2,
 });
 
-export const formatPriceNumber = new Intl.NumberFormat("en-US", {
-  style: "decimal",
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 8,
+export const formatPriceNumber = new Intl.NumberFormat('en-US', {
+	style: 'decimal',
+	minimumFractionDigits: 2,
+	maximumFractionDigits: 8,
 });
