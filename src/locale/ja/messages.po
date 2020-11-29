@@ -8,7 +8,7 @@ msgstr ""
 "Language: ja\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-11-29 16:12\n"
+"PO-Revision-Date: 2020-11-29 18:10\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -69,7 +69,11 @@ msgstr ""
 msgid "Charts"
 msgstr ""
 
-#: src/components/appBar/right.tsx:17
+#: src/components/MoreInfo.tsx:28
+msgid "Code"
+msgstr ""
+
+#: src/components/appBar/right.tsx:18
 msgid "Connect"
 msgstr ""
 
@@ -99,6 +103,10 @@ msgstr ""
 
 #: src/utils/wallet.tsx:48
 msgid "Disconnected from wallet"
+msgstr ""
+
+#: src/components/MoreInfo.tsx:36
+msgid "Discord"
 msgstr ""
 
 #: src/components/labels.tsx:10
@@ -362,6 +370,10 @@ msgstr ""
 #~ msgid "Symbol"
 #~ msgstr ""
 
+#: src/components/MoreInfo.tsx:52
+msgid "Telegram"
+msgstr ""
+
 #: src/components/trade/index.tsx:268
 msgid "The difference between the market price and estimated price due to trade size."
 msgstr ""
@@ -412,6 +424,10 @@ msgstr ""
 
 #: src/screens/PairScreen.tsx:183
 msgid "Transactions"
+msgstr ""
+
+#: src/components/MoreInfo.tsx:44
+msgid "Twitter"
 msgstr ""
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:124
