@@ -3,7 +3,11 @@ import { Hidden, Toolbar, AppBar as MuiAppBar, Grid, Box, Container } from '@mat
 import AppBar from './appBar';
 import AppBarRight from './appBar/right';
 
-const DefaultLayout: FC = ({ children }) => {
+interface IDefaultLayout {
+	appBarBorder?: boolean;
+}
+
+const DefaultLayout: FC<IDefaultLayout> = ({ children, appBarBorder = false }) => {
 	return (
 		<>
 			<AppBar
@@ -14,12 +18,13 @@ const DefaultLayout: FC = ({ children }) => {
 						</Box>
 					</Hidden>
 				}
+				borderless={!appBarBorder}
 			/>
 			<Container maxWidth="lg">
 				<>{children}</>
 			</Container>
 			<Hidden smUp>
-				<Toolbar style={{ height: 72 }} />
+				<Toolbar style={{ height: 88 }} />
 				<MuiAppBar
 					elevation={0}
 					position="fixed"

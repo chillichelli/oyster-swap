@@ -1,12 +1,12 @@
 import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
-import { ubuntuExtraBold, ubuntuLight, ubuntuRegular, ubuntuSemiBold } from '../assets/fonts';
+import { openSansExtraBold, openSansLight, openSansRegular, openSansSemiBold } from '../assets/fonts';
 const breakpoints = createBreakpoints({});
 
 const theme = {
 	overrides: {
 		MuiCssBaseline: {
 			'@global': {
-				'@font-face': [ubuntuRegular, ubuntuSemiBold, ubuntuLight, ubuntuExtraBold],
+				'@font-face': [openSansRegular, openSansSemiBold, openSansLight, openSansExtraBold],
 			},
 		},
 		MuiContainer: {
@@ -15,11 +15,7 @@ const theme = {
 				paddingRight: '16px !important',
 			},
 		},
-		MuiAppBar: {
-			colorTransparent: {
-				border: 'none',
-			},
-		},
+		MuiAppBar: {},
 		MuiTypography: {
 			caption: {
 				// fontSize: '0.825rem',
@@ -97,12 +93,7 @@ const theme = {
 				borderRadius: 10,
 			},
 			tooltip: {
-				padding: 12,
-				margin: '0 !important',
 				borderRadius: 10,
-				backgroundColor: 'rgba(255,255,255,0.36)',
-				boxShadow:
-					'0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12)',
 			},
 		},
 		MuiInputBase: {
@@ -125,24 +116,18 @@ const theme = {
 				fontSize: 14,
 				whiteSpace: 'nowrap',
 				[breakpoints.down('xs')]: {
-					'&:first-child': {
-						paddingRight: 0,
-					},
-					'&:last-child': {
-						paddingLeft: 0,
-					},
 					'&:not(:first-child):not(:last-child)': {
-						paddingLeft: 0,
-						paddingRight: 0,
+						paddingLeft: 8,
+						paddingRight: 8,
 					},
 				},
 			},
 		},
 	},
 	typography: {
-		fontSize: 14,
+		fontSize: 12,
 		fontFamily: [
-			'Ubuntu',
+			'OpenSans',
 			'-apple-system',
 			'BlinkMacSystemFont',
 			'"Segoe UI"',

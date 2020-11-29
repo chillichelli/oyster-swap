@@ -162,14 +162,15 @@ export const CurrencyInput = (props: {
 
 	return (
 		<RaisedBase pl={1.5} pt={1} pb={1} pr={1.5}>
-			<Grid container justify="space-between">
+			<Grid container justify="space-between" alignItems="center">
 				<Grid item>
-					<Typography variant="subtitle1" color="textSecondary">
+					<Typography variant="subtitle1" color="textSecondary" component="span">
 						{props.title}
 					</Typography>
 				</Grid>
 				<Grid item>
 					<Typography
+						component="span"
 						variant="subtitle1"
 						color="textSecondary"
 						onClick={() => props.onInputChange && props.onInputChange(userUiBalance())}

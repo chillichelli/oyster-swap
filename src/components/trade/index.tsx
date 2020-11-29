@@ -16,7 +16,6 @@ import { t, Trans } from '@lingui/macro';
 import { PoolInfo } from '../../models';
 import { useEnrichedPools } from '../../context/market';
 import HelpOutlineRoundedIcon from '@material-ui/icons/HelpOutlineRounded';
-import { emphasize } from '@material-ui/core/styles';
 
 // TODO:
 // Compute price breakdown with/without fee
@@ -90,8 +89,9 @@ export const TradeEntry = () => {
 				borderRadius={20}
 				p={2}
 				style={{
-					backgroundColor:
-						theme.palette.type === 'dark' ? emphasize(theme.palette.background.default, 0.12) : 'white',
+					boxShadow:
+						'rgba(0, 0, 0, 0.01) 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 4px 8px, rgba(0, 0, 0, 0.04) 0px 16px 24px, rgba(0, 0, 0, 0.01) 0px 24px 32px',
+					backgroundColor: theme.palette.type === 'dark' ? '#212429' : 'white',
 				}}
 			>
 				<CurrencyInput
@@ -111,7 +111,7 @@ export const TradeEntry = () => {
 					}}
 				/>
 
-				<Box mt={2} mb={2} position="relative" display="flex" alignItems="center" justifyContent="center">
+				<Box mt={1.25} mb={1.25} position="relative" display="flex" alignItems="center" justifyContent="center">
 					<Typography color="textSecondary" component="div">
 						<IconButton onClick={swapAccounts} color="inherit">
 							<ArrowDownwardRoundedIcon />
@@ -306,7 +306,7 @@ export const TradeInfo = (props: { pool?: PoolInfo }) => {
 								<Tooltip
 									TransitionProps={{ timeout: 0 }}
 									title={
-										<Typography variant="subtitle1" color="textPrimary">
+										<Typography variant="caption" color="textPrimary">
 											<Trans>
 												You transaction will revert if there is a large, unfavorable price
 												movement before it is confirmed.
@@ -339,7 +339,7 @@ export const TradeInfo = (props: { pool?: PoolInfo }) => {
 								<Tooltip
 									TransitionProps={{ timeout: 0 }}
 									title={
-										<Typography variant="subtitle1" color="textPrimary">
+										<Typography variant="caption" color="textPrimary">
 											<Trans>
 												The difference between the market price and estimated price due to trade
 												size.
@@ -372,7 +372,7 @@ export const TradeInfo = (props: { pool?: PoolInfo }) => {
 								<Tooltip
 									TransitionProps={{ timeout: 0 }}
 									title={
-										<Typography variant="subtitle1" color="textPrimary">
+										<Typography variant="caption" color="textPrimary">
 											{t`A portion of each trade (${
 												LIQUIDITY_PROVIDER_FEE * 100
 											}%) goes to liquidity

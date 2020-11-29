@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import DefaultLayout from '../components/defaultLayout';
 import TopTokens from '../components/TopTokens';
 import { Box, Grid, IconButton, Typography } from '@material-ui/core';
 import { Trans } from '@lingui/macro';
 import { useHistory } from 'react-router-dom';
 import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
+import { EnrichedDataContext } from '../providers/EnrichedDataProvider';
 
 const TokensScreen = () => {
 	const history = useHistory();
+	const { enrichedTokens } = useContext(EnrichedDataContext);
+	console.log(enrichedTokens);
 
 	return (
-		<DefaultLayout>
+		<DefaultLayout appBarBorder>
 			<Box mb={1}>
 				<Grid container justify="space-between" alignItems="center">
 					<Grid item>

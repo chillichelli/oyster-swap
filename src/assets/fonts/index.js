@@ -1,104 +1,104 @@
-// import UbuntuExtraLight from './Ubuntu-ExtraLight.woff2';
-import UbuntuLight from './Ubuntu-Light.woff2';
-import UbuntuRegular from './Ubuntu-Regular.woff2';
-// import UbuntuBold from './Ubuntu-Bold.woff2';
-import UbuntuSemiBold from './Ubuntu-SemiBold.woff2';
-import UbuntuExtraBold from './Ubuntu-ExtraBold.woff2';
-// import UbuntuBlack from './Ubuntu-Black.woff2';
+// import OpenSansExtraLight from './OpenSans-ExtraLight.woff2';
+import OpenSansLight from './OpenSans-Light.woff2';
+import OpenSansRegular from './OpenSans-Regular.woff2';
+import OpenSansBold from './OpenSans-Bold.woff2';
+import OpenSansSemiBold from './OpenSans-SemiBold.woff2';
+import OpenSansExtraBold from './OpenSans-ExtraBold.woff2';
+// import OpenSansBlack from './OpenSans-Black.woff2';
 
-// const UbuntuExtraLight = {
-// 	fontFamily: 'Ubuntu',
+// const OpenSansExtraLight = {
+// 	fontFamily: 'OpenSans',
 // 	fontStyle: 'normal',
 // 	fontDisplay: 'swap',
 // 	fontWeight: 200,
 // 	src: `
-//     local('Ubuntu'),
-//     local('Ubuntu-ExtraLight'),
-//     url(${UbuntuExtraLight}) format('woff2')
+//     local('OpenSans'),
+//     local('OpenSans-ExtraLight'),
+//     url(${OpenSansExtraLight}) format('woff2')
 //     `,
 // };
 
-const ubuntuLight = {
-	fontFamily: 'Ubuntu',
+const openSansLight = {
+	fontFamily: 'OpenSans',
 	fontStyle: 'normal',
 	fontDisplay: 'swap',
 	fontWeight: 300,
 	src: `
-    local('Ubuntu'),
-    local('Ubuntu-Light'),
-    url(${UbuntuLight}) format('woff2')
+    local('OpenSans'),
+    local('OpenSans-Light'),
+    url(${OpenSansLight}) format('woff2')
     `,
 };
 
-const ubuntuRegular = {
-	fontFamily: 'Ubuntu',
+const openSansRegular = {
+	fontFamily: 'OpenSans',
 	fontStyle: 'normal',
 	fontDisplay: 'swap',
 	fontWeight: 500,
 	src: `
-    local('Ubuntu'),
-    local('Ubuntu-Regular'),
-    url(${UbuntuRegular}) format('woff2')
+    local('OpenSans'),
+    local('OpenSans-Regular'),
+    url(${OpenSansRegular}) format('woff2')
     `,
 };
 
-const ubuntuSemiBold = {
-	fontFamily: 'Ubuntu',
+const openSansSemiBold = {
+	fontFamily: 'OpenSans',
 	fontStyle: 'normal',
 	fontDisplay: 'swap',
 	fontWeight: 600,
 	src: `
-    local('Ubuntu'),
-    local('Ubuntu-SemiBold'),
-    url(${UbuntuSemiBold}) format('woff2')
+    local('OpenSans'),
+    local('OpenSans-SemiBold'),
+    url(${OpenSansSemiBold}) format('woff2')
     `,
 };
 
-const ubuntuExtraBold = {
-	fontFamily: 'Ubuntu',
+const openSansExtraBold = {
+	fontFamily: 'OpenSans',
 	fontStyle: 'normal',
 	fontDisplay: 'swap',
 	fontWeight: 700,
 	src: `
-    local('Ubuntu'),
-    local('Ubuntu-ExtraBold'),
-    url(${UbuntuExtraBold}) format('woff2')
+    local('OpenSans'),
+    local('OpenSans-ExtraBold'),
+    url(${OpenSansExtraBold}) format('woff2')
     `,
 };
-//
-// const UbuntuBold = {
-// 	fontFamily: 'Ubuntu',
-// 	fontStyle: 'normal',
-// 	fontDisplay: 'swap',
-// 	fontWeight: 700,
-// 	src: `
-//     local('Ubuntu'),
-//     local('Ubuntu-Bold'),
-//     url(${UbuntuBold}) format('woff2')
-//     `,
-// };
 
-// const UbuntuBlack = {
-// 	fontFamily: 'Ubuntu',
+const openSansBold = {
+	fontFamily: 'OpenSans',
+	fontStyle: 'normal',
+	fontDisplay: 'swap',
+	fontWeight: 700,
+	src: `
+    local('OpenSans'),
+    local('OpenSans-Bold'),
+    url(${OpenSansBold}) format('woff2')
+    `,
+};
+
+// const OpenSansBlack = {
+// 	fontFamily: 'OpenSans',
 // 	fontStyle: 'normal',
 // 	fontDisplay: 'swap',
 // 	fontWeight: 900,
 // 	src: `
-//     local('Ubuntu'),
-//     local('Ubuntu-Black'),
-//     url(${UbuntuBlack}) format('woff2')
+//     local('OpenSans'),
+//     local('OpenSans-Black'),
+//     url(${OpenSansBlack}) format('woff2')
 //     `,
 // };
 
 export {
-	ubuntuExtraBold,
-	// UbuntuBlack,
-	// UbuntuBold,
-	// UbuntuExtraLight,
-	ubuntuLight,
-	ubuntuRegular,
-	ubuntuSemiBold,
+	openSansExtraBold,
+	// OpenSansBlack,
+	openSansBold,
+	// OpenSansExtraLight,
+	openSansLight,
+	openSansRegular,
+	openSansSemiBold,
 
-	// UbuntuThin,
-	// UbuntuMedium,
+	// OpenSansThin,
+	// OpenSansMedium,
 };

@@ -1,11 +1,13 @@
 import { t } from '@lingui/macro';
-import { Box, Hidden, Link, Typography } from '@material-ui/core';
+import { Box, Button, Hidden, Typography } from '@material-ui/core';
 import { TokenIcon } from './tokenIcon';
 import React, { useContext, useMemo } from 'react';
 import CardBase from './layout/CardBase';
 import DefaultTable from './layout/DefaultTable/index';
 import { CellProps } from 'react-table';
 import { EnrichedDataContext } from '../providers/EnrichedDataProvider';
+import { formatUSD } from '../utils/utils';
+import { Link } from 'react-router-dom';
 
 const valueFormatter = ({ value }: any) => {
 	return `$${value.toLocaleString('en-US', {
@@ -35,32 +37,39 @@ const columns = [
 						<Box mr={1} />
 						<Link
 							color="secondary"
-							component="a"
-							href={data.link}
-							target="_blank"
-							rel="noopener noreferrer"
-							underline="none"
+							component={({ navigate, ...props }) => <Button color="secondary" {...props} />}
+							to={`/token/${data.mint}`}
 						>
 							{props.value}
 						</Link>
 					</Box>
 				),
 				// @ts-ignore
-				[data.mint, data.link, props.value, props.cell.rowIndex]
+				[data.mint, props.value, props.cell.rowIndex]
 			);
 		},
+		sortDescFirst: true,
 	},
 	{
 		align: 'right',
 		Header: t`Liquidity`,
 		accessor: 'liquidity',
 		Cell: valueFormatter,
+		sortDescFirst: true,
 	},
 	{
 		align: 'right',
 		Header: t`Volume (24h)`,
 		accessor: 'volume24h',
 		Cell: valueFormatter,
+		sortDescFirst: true,
+	},
+	{
+		align: 'right',
+		Header: t`Price`,
+		accessor: 'price',
+		Cell: ({ value }: any) => formatUSD.format(value),
+		sortDescFirst: true,
 	},
 ];
 
@@ -73,7 +82,7 @@ const TopTokens = ({ initialState }: ITopPairs) => {
 
 	return (
 		<>
-			<CardBase width={1} mb={3}>
+			<CardBase width={1}>
 				<DefaultTable
 					data={enrichedTokens}
 					columns={columns}

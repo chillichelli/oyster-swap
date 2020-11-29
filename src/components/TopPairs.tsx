@@ -20,6 +20,7 @@ const columns = [
 		Header: t`Name`,
 		accessor: 'name',
 		sortType: 'basic',
+		sortDescFirst: true,
 		Cell: (props: CellProps<any>) => {
 			const data = props.cell.row.original;
 			const [mintA, mintB] = data.mints;
@@ -38,7 +39,7 @@ const columns = [
 						<Box mr={1} />
 						<Link
 							color="secondary"
-							component={props => <Button color="secondary" {...props} />}
+							component={({ navigate, ...props }) => <Button color="secondary" {...props} />}
 							to={`/pair/${data.key}`}
 						>
 							{props.value}
@@ -46,7 +47,7 @@ const columns = [
 					</Box>
 				),
 				// @ts-ignore
-				[mintA, mintB, data.link, props.value, props.cell.rowIndex]
+				[mintA, mintB, props.value, props.cell.rowIndex, data.key]
 			);
 		},
 	},
@@ -56,6 +57,7 @@ const columns = [
 		sortType: 'basic',
 		Cell: valueFormatter,
 		Header: t`Liquidity`,
+		sortDescFirst: true,
 	},
 	// {
 	// 	align: 'right',
@@ -75,6 +77,7 @@ const columns = [
 		sortType: 'basic',
 		Cell: valueFormatter,
 		Header: t`Volume (24h)`,
+		sortDescFirst: true,
 	},
 	{
 		align: 'right',
@@ -82,11 +85,13 @@ const columns = [
 		sortType: 'basic',
 		Cell: valueFormatter,
 		Header: t`Fees (24h)`,
+		sortDescFirst: true,
 	},
 	{
 		align: 'right',
 		accessor: 'apy',
 		sortType: 'basic',
+		sortDescFirst: true,
 		Cell: ({ value }: any) => {
 			return `${(+value * 100).toLocaleString('en-US', {
 				minimumFractionDigits: 2,
@@ -109,16 +114,23 @@ const columns = [
 
 interface ITopPairs {
 	initialState?: {};
+	mintAddress?: string;
 }
 
-const TopPairs = ({ initialState }: ITopPairs) => {
+const TopPairs = ({ initialState, mintAddress }: ITopPairs) => {
 	const { enrichedPools } = useContext(EnrichedDataContext);
+
+	let data = enrichedPools;
+	if (mintAddress) {
+		data = enrichedPools.filter(el => el.mints.includes(mintAddress));
+	}
+
 	return (
 		<>
-			<CardBase width={1} mb={3}>
+			<CardBase width={1}>
 				<DefaultTable
 					columns={columns}
-					data={enrichedPools}
+					data={data}
 					initialState={initialState || { sortBy: [{ id: 'liquidity', desc: true }] }}
 				/>
 			</CardBase>

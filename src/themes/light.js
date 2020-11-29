@@ -1,15 +1,13 @@
-import { createMuiTheme, fade } from '@material-ui/core';
+import { createMuiTheme, emphasize, fade } from '@material-ui/core';
 import base from './base';
 import merge from 'lodash/merge';
 
 const bodyColor = '#EEF1EF';
 const textPrimary = '#231F20';
 const textSecondary = '#575757';
-const primaryMain = '#cf43f5';
+const primaryMain = '#3f8bfe';
 const secondaryMain = '#1473FF';
 const buttonBackground = fade(textPrimary, 0.08);
-const popoverBackground = fade('#fff', 0.5);
-const border = `1px solid ${popoverBackground}`;
 
 const theme = {
 	overrides: {
@@ -23,7 +21,12 @@ const theme = {
 		},
 		MuiPaper: {
 			root: {
-				border,
+				// border,
+			},
+		},
+		MuiAppBar: {
+			colorTransparent: {
+				borderBottom: `1px solid ${emphasize(bodyColor, 0.05)}`,
 			},
 		},
 		MuiSelect: {
@@ -38,7 +41,7 @@ const theme = {
 		},
 		MuiTooltip: {
 			tooltip: {
-				border,
+				// border,
 			},
 		},
 		MuiTableCell: {
