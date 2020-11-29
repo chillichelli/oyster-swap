@@ -45,6 +45,7 @@ const theme = {
 				fontSize: '1.25rem',
 			},
 			root: {
+				fontSize: '0.875rem',
 				minWidth: 'unset',
 				textTransform: 'capitalize',
 				border: '1px solid transparent',

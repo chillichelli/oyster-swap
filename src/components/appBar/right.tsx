@@ -6,6 +6,7 @@ import { useWallet } from '../../utils/wallet';
 import { Settings } from '../settings';
 import RaisedButton from '../layout/RaisedButton';
 import { Trans } from '@lingui/macro';
+import MoreInfo from '../MoreInfo';
 
 const AppBarRight = () => {
 	const { connected, wallet } = useWallet();
@@ -31,6 +32,9 @@ const AppBarRight = () => {
 			{/*</Grid>*/}
 			<Grid item>
 				<Settings />
+			</Grid>
+			<Grid item>
+				<MoreInfo />
 			</Grid>
 		</Grid>
 	);
