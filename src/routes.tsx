@@ -18,6 +18,7 @@ import EnrichedDataProvider from './providers/EnrichedDataProvider';
 import ChartsScreen from './screens/ChartsScreen';
 import PairScreen from './screens/PairScreen';
 import SwapScreen from './screens/SwapScreen';
+import TokenScreen from './screens/TokenScreen';
 
 export function Routes() {
 	return (
@@ -44,6 +45,11 @@ export function Routes() {
 																component={() => <PairsScreen />}
 															/>
 															<Route exact path="/pair/:address" component={PairScreen} />
+															<Route
+																exact
+																path="/token/:address"
+																component={TokenScreen}
+															/>
 															<Route
 																exact
 																path="/info"

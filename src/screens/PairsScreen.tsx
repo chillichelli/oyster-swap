@@ -10,7 +10,7 @@ const PairsScreen = () => {
 	const history = useHistory();
 
 	return (
-		<DefaultLayout>
+		<DefaultLayout appBarBorder>
 			<Box mb={1}>
 				<Grid container justify="space-between" alignItems="center">
 					<Grid item>

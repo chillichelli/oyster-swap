@@ -19,7 +19,7 @@ msgid ""
 "providers as a protocol incentive."
 msgstr ""
 
-#: src/components/TopPairs.tsx:84
+#: src/components/TopPairs.tsx:105
 msgid "APY"
 msgstr ""
 
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Accounts created"
 msgstr ""
 
-#: src/components/pool/add.tsx:107
+#: src/components/pool/add.tsx:106
 #: src/components/pool/view.tsx:64
 msgid "Add Liquidity"
 msgstr ""
@@ -37,12 +37,11 @@ msgstr ""
 msgid "Adding Liquidity..."
 msgstr ""
 
-#: src/components/pool/add.tsx:80
+#: src/components/pool/add.tsx:79
 msgid "Adding liquidity cancelled."
 msgstr ""
 
-#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:110
-#: src/components/TopPairs.tsx:88
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:162
 msgid "Address"
 msgstr ""
 
@@ -50,11 +49,11 @@ msgstr ""
 msgid "Addresses"
 msgstr ""
 
-#: src/components/charts/TopPairs.tsx:89
-#~ msgid "Annual Percentage Yield"
-#~ msgstr ""
+#: src/screens/PairScreen.tsx:144
+msgid "Annual Percentage Yield"
+msgstr ""
 
-#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:104
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:148
 msgid "Approx. APY (24h)"
 msgstr ""
 
@@ -106,10 +105,14 @@ msgstr ""
 msgid "Fees"
 msgstr ""
 
-#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:98
-#: src/components/TopPairs.tsx:71
-#: src/screens/ChartsScreen.tsx:94
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:140
+#: src/components/TopPairs.tsx:90
+#: src/screens/ChartsScreen.tsx:104
 msgid "Fees (24h)"
+msgstr ""
+
+#: src/screens/PairScreen.tsx:130
+msgid "Fees (24hr)"
 msgstr ""
 
 #: src/components/charts/index.tsx:54
@@ -128,8 +131,8 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-#: src/components/pool/add.tsx:125
-#: src/components/pool/add.tsx:144
+#: src/components/pool/add.tsx:124
+#: src/components/pool/add.tsx:143
 msgid "Input"
 msgstr ""
 
@@ -137,7 +140,7 @@ msgstr ""
 msgid "Insufficient {tokenName} funds"
 msgstr ""
 
-#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:80
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:116
 msgid "LP Supply"
 msgstr ""
 
@@ -145,14 +148,13 @@ msgstr ""
 msgid "LPs Trading Fee"
 msgstr ""
 
-#: src/components/TopPairs.tsx:45
-#: src/components/TopTokens.tsx:39
+#: src/components/TopPairs.tsx:62
+#: src/components/TopTokens.tsx:58
 #: src/components/pool/quickView.tsx:70
-#: src/screens/ChartsScreen.tsx:74
 msgid "Liquidity"
 msgstr ""
 
-#: src/components/OwnedPoolTable/index.tsx:15
+#: src/components/OwnedPoolTable/index.tsx:18
 msgid "Liquidity Pool"
 msgstr ""
 
@@ -164,7 +166,7 @@ msgstr ""
 msgid "Liquidity provider rewards"
 msgstr ""
 
-#: src/components/pool/add.tsx:112
+#: src/components/pool/add.tsx:111
 #: src/components/pool/view.tsx:44
 msgid "Liquidity providers earn a fixed percentage fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
 msgstr ""
@@ -173,8 +175,8 @@ msgstr ""
 msgid "Minimum Received"
 msgstr ""
 
-#: src/components/TopPairs.tsx:17
-#: src/components/TopTokens.tsx:16
+#: src/components/TopPairs.tsx:28
+#: src/components/TopTokens.tsx:29
 msgid "Name"
 msgstr ""
 
@@ -206,6 +208,30 @@ msgstr ""
 msgid "Owner Trading Fee"
 msgstr ""
 
+#: src/screens/PairScreen.tsx:60
+msgid "Pair"
+msgstr ""
+
+#: src/screens/PairScreen.tsx:211
+msgid "Pair Address"
+msgstr ""
+
+#: src/screens/PairScreen.tsx:197
+msgid "Pair Name"
+msgstr ""
+
+#: src/screens/PairScreen.tsx:191
+msgid "Pair information"
+msgstr ""
+
+#: src/screens/PairScreen.tsx:95
+msgid "Pair statistics"
+msgstr ""
+
+#: src/screens/TokenScreen.tsx:92
+msgid "Pairs"
+msgstr ""
+
 #: src/utils/solong_adapter.tsx:36
 msgid "Please install solong wallet from Chrome"
 msgstr ""
@@ -221,9 +247,9 @@ msgstr ""
 msgid "Please review transactions to approve."
 msgstr ""
 
-#: src/components/pool/add.tsx:79
+#: src/components/pool/add.tsx:78
 #: src/components/pool/remove.tsx:31
-#: src/components/trade/index.tsx:80
+#: src/components/trade/index.tsx:79
 msgid "Please try again and approve transactions from your wallet"
 msgstr ""
 
@@ -245,7 +271,7 @@ msgstr ""
 msgid "Pool doesn't exist."
 msgstr ""
 
-#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:66
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:86
 msgid "Pool liquidity"
 msgstr ""
 
@@ -253,6 +279,11 @@ msgstr ""
 msgid "Pool {tokenA}/{tokenB} doesn't exist"
 msgstr ""
 
+#: src/screens/PairScreen.tsx:158
+msgid "Pooled Tokens"
+msgstr ""
+
+#: src/components/TopTokens.tsx:72
 #: src/components/trade/index.tsx:141
 msgid "Price"
 msgstr ""
@@ -273,8 +304,8 @@ msgstr ""
 msgid "Removing liquidity cancelled."
 msgstr ""
 
-#: src/screens/ChartsScreen.tsx:116
-#: src/screens/ChartsScreen.tsx:134
+#: src/screens/ChartsScreen.tsx:129
+#: src/screens/ChartsScreen.tsx:149
 msgid "See All"
 msgstr ""
 
@@ -282,7 +313,7 @@ msgstr ""
 msgid "Select a token"
 msgstr ""
 
-#: src/components/pool/add.tsx:212
+#: src/components/pool/add.tsx:211
 msgid "Share of pool"
 msgstr ""
 
@@ -298,7 +329,7 @@ msgstr ""
 msgid "Solong Error"
 msgstr ""
 
-#: src/screens/ChartsScreen.tsx:27
+#: src/screens/ChartsScreen.tsx:69
 msgid "Statistics"
 msgstr ""
 
@@ -311,7 +342,7 @@ msgstr ""
 msgid "Swap"
 msgstr ""
 
-#: src/components/layout/FormBase.tsx:35
+#: src/components/layout/FormBase.tsx:36
 msgid "Swap is unaudited software. Use at your own risk"
 msgstr ""
 
@@ -319,7 +350,7 @@ msgstr ""
 msgid "Swap trade cancelled"
 msgstr ""
 
-#: src/components/trade/index.tsx:81
+#: src/components/trade/index.tsx:80
 msgid "Swap trade cancelled."
 msgstr ""
 
@@ -339,14 +370,20 @@ msgstr ""
 msgid "Toggle dark mode"
 msgstr ""
 
-#: src/screens/ChartsScreen.tsx:108
+#: src/screens/ChartsScreen.tsx:141
 #: src/screens/PairsScreen.tsx:20
 msgid "Top Pairs"
 msgstr ""
 
-#: src/screens/ChartsScreen.tsx:126
-#: src/screens/TokensScreen.tsx:20
+#: src/screens/ChartsScreen.tsx:121
+#: src/screens/TokensScreen.tsx:23
 msgid "Top Tokens"
+msgstr ""
+
+#: src/screens/ChartsScreen.tsx:76
+#: src/screens/PairScreen.tsx:102
+#: src/screens/TokenScreen.tsx:64
+msgid "Total Liquidity"
 msgstr ""
 
 #: src/components/appBar/index.tsx:76
@@ -361,7 +398,7 @@ msgstr ""
 msgid "Transaction Settings"
 msgstr ""
 
-#: src/components/pool/add.tsx:77
+#: src/components/pool/add.tsx:76
 msgid "Transaction failed"
 msgstr ""
 
@@ -369,15 +406,24 @@ msgstr ""
 msgid "Transaction failed..."
 msgstr ""
 
-#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:86
+#: src/screens/PairScreen.tsx:183
+msgid "Transactions"
+msgstr ""
+
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:124
 msgid "Value per token"
 msgstr ""
 
-#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:92
-#: src/components/TopPairs.tsx:64
-#: src/components/TopTokens.tsx:45
-#: src/screens/ChartsScreen.tsx:84
+#: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:132
+#: src/components/TopPairs.tsx:82
+#: src/components/TopTokens.tsx:65
+#: src/screens/ChartsScreen.tsx:90
 msgid "Volume (24h)"
+msgstr ""
+
+#: src/screens/PairScreen.tsx:116
+#: src/screens/TokenScreen.tsx:78
+msgid "Volume (24hr)"
 msgstr ""
 
 #: src/components/settings.tsx:65
@@ -405,16 +451,16 @@ msgstr ""
 msgid "Your Liquidity"
 msgstr ""
 
-#: src/components/OwnedPoolTable/index.tsx:24
+#: src/components/OwnedPoolTable/index.tsx:27
 msgid "Your fees (24h)"
 msgstr ""
 
-#: src/components/OwnedPoolTable/index.tsx:18
+#: src/components/OwnedPoolTable/index.tsx:21
 #: src/components/pool/view.tsx:58
 msgid "Your liquidity"
 msgstr ""
 
-#: src/components/OwnedPoolTable/index.tsx:21
+#: src/components/OwnedPoolTable/index.tsx:24
 msgid "Your quantity"
 msgstr ""
 
@@ -428,9 +474,17 @@ msgstr ""
 msgid "explorer"
 msgstr ""
 
-#: src/components/pool/add.tsx:202
-#: src/components/pool/add.tsx:207
+#: src/components/pool/add.tsx:201
+#: src/components/pool/add.tsx:206
 #: src/components/trade/index.tsx:152
 #: src/components/trade/index.tsx:163
 msgid "per"
+msgstr ""
+
+#: src/screens/PairScreen.tsx:219
+msgid "{symbolA} Address"
+msgstr ""
+
+#: src/screens/PairScreen.tsx:227
+msgid "{symbolB} Address"
 msgstr ""

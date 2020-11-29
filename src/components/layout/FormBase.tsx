@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { emphasize, makeStyles } from '@material-ui/core/styles';
+import { fade, makeStyles } from '@material-ui/core/styles';
 import { Box, BoxProps, Typography } from '@material-ui/core';
 import { Trans } from '@lingui/macro';
 
@@ -12,9 +12,10 @@ const useStyles = makeStyles(theme => ({
 		margin: theme.spacing(2),
 		marginLeft: 'auto',
 		marginRight: 'auto',
-		boxShadow:
-			'rgba(0, 0, 0, 0.01) 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 4px 8px, rgba(0, 0, 0, 0.04) 0px 16px 24px, rgba(0, 0, 0, 0.01) 0px 24px 32px',
-		backgroundColor: emphasize(theme.palette.background.default, 0.05),
+		backgroundColor:
+			theme.palette.type === 'dark'
+				? fade(theme.palette.common.black, 0.07)
+				: fade(theme.palette.common.white, 0.7),
 	},
 }));
 

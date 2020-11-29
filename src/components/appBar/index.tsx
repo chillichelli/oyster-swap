@@ -18,14 +18,19 @@ const useStyles = makeStyles(theme => ({
 	},
 }));
 
-const AppBar = (props: { left?: JSX.Element; right?: JSX.Element }) => {
+const AppBar = ({ right, borderless = true }: { right?: JSX.Element; borderless?: boolean }) => {
 	const styles = useStyles();
 	const theme = useTheme();
 	const matches = useMediaQuery(theme.breakpoints.down('sm'));
 
 	return (
 		<>
-			<MuiAppBar color="transparent" position="relative" elevation={0} style={{ border: 'none' }}>
+			<MuiAppBar
+				color="transparent"
+				position="relative"
+				elevation={0}
+				{...(borderless && { style: { border: 'none' } })}
+			>
 				<Toolbar disableGutters>
 					<Container maxWidth="xl" className={styles.header}>
 						<Grid container justify={matches ? 'space-between' : 'flex-start'} alignItems="center">
@@ -99,7 +104,7 @@ const AppBar = (props: { left?: JSX.Element; right?: JSX.Element }) => {
 										</>
 									)}
 									<Box component={Grid} flexGrow={1} />
-									{props.right}
+									{right}
 								</Grid>
 							</Grid>
 						</Grid>

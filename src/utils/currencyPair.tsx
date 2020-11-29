@@ -94,15 +94,16 @@ export function CurrencyPairProvider({ children = null as any }) {
 			location.pathname.indexOf('info') < 0 &&
 			location.pathname.indexOf('pairs') < 0 &&
 			location.pathname.indexOf('tokens') < 0 &&
+			location.pathname.indexOf('token/') < 0 &&
 			location.pathname.indexOf('pair/') < 0
 		) {
 			// TODO
-			history.push({
+			history.replace({
 				search: `?pair=${base}-${quote}`,
 			});
 		} else {
 			if (mintAddressA && mintAddressB) {
-				history.push({
+				history.replace({
 					search: ``,
 				});
 			} else {

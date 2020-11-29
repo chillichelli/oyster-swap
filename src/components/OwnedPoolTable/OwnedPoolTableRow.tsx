@@ -1,5 +1,16 @@
 import React, { useMemo, useState } from 'react';
-import { Box, Collapse, Grid, IconButton, TableCell, TableRow } from '@material-ui/core';
+import {
+	Box,
+	Collapse,
+	Divider,
+	fade,
+	Grid,
+	IconButton,
+	TableCell,
+	TableRow,
+	Typography,
+	withStyles,
+} from '@material-ui/core';
 import { PoolInfo } from '../../models';
 import { useEnrichedPools } from '../../context/market';
 import { useMint, useUserAccounts } from '../../utils/accounts';
@@ -12,13 +23,29 @@ import { Trans } from '@lingui/macro';
 import { RemoveLiquidity } from '../pool/remove';
 import { ExplorerLink } from '../explorerLink';
 
-const useRowStyles = makeStyles({
+const ResponsiveBox = withStyles(theme => ({
+	root: {
+		display: 'flex',
+		width: '100%',
+		marginTop: theme.spacing(2),
+		marginBottom: theme.spacing(2),
+		flexWrap: 'wrap',
+	},
+}))(Box);
+
+const useRowStyles = makeStyles(theme => ({
 	root: {
 		'& > *': {
 			borderBottom: 'unset',
 		},
 	},
-});
+	innerBorder: {
+		backgroundColor:
+			theme.palette.type === 'dark'
+				? fade(theme.palette.common.white, 0.04)
+				: fade(theme.palette.common.black, 0.04),
+	},
+}));
 
 const OwnedPoolTableRow = ({ pool }: { pool: PoolInfo }) => {
 	const styles = useRowStyles();
@@ -50,101 +77,162 @@ const OwnedPoolTableRow = ({ pool }: { pool: PoolInfo }) => {
 		<>
 			<TableRow className={styles.root}>
 				<TableCell>
-					<IconButton aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
-						{open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-					</IconButton>
-				</TableCell>
-				<TableCell>
-					<Box display="flex" alignItems="center">
-						<PoolIcon
-							mintA={baseMintAddress}
-							mintB={quoteMintAddress}
-							className="left-icon"
-							style={{ display: 'inline-flex' }}
-						/>
-						<Box ml={1}>{enriched?.name}</Box>
-					</Box>
+					<Grid container alignItems="center" spacing={1}>
+						<Grid item>
+							<IconButton aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
+								{open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+							</IconButton>
+						</Grid>
+						<Grid item>
+							<PoolIcon
+								mintA={baseMintAddress}
+								mintB={quoteMintAddress}
+								className="left-icon"
+								style={{ display: 'inline-flex' }}
+							/>
+						</Grid>
+						<Grid item>{enriched?.name}</Grid>
+					</Grid>
 				</TableCell>
 				<TableCell align="right">{formatUSD.format(ratio * enriched.liquidity)}</TableCell>
-				<TableCell align="right">{ratio * enriched.supply}</TableCell>
+				<TableCell align="right">{formatNumber.format(ratio * enriched.supply)}</TableCell>
 				<TableCell align="right">
 					{enriched.fees24h * ratio < 0.005 ? '< ' : ''}
 					{formatUSD.format(enriched.fees24h * ratio)}
 				</TableCell>
 			</TableRow>
-			<TableRow>
-				<TableCell style={{ paddingBottom: 0, paddingTop: 0 }} />
-				<TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={5}>
-					<Collapse in={open} timeout="auto" unmountOnExit collapsedHeight={0}>
-						<Box mb={2} p={2}>
-							<Grid container justify="space-between">
+			<TableRow className={styles.root}>
+				<TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={4}>
+					<Collapse in={open} timeout="auto" unmountOnExit collapsedHeight={0} component="span">
+						<Grid container justify="space-between">
+							<Grid item xs={12}>
+								<Divider className={styles.innerBorder} />
+							</Grid>
+							<ResponsiveBox>
+								<Grid item xs={12} sm={3}>
+									<Box component="div" display="flex" alignItems="center">
+										<Typography color="textSecondary">
+											<Trans>Pool liquidity</Trans>
+										</Typography>
+									</Box>
+								</Grid>
+								<Grid item xs={12} sm={3}>
+									<Box component="div" display="flex" alignItems="center">
+										<Typography>{formatUSD.format(enriched.liquidity)}</Typography>
+									</Box>
+								</Grid>
+								<Grid item xs={12} sm={3}>
+									<Box component="div" display="flex" alignItems="center">
+										<Typography>
+											{formatNumber.format(enriched.liquidityA)} {enriched.names[0]}
+										</Typography>
+									</Box>
+								</Grid>
+								<Grid item xs={12} sm={3}>
+									<Box component="div" display="flex" alignItems="center">
+										<Typography>
+											{formatNumber.format(enriched.liquidityB)} {enriched.names[1]}
+										</Typography>
+									</Box>
+								</Grid>
+							</ResponsiveBox>
+							<Grid item xs={12}>
+								<Divider className={styles.innerBorder} />
+							</Grid>
+							<Box mt={2} mb={2} width={1} component={props => <Grid container {...props} />}>
 								<Grid item xs={6}>
-									<Trans>Pool liquidity</Trans>
-								</Grid>
-								<Grid item xs={6}>
-									{formatUSD.format(enriched.liquidity)}
-								</Grid>
-								<Grid item xs={6} />
-								<Grid item>
-									{formatNumber.format(enriched.liquidityA)} {enriched.names[0]}
-								</Grid>
-								<Grid item xs={6} />
-								<Grid item>
-									{formatNumber.format(enriched.liquidityB)} {enriched.names[1]}
-								</Grid>
-								<Grid item xs={6}>
-									<Trans>LP Supply</Trans>
+									<Typography color="textSecondary">
+										<Trans>LP Supply</Trans>
+									</Typography>
 								</Grid>
 								<Grid item xs={6}>
 									{formatNumber.format(enriched.supply)}
 								</Grid>
 								<Grid item xs={6}>
-									<Trans>Value per token</Trans>
+									<Typography color="textSecondary">
+										<Trans>Value per token</Trans>
+									</Typography>
 								</Grid>
 								<Grid item xs={6}>
 									{formatUSD.format(enriched.liquidity / enriched.supply)}
 								</Grid>
 								<Grid item xs={6}>
-									<Trans>Volume (24h)</Trans>
+									<Typography color="textSecondary">
+										<Trans>Volume (24h)</Trans>
+									</Typography>
 								</Grid>
 								<Grid item xs={6}>
 									{formatUSD.format(enriched.volume24h)}
 								</Grid>
 								<Grid item xs={6}>
-									<Trans>Fees (24h)</Trans>
+									<Typography color="textSecondary">
+										<Trans>Fees (24h)</Trans>
+									</Typography>
 								</Grid>
 								<Grid item xs={6}>
 									{formatUSD.format(enriched.fees24h)}
 								</Grid>
 								<Grid item xs={6}>
-									<Trans>Approx. APY (24h)</Trans>
+									<Typography color="textSecondary">
+										<Trans>Approx. APY (24h)</Trans>
+									</Typography>
 								</Grid>
 								<Grid item xs={6}>
 									{formatUSD.format(enriched.apy24h)}
 								</Grid>
-								<Grid item xs={6}>
-									<Trans>Address</Trans>
-								</Grid>
-								<Grid item xs={6}>
-									<ExplorerLink address={enriched.address} type="account" length={4} />
-								</Grid>
-								<Grid item xs={6} />
-								<Grid item xs={6}>
-									<ExplorerLink address={pool.pubkeys.holdingAccounts[0]} type="account" length={4} />
-									{enriched.names[0]}
-								</Grid>
-								<Grid item xs={6} />
-								<Grid item xs={6}>
-									<ExplorerLink address={pool.pubkeys.holdingAccounts[1]} type="account" length={4} />
-									{enriched.names[1]}
-								</Grid>
-								{largestUserAccount && (
-									<Grid item xs={12}>
-										<RemoveLiquidity instance={{ pool, account: largestUserAccount }} />
-									</Grid>
-								)}
+							</Box>
+							<Grid item xs={12}>
+								<Divider className={styles.innerBorder} />
 							</Grid>
-						</Box>
+							<ResponsiveBox>
+								<Grid item xs={12} sm={3}>
+									<Box component="div" display="flex" alignItems="center">
+										<Typography color="textSecondary">
+											<Trans>Address</Trans>
+										</Typography>
+									</Box>
+								</Grid>
+								<Grid item xs={12} sm={3}>
+									<Box component="div" display="flex" alignItems="center">
+										<ExplorerLink address={enriched.address} type="account" length={4} />
+									</Box>
+								</Grid>
+								<Grid item xs={12} sm={3}>
+									<Box component="div" display="flex" alignItems="center">
+										<ExplorerLink
+											address={pool.pubkeys.holdingAccounts[0]}
+											type="account"
+											length={4}
+										/>{' '}
+										{enriched.names[0]}
+									</Box>
+								</Grid>
+								<Grid item xs={12} sm={3}>
+									<Box component="div" display="flex" alignItems="center">
+										<ExplorerLink
+											address={pool.pubkeys.holdingAccounts[1]}
+											type="account"
+											length={4}
+										/>{' '}
+										{enriched.names[1]}
+									</Box>
+								</Grid>
+							</ResponsiveBox>
+							{largestUserAccount && (
+								<>
+									<Grid item xs={12}>
+										<Divider className={styles.innerBorder} />
+									</Grid>
+									<ResponsiveBox>
+										<Grid item xs={12}>
+											<Box component="div" display="flex" alignItems="center">
+												<RemoveLiquidity instance={{ pool, account: largestUserAccount }} />
+											</Box>
+										</Grid>
+									</ResponsiveBox>
+								</>
+							)}
+						</Grid>
 					</Collapse>
 				</TableCell>
 			</TableRow>

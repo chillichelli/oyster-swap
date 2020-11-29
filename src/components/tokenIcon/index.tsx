@@ -19,6 +19,8 @@ export const TokenIcon = (props: { mintAddress: string; style?: React.CSSPropert
 				src={icon}
 				style={{
 					borderRadius: '50%',
+					display: 'inline-flex',
+					alignSelf: 'center',
 					...props.style,
 				}}
 			/>

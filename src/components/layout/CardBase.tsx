@@ -6,7 +6,7 @@ const useStyles = makeStyles(theme => ({
 	root: {
 		boxShadow: 'rgba(0, 0, 0, 0.05) 0px 6px 10px',
 		backgroundColor:
-			theme.palette.type === 'dark' ? fade(theme.palette.common.black, 0.1) : theme.palette.common.white,
+			theme.palette.type === 'dark' ? fade(theme.palette.common.black, 0.3) : theme.palette.common.white,
 		border: `1px solid ${emphasize(theme.palette.background.default, 0.05)}`,
 		borderRadius: 12,
 		zIndex: 1,

@@ -23,7 +23,6 @@ import { t, Trans } from '@lingui/macro';
 import { formatPriceNumber } from '../../utils/utils';
 import { useEnrichedPools } from '../../context/market';
 import { useMint, useUserAccounts } from '../../utils/accounts';
-import { emphasize } from '@material-ui/core/styles';
 
 const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
 
@@ -115,9 +114,9 @@ export const AddToLiquidity = () => {
 			<Box
 				borderRadius={20}
 				p={2}
+				pt={0}
 				style={{
-					backgroundColor:
-						theme.palette.type === 'dark' ? emphasize(theme.palette.background.default, 0.12) : 'white',
+					backgroundColor: theme.palette.type === 'dark' ? '#212429' : 'white',
 				}}
 			>
 				<Box pt={2} pb={2}>
@@ -167,8 +166,8 @@ export const AddToLiquidity = () => {
 						A.setMint(item);
 					}}
 				/>
-				<Box mt={2.5} mb={2.5} position="relative" display="flex" alignItems="center" justifyContent="center">
-					<Typography color="textSecondary">
+				<Box mt={1.25} mb={1.25} position="relative" display="flex" alignItems="center" justifyContent="center">
+					<Typography color="textSecondary" component="div">
 						<Box p={1} display="inline-flex" alignItems="center">
 							<AddRoundedIcon color="inherit" />
 						</Box>

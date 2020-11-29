@@ -494,6 +494,7 @@ function createEnrichedTokens(
 					liquidity: 0,
 					liquidityInUsd: 0,
 					volume24h: 0,
+					price: baseMid,
 				};
 			}
 
@@ -508,6 +509,7 @@ function createEnrichedTokens(
 					liquidity: 0,
 					liquidityInUsd: 0,
 					volume24h: 0,
+					price: quote,
 				};
 			}
 		}
@@ -636,3 +638,14 @@ interface SerumMarket {
 
 	midPrice?: (mint?: PublicKey) => number;
 }
+
+export const usePrice = (mint: string) => {
+	const context = useContext(MarketsContext);
+	const marketByMint = context?.marketByMint;
+
+	if (marketByMint) {
+		return getMidPrice(marketByMint.get(mint)?.marketInfo.address.toBase58());
+	}
+
+	return 0;
+};

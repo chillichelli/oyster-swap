@@ -18,8 +18,11 @@ const Background: FC = ({ children }) => {
 	return (
 		<>
 			{location.pathname.indexOf('info') < 0 &&
+				location.pathname.indexOf('pool') < 0 &&
 				location.pathname.indexOf('pairs') < 0 &&
-				location.pathname.indexOf('tokens') < 0 && (
+				location.pathname.indexOf('tokens') < 0 &&
+				location.pathname.indexOf('token/') < 0 &&
+				location.pathname.indexOf('pair/') < 0 && (
 					<Box
 						position="absolute"
 						left={0}
