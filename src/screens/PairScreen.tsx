@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { RouteComponentProps, useHistory } from 'react-router-dom';
-import { formatPct, formatPriceNumber, formatUSD } from '../utils/utils';
-import { Box, Button, Grid, IconButton, Link, Typography } from '@material-ui/core';
+import { formatPct, formatPriceNumberSmall, formatUSD } from '../utils/utils';
+import { Box, Button, Grid, IconButton, Link, Typography, useMediaQuery, useTheme } from '@material-ui/core';
 import DefaultLayout from '../components/defaultLayout';
-import { Trans } from '@lingui/macro';
+import { t, Trans } from '@lingui/macro';
 import { PoolIcon, TokenIcon } from '../components/tokenIcon';
 import AddRoundedIcon from '@material-ui/icons/AddRounded';
 import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
@@ -14,6 +14,54 @@ import { ExplorerLink } from '../components/explorerLink';
 import LogoLoader from '../components/layout/LogoLoader';
 import { useCurrencyPairState } from '../utils/currencyPair';
 import { EnrichedDataContext } from '../providers/EnrichedDataProvider';
+import usePoolHistory from '../hooks/useSwapHistory';
+import moment from 'moment';
+
+const columns = [
+	{
+		align: 'right',
+		accessor: 'title',
+		sortType: 'basic',
+		Header: t``,
+		disableSortBy: true,
+		Cell: ({ value, row }: { value: any; row: any }) => (
+			<Link
+				href={`https://explorer.solana.com/tx/${row.original.signature}`}
+				target="_blank"
+				rel="noopener noreferrer"
+				title={value}
+				underline="none"
+				color="secondary"
+			>
+				{value}
+			</Link>
+		),
+	},
+	{
+		align: 'right',
+		accessor: 'fromAmount',
+		sortType: 'basic',
+		Header: t`From Token`,
+		sortDescFirst: true,
+		Cell: ({ value, row }: { value: any; row: any }) => `${value} ${row.original.fromToken}`,
+	},
+	{
+		align: 'right',
+		accessor: 'toAmount',
+		sortType: 'basic',
+		Header: t`To Token`,
+		sortDescFirst: true,
+		Cell: ({ value, row }: { value: any; row: any }) => `${value} ${row.original.toToken}`,
+	},
+	{
+		align: 'right',
+		accessor: 'time',
+		sortType: 'basic',
+		Header: t`Time`,
+		sortDescFirst: true,
+		Cell: ({ value }: { value: any }) => moment(value * 1000).fromNow(),
+	},
+];
 
 interface MatchParams {
 	address: string;
@@ -31,9 +79,9 @@ const PriceAPerB = ({
 	mintB: string;
 }) => {
 	const history = useHistory();
-	const priceA = usePrice(mintA);
-	const priceB = usePrice(mintB);
-	const result = formatPriceNumber.format(priceA / priceB ? priceA / priceB : 0);
+	const priceA = usePrice(mintA) || 1;
+	const priceB = usePrice(mintB) || 1;
+	const result = formatPriceNumberSmall.format(priceA / priceB ? priceA / priceB : 0);
 	return (
 		<CardBase display="inline-flex" borderRadius={20}>
 			<Button
@@ -50,8 +98,11 @@ const PriceAPerB = ({
 
 const PairScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 	const { enrichedPools } = useContext(EnrichedDataContext);
-	const pool = enrichedPools.find(el => el.key === match.params.address);
 	const { A, B } = useCurrencyPairState();
+	const pool = enrichedPools.find(el => el.key === match.params.address);
+	const poolHistory = usePoolHistory(pool);
+	const theme = useTheme();
+	const matches = useMediaQuery(theme.breakpoints.down('sm'));
 
 	let poolStats;
 	if (pool) {
@@ -71,10 +122,16 @@ const PairScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 								display="inline-flex"
 								alignItems="center"
 								component={props => (
-									<Typography {...props} variant="h4" color="textPrimary" component="span" />
+									<Typography
+										{...props}
+										variant="h4"
+										color="textPrimary"
+										component="span"
+										gutterBottom
+									/>
 								)}
 							>
-								<IconButton color="inherit" onClick={() => history.goBack()}>
+								<IconButton color="inherit" onClick={() => history.push('/pairs')}>
 									<ArrowBackIosRoundedIcon fontSize="inherit" />
 								</IconButton>
 								<Box mr={3} component="span" />
@@ -108,6 +165,7 @@ const PairScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 								<Grid item>
 									<Button
 										color="primary"
+										variant="outlined"
 										startIcon={<AddRoundedIcon />}
 										onClick={() => history.push('/add')}
 									>
@@ -198,7 +256,7 @@ const PairScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 								</Grid>
 							</CardBase>
 						</Grid>
-						<Grid item xs={12} md={6} lg={3}>
+						<Grid item xs={12} lg={6}>
 							<CardBase p={2.5}>
 								<Grid item>
 									<Typography variant="body1" color="textSecondary" gutterBottom>
@@ -211,18 +269,24 @@ const PairScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 											<Typography {...props} variant="h5" color="textPrimary" gutterBottom />
 										)}
 									>
+										<Box mr={1} component="span" display="inline-flex">
+											<TokenIcon mintAddress={mintA} />
+										</Box>{' '}
 										<Link
 											underline="none"
 											color="inherit"
 											component="button"
-											variant="h5"
+											variant={matches ? 'h6' : 'h5'}
 											onClick={() => history.push(`/token/${mintA}`)}
-											style={{ display: 'flex', alignItems: 'center' }}
+											style={{ display: 'flex', alignItems: 'baseline' }}
 										>
-											<Box mr={1} component="span" display="inline-flex">
-												<TokenIcon mintAddress={mintA} />
-											</Box>{' '}
-											{formatPriceNumber.format(pool.liquidityA)} {symbolA}
+											{formatPriceNumberSmall.format(pool.liquidityA)} {symbolA}
+											<Box mr={1} />
+											{!matches && (
+												<Typography component="span" color="textSecondary">
+													{formatUSD.format(pool.liquidityAinUsd)}
+												</Typography>
+											)}
 										</Link>
 									</Box>
 									<Box
@@ -230,18 +294,24 @@ const PairScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 										alignItems="center"
 										component={props => <Typography {...props} variant="h5" color="textPrimary" />}
 									>
+										<Box mr={1} component="span" display="inline-flex">
+											<TokenIcon mintAddress={mintB} />
+										</Box>{' '}
 										<Link
 											underline="none"
 											color="inherit"
 											component="button"
-											variant="h5"
+											variant={matches ? 'h6' : 'h5'}
 											onClick={() => history.push(`/token/${mintB}`)}
-											style={{ display: 'flex', alignItems: 'center' }}
+											style={{ display: 'flex', alignItems: 'baseline' }}
 										>
-											<Box mr={1} component="span" display="inline-flex">
-												<TokenIcon mintAddress={mintB} />
-											</Box>{' '}
-											{formatPriceNumber.format(pool.liquidityB)} {symbolB}
+											{formatPriceNumberSmall.format(pool.liquidityB)} {symbolB}
+											<Box mr={1} />
+											{!matches && (
+												<Typography component="span" color="textSecondary">
+													{formatUSD.format(pool.liquidityBinUsd)}
+												</Typography>
+											)}
 										</Link>
 									</Box>
 								</Grid>
@@ -251,10 +321,10 @@ const PairScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 				</Grid>
 				<Grid item xs={12}>
 					<Typography variant="h6" gutterBottom>
-						<Trans>Transactions</Trans> (Work in Progress)
+						<Trans>Transactions</Trans>
 					</Typography>
 					<CardBase>
-						<DefaultTable data={[]} columns={[]} />
+						<DefaultTable disablePagination data={poolHistory} columns={columns} />
 					</CardBase>
 				</Grid>
 				<Grid item xs={12}>

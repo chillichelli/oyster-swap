@@ -29,6 +29,9 @@ const theme = {
 			},
 		},
 		MuiButton: {
+			outlined: {
+				padding: '6px 16px',
+			},
 			textSizeLarge: {
 				fontSize: '1rem',
 			},

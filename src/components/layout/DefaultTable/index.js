@@ -4,8 +4,9 @@ import { Box, Table, TableBody, TableCell, TableHead, TableRow, TableSortLabel }
 import TablePagination from '@material-ui/core/TablePagination';
 import ExpandMoreRoundedIcon from '@material-ui/icons/ExpandMoreRounded';
 import TableContainer from '@material-ui/core/TableContainer';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
-const DefaultTable = ({ columns, data, initialState = {} }) => {
+const DefaultTable = ({ columns, data, initialState = {}, disablePagination = false }) => {
 	const {
 		getTableProps,
 		getTableBodyProps,
@@ -53,35 +54,53 @@ const DefaultTable = ({ columns, data, initialState = {} }) => {
 						))}
 					</TableHead>
 					<TableBody {...getTableBodyProps()}>
-						{page.map((row, i) => {
-							prepareRow(row);
-							return (
-								<TableRow {...row.getRowProps()}>
-									{row.cells.map((cell, k) => {
-										cell.rowIndex = i;
-										return (
-											<TableCell align={k === 0 ? 'left' : 'right'} {...cell.getCellProps()}>
-												{cell.render('Cell')}
-											</TableCell>
-										);
-									})}
-								</TableRow>
-							);
-						})}
+						{data.length > 0 ? (
+							page.map((row, i) => {
+								prepareRow(row);
+								return (
+									<TableRow {...row.getRowProps()}>
+										{row.cells.map((cell, k) => {
+											cell.rowIndex = i;
+											return (
+												<TableCell align={k === 0 ? 'left' : 'right'} {...cell.getCellProps()}>
+													{cell.render('Cell')}
+												</TableCell>
+											);
+										})}
+									</TableRow>
+								);
+							})
+						) : (
+							<TableRow>
+								<TableCell colSpan={columns.length}>
+									<Box
+										width={1}
+										height={1}
+										display="flex"
+										alignItems="center"
+										justifyContent="center"
+									>
+										<CircularProgress size={24} />
+									</Box>
+								</TableCell>
+							</TableRow>
+						)}
 					</TableBody>
 				</Table>
 			</TableContainer>
-			<Box mr={0.75}>
-				<TablePagination
-					rowsPerPageOptions={[5, 10, 25, 50]}
-					component="div"
-					count={data.length}
-					rowsPerPage={pageSize}
-					page={pageIndex}
-					onChangePage={(e, val) => gotoPage(val)}
-					onChangeRowsPerPage={e => setPageSize(e.target.value)}
-				/>
-			</Box>
+			{!disablePagination && (
+				<Box mr={0.75}>
+					<TablePagination
+						rowsPerPageOptions={[5, 10, 25, 50]}
+						component="div"
+						count={data.length}
+						rowsPerPage={pageSize}
+						page={pageIndex}
+						onChangePage={(e, val) => gotoPage(val)}
+						onChangeRowsPerPage={e => setPageSize(e.target.value)}
+					/>
+				</Box>
+			)}
 		</>
 	);
 };

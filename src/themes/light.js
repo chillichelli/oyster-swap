@@ -53,6 +53,13 @@ const theme = {
 				fontWeight: 400,
 			},
 		},
+		MuiLink: {
+			button: {
+				'&:hover': {
+					color: emphasize(textPrimary, 0.4),
+				},
+			},
+		},
 	},
 	palette: {
 		type: 'light',

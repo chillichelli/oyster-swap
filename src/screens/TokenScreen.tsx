@@ -12,6 +12,7 @@ import LogoLoader from '../components/layout/LogoLoader';
 import { EnrichedDataContext } from '../providers/EnrichedDataProvider';
 import TopPairs from '../components/TopPairs';
 import { useCurrencyPairState } from '../utils/currencyPair';
+import { ExplorerLink } from '../components/explorerLink';
 
 interface MatchParams {
 	address: string;
@@ -39,10 +40,16 @@ const TokenScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 								display="inline-flex"
 								alignItems="baseline"
 								component={props => (
-									<Typography {...props} variant="h4" color="textPrimary" component="span" />
+									<Typography
+										{...props}
+										variant="h4"
+										color="textPrimary"
+										component="span"
+										gutterBottom
+									/>
 								)}
 							>
-								<IconButton color="inherit" onClick={() => history.goBack()}>
+								<IconButton color="inherit" onClick={() => history.push('/tokens')}>
 									<ArrowBackIosRoundedIcon fontSize="inherit" />
 								</IconButton>
 								<Box mr={3} component="span" />
@@ -57,6 +64,7 @@ const TokenScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 							<Grid container spacing={1}>
 								<Grid item>
 									<Button
+										variant="outlined"
 										color="primary"
 										startIcon={<AddRoundedIcon />}
 										onClick={() => history.push('/add')}
@@ -110,6 +118,29 @@ const TokenScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 						<Trans>Pairs</Trans>
 					</Typography>
 					<TopPairs mintAddress={token.mint} />
+				</Grid>
+				<Grid item xs={12}>
+					<Typography variant="h6" gutterBottom>
+						<Trans>Token information</Trans>
+					</Typography>
+					<CardBase p={2.5}>
+						<Grid container spacing={3}>
+							<Grid item>
+								<Typography color="textSecondary">
+									<Trans>Symbol</Trans>
+								</Typography>
+								<Typography>{token.symbol}</Typography>
+							</Grid>
+							<Grid item>
+								<Typography color="textSecondary">
+									<Trans>Address</Trans>
+								</Typography>
+								<Typography>
+									<ExplorerLink address={token.mint} type="address" />
+								</Typography>
+							</Grid>
+						</Grid>
+					</CardBase>
 				</Grid>
 			</Grid>
 		);

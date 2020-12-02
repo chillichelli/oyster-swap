@@ -143,6 +143,12 @@ export const formatPriceNumber = new Intl.NumberFormat('en-US', {
 	maximumFractionDigits: 8,
 });
 
+export const formatPriceNumberSmall = new Intl.NumberFormat('en-US', {
+	style: 'decimal',
+	minimumFractionDigits: 2,
+	maximumFractionDigits: 5,
+});
+
 // returns a Color from a 4 color array, green to red, depending on the index
 // of the closer (up) checkpoint number from the value
 export const colorWarning = (value = 0, valueCheckpoints = [1, 3, 5, 100]) => {
