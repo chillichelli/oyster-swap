@@ -17,6 +17,7 @@ import { TokenIcon } from '../tokenIcon';
 import ExploreOutlinedIcon from '@material-ui/icons/ExploreOutlined';
 import Popover from '@material-ui/core/Popover/Popover';
 import { Trans } from '@lingui/macro';
+import { PublicKey } from '@solana/web3.js';
 
 const Address = (props: { address: string; mint?: string; style?: React.CSSProperties; label?: string }) => {
 	return (
@@ -81,15 +82,23 @@ export const AccountsAddress = (props: {
 	bName?: string;
 	bMint?: string;
 }) => {
-	const { pool, aMint, bMint } = props;
-	const account1 = pool?.pubkeys.holdingAccounts[0];
-	const account2 = pool?.pubkeys.holdingAccounts[1];
-	return (
-		<>
-			{account1 && <Address address={account1.toBase58()} mint={aMint} style={props.style} label={props.aName} />}
-			{account2 && <Address address={account2.toBase58()} mint={bMint} style={props.style} label={props.bName} />}
-		</>
-	);
+	const { pool, aMint, bMint, aName, bName, style } = props;
+
+	if (pool && aName && aMint && bName && bMint) {
+		const accounts = {
+			[pool.pubkeys.holdingMints[0].toBase58() || '']: pool.pubkeys.holdingAccounts[0].toBase58(),
+			[pool.pubkeys.holdingMints[1].toBase58() || '']: pool.pubkeys.holdingAccounts[1].toBase58(),
+		};
+
+		return (
+			<>
+				<Address address={accounts[aMint]} mint={aMint} style={style} label={aName} />
+				<Address address={accounts[bMint]} mint={bMint} style={style} label={bName} />
+			</>
+		);
+	}
+
+	return <></>;
 };
 
 export const AdressesPopover = (props: {
