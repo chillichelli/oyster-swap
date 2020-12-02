@@ -8,7 +8,7 @@ msgstr ""
 "Language: zh\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-11-29 18:10\n"
+"PO-Revision-Date: 2020-12-02 08:26\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -46,6 +46,7 @@ msgid "Adding liquidity cancelled."
 msgstr ""
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:162
+#: src/screens/TokenScreen.tsx:111
 msgid "Address"
 msgstr ""
 
@@ -53,7 +54,7 @@ msgstr ""
 msgid "Addresses"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:144
+#: src/screens/PairScreen.tsx:185
 msgid "Annual Percentage Yield"
 msgstr ""
 
@@ -123,7 +124,7 @@ msgstr ""
 msgid "Fees (24h)"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:130
+#: src/screens/PairScreen.tsx:171
 msgid "Fees (24hr)"
 msgstr ""
 
@@ -137,6 +138,10 @@ msgstr ""
 
 #: src/components/trade/index.tsx:94
 msgid "From"
+msgstr ""
+
+#: src/screens/PairScreen.tsx:34
+msgid "From Token"
 msgstr ""
 
 #: src/components/appBar/index.tsx:82
@@ -220,27 +225,27 @@ msgstr ""
 msgid "Owner Trading Fee"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:60
+#: src/screens/PairScreen.tsx:101
 msgid "Pair"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:211
+#: src/screens/PairScreen.tsx:260
 msgid "Pair Address"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:197
+#: src/screens/PairScreen.tsx:246
 msgid "Pair Name"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:191
+#: src/screens/PairScreen.tsx:240
 msgid "Pair information"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:95
+#: src/screens/PairScreen.tsx:136
 msgid "Pair statistics"
 msgstr ""
 
-#: src/screens/TokenScreen.tsx:92
+#: src/screens/TokenScreen.tsx:93
 msgid "Pairs"
 msgstr ""
 
@@ -291,7 +296,7 @@ msgstr ""
 msgid "Pool {tokenA}/{tokenB} doesn't exist"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:158
+#: src/screens/PairScreen.tsx:199
 msgid "Pooled Tokens"
 msgstr ""
 
@@ -366,9 +371,9 @@ msgstr ""
 msgid "Swap trade cancelled."
 msgstr ""
 
-#: src/components/charts/TopTokens.tsx:40
-#~ msgid "Symbol"
-#~ msgstr ""
+#: src/screens/TokenScreen.tsx:105
+msgid "Symbol"
+msgstr ""
 
 #: src/components/MoreInfo.tsx:52
 msgid "Telegram"
@@ -378,12 +383,24 @@ msgstr ""
 msgid "The difference between the market price and estimated price due to trade size."
 msgstr ""
 
+#: src/screens/PairScreen.tsx:50
+msgid "Time"
+msgstr ""
+
 #: src/components/trade/index.tsx:114
 msgid "To (Estimate)"
 msgstr ""
 
+#: src/screens/PairScreen.tsx:42
+msgid "To Token"
+msgstr ""
+
 #: src/components/settings.tsx:79
 msgid "Toggle dark mode"
+msgstr ""
+
+#: src/screens/TokenScreen.tsx:99
+msgid "Token information"
 msgstr ""
 
 #: src/screens/ChartsScreen.tsx:141
@@ -397,8 +414,8 @@ msgid "Top Tokens"
 msgstr ""
 
 #: src/screens/ChartsScreen.tsx:76
-#: src/screens/PairScreen.tsx:102
-#: src/screens/TokenScreen.tsx:64
+#: src/screens/PairScreen.tsx:143
+#: src/screens/TokenScreen.tsx:65
 msgid "Total Liquidity"
 msgstr ""
 
@@ -414,6 +431,10 @@ msgstr ""
 msgid "Transaction Settings"
 msgstr ""
 
+#: src/screens/PairScreen.tsx:223
+#~ msgid "Transaction Signature"
+#~ msgstr ""
+
 #: src/components/pool/add.tsx:76
 msgid "Transaction failed"
 msgstr ""
@@ -422,7 +443,7 @@ msgstr ""
 msgid "Transaction failed..."
 msgstr ""
 
-#: src/screens/PairScreen.tsx:183
+#: src/screens/PairScreen.tsx:232
 msgid "Transactions"
 msgstr ""
 
@@ -441,8 +462,8 @@ msgstr ""
 msgid "Volume (24h)"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:116
-#: src/screens/TokenScreen.tsx:78
+#: src/screens/PairScreen.tsx:157
+#: src/screens/TokenScreen.tsx:79
 msgid "Volume (24hr)"
 msgstr ""
 
@@ -501,11 +522,11 @@ msgstr ""
 msgid "per"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:219
+#: src/screens/PairScreen.tsx:268
 msgid "{symbolA} Address"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:227
+#: src/screens/PairScreen.tsx:276
 msgid "{symbolB} Address"
 msgstr ""
 
