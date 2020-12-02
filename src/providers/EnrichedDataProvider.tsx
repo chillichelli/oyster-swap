@@ -26,7 +26,7 @@ const EnrichedDataProvider: FC = ({ children }) => {
 		(acc, item) => {
 			acc.liquidity = acc.liquidity + item.liquidity;
 			acc.volume = acc.volume + item.volume24h;
-			acc.fees = acc.fees + item.fees;
+			acc.fees = acc.fees + item.fees24h;
 			return acc;
 		},
 		{ liquidity: 0, volume: 0, fees: 0 } as Totals

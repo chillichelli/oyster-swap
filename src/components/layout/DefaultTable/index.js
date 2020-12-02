@@ -5,6 +5,7 @@ import TablePagination from '@material-ui/core/TablePagination';
 import ExpandMoreRoundedIcon from '@material-ui/icons/ExpandMoreRounded';
 import TableContainer from '@material-ui/core/TableContainer';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import LogoLoader from '../LogoLoader';
 
 const DefaultTable = ({ columns, data, initialState = {}, disablePagination = false }) => {
 	const {
@@ -80,7 +81,7 @@ const DefaultTable = ({ columns, data, initialState = {}, disablePagination = fa
 										alignItems="center"
 										justifyContent="center"
 									>
-										<CircularProgress size={24} />
+										<LogoLoader width={32} height={32} />
 									</Box>
 								</TableCell>
 							</TableRow>

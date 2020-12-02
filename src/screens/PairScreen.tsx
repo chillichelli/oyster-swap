@@ -390,7 +390,17 @@ const PairScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 		);
 	}
 
-	return <DefaultLayout appBarBorder>{pool ? poolStats : <LogoLoader />}</DefaultLayout>;
+	return (
+		<DefaultLayout appBarBorder>
+			{pool ? (
+				poolStats
+			) : (
+				<Box position="fixed" ml={-2.5} mt={-2.5} left="50%" top="50%">
+					<LogoLoader />
+				</Box>
+			)}
+		</DefaultLayout>
+	);
 };
 
 export default PairScreen;

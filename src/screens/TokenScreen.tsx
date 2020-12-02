@@ -145,7 +145,17 @@ const TokenScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 			</Grid>
 		);
 	}
-	return <DefaultLayout appBarBorder>{token ? tokenStats : <LogoLoader />}</DefaultLayout>;
+	return (
+		<DefaultLayout appBarBorder>
+			{token ? (
+				tokenStats
+			) : (
+				<Box position="fixed" ml={-2.5} mt={-2.5} left="50%" top="50%">
+					<LogoLoader />
+				</Box>
+			)}
+		</DefaultLayout>
+	);
 };
 
 export default TokenScreen;

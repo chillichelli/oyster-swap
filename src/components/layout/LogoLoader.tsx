@@ -20,19 +20,10 @@ const useStyles = makeStyles(theme => ({
 	},
 }));
 
-const LogoLoader = () => {
+const LogoLoader = ({ width = 40, height = 40 }: { width?: number; height?: number }) => {
 	const styles = useStyles();
 	return (
-		<Box
-			className={styles.animatedItem}
-			position="fixed"
-			left="50%"
-			top="50%"
-			mt={-2.5}
-			ml={-2.5}
-			width={40}
-			height={40}
-		>
+		<Box className={styles.animatedItem} width={width} height={height}>
 			<Logo width="100%" height="100%" />
 		</Box>
 	);
