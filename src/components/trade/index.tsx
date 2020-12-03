@@ -399,34 +399,3 @@ export const TradeInfo = (props: { pool?: PoolInfo }) => {
 		</Box>
 	) : null;
 };
-
-export const TradeView = () => {
-  return (
-    <>
-      <AppBar
-        right={
-          <Popover
-            placement="topRight"
-            title="Settings"
-            content={<Settings />}
-            trigger="click"
-          >
-            <Button
-              shape="circle"
-              size="large"
-              type="text"
-              icon={<SettingOutlined />}
-            />
-          </Popover>
-        }
-      />
-      <Card
-        className="exchange-card"
-        headStyle={{ padding: 0 }}
-        bodyStyle={{ position: "relative" }}
-      >
-        <TradeEntry />
-      </Card>
-    </>
-  );
-};

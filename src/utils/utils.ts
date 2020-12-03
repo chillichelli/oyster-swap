@@ -1,7 +1,11 @@
 import { useCallback, useState } from 'react';
 import { MintInfo } from '@solana/spl-token';
-
 import { PoolInfo, TokenAccount } from '../models';
+import Numeral from 'numeral';
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
+
+dayjs.extend(utc);
 
 export interface KnownToken {
 	tokenSymbol: string;
@@ -149,32 +153,43 @@ export const formatPriceNumberSmall = new Intl.NumberFormat('en-US', {
 	maximumFractionDigits: 5,
 });
 
-export const formatShortDate = new Intl.DateTimeFormat("en-US", {
-  day: "numeric",
-  month: "short",
+export const formatShortDate = new Intl.DateTimeFormat('en-US', {
+	day: 'numeric',
+	month: 'short',
 });
 
 // returns a Color from a 4 color array, green to red, depending on the index
 // of the closer (up) checkpoint number from the value
 export const colorWarning = (value = 0, valueCheckpoints = [1, 3, 5, 100]) => {
-  const defaultIndex = 1;
-  const colorCodes = ["#27ae60", "inherit", "#f3841e", "#ff3945"];
-  if (value > valueCheckpoints[valueCheckpoints.length - 1]) {
-    return colorCodes[defaultIndex];
-  }
-  const closest = [...valueCheckpoints].sort((a, b) => {
-    const first = a - value < 0 ? Number.POSITIVE_INFINITY : a - value;
-    const second = b - value < 0 ? Number.POSITIVE_INFINITY : b - value;
-    if (first < second) {
-      return -1;
-    } else if (first > second) {
-      return 1;
-    }
-    return 0;
-  })[0];
-  const index = valueCheckpoints.indexOf(closest);
-  if (index !== -1) {
-    return colorCodes[index];
-  }
-  return colorCodes[defaultIndex];
+	const defaultIndex = 1;
+	const colorCodes = ['#27ae60', 'inherit', '#f3841e', '#ff3945'];
+	if (value > valueCheckpoints[valueCheckpoints.length - 1]) {
+		return colorCodes[defaultIndex];
+	}
+	const closest = [...valueCheckpoints].sort((a, b) => {
+		const first = a - value < 0 ? Number.POSITIVE_INFINITY : a - value;
+		const second = b - value < 0 ? Number.POSITIVE_INFINITY : b - value;
+		if (first < second) {
+			return -1;
+		} else if (first > second) {
+			return 1;
+		}
+		return 0;
+	})[0];
+	const index = valueCheckpoints.indexOf(closest);
+	if (index !== -1) {
+		return colorCodes[index];
+	}
+	return colorCodes[defaultIndex];
+};
+
+export const toNiceDate = (date: any) => {
+	let x = dayjs.utc(dayjs.unix(date)).format('MMM DD');
+	return x;
+};
+
+export const toNiceDateYear = (date: any) => dayjs.utc(dayjs.unix(date)).format('MMMM DD, YYYY');
+
+export const toK = (num: number) => {
+	return Numeral(num).format('0.[00]a');
 };

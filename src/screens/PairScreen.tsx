@@ -16,6 +16,7 @@ import { useCurrencyPairState } from '../utils/currencyPair';
 import { EnrichedDataContext } from '../providers/EnrichedDataProvider';
 import usePoolHistory from '../hooks/useSwapHistory';
 import moment from 'moment';
+import PairChart, { ChartView } from '../components/PairChart';
 
 const columns = [
 	{
@@ -200,122 +201,155 @@ const PairScreen = ({ match, history }: RouteComponentProps<MatchParams>) => {
 						<Trans>Pair statistics</Trans>
 					</Typography>
 					<Grid container spacing={1}>
-						<Grid item xs={12} md={6} lg={3}>
-							<CardBase p={2.5}>
-								<Grid item>
-									<Typography variant="body1" color="textSecondary" gutterBottom>
-										<Trans>Total Liquidity</Trans>
-									</Typography>
-									<Typography variant="h5" color="textPrimary">
-										<Box component="span" display="flex">
-											{formatUSD.format(pool.liquidity)}
-										</Box>
-									</Typography>
+						<Grid item xs={12} md={4}>
+							<Grid container spacing={1} direction="column">
+								<Grid item xs={12}>
+									<CardBase p={2.5}>
+										<Grid item>
+											<Typography variant="body1" color="textSecondary" gutterBottom>
+												<Trans>Total Liquidity</Trans>
+											</Typography>
+											<Typography variant="h5" color="textPrimary">
+												<Box component="span" display="flex">
+													{formatUSD.format(pool.liquidity)}
+												</Box>
+											</Typography>
+										</Grid>
+									</CardBase>
 								</Grid>
-							</CardBase>
+								<Grid item xs={12}>
+									<CardBase p={2.5}>
+										<Grid item>
+											<Typography variant="body1" color="textSecondary" gutterBottom>
+												<Trans>Volume (24hr)</Trans>
+											</Typography>
+											<Typography variant="h5" color="textPrimary">
+												<Box component="span" display="flex">
+													{formatUSD.format(pool.volume24h)}
+												</Box>
+											</Typography>
+										</Grid>
+									</CardBase>
+								</Grid>
+								<Grid item xs={12}>
+									<CardBase p={2.5}>
+										<Grid item>
+											<Typography variant="body1" color="textSecondary" gutterBottom>
+												<Trans>Fees (24hr)</Trans>
+											</Typography>
+											<Typography variant="h5" color="textPrimary">
+												<Box component="span" display="flex">
+													{formatUSD.format(pool.fees24h)}
+												</Box>
+											</Typography>
+										</Grid>
+									</CardBase>
+								</Grid>
+								<Grid item xs={12}>
+									<CardBase p={2.5}>
+										<Grid item>
+											<Typography variant="body1" color="textSecondary" gutterBottom>
+												<Trans>Annual Percentage Yield</Trans>
+											</Typography>
+											<Typography variant="h5" color="textPrimary">
+												<Box component="span" display="flex">
+													{formatPct.format(pool.apy)}
+												</Box>
+											</Typography>
+										</Grid>
+									</CardBase>
+								</Grid>
+								<Grid item xs={12}>
+									<CardBase p={2.5}>
+										<Grid item>
+											<Typography variant="body1" color="textSecondary" gutterBottom>
+												<Trans>Pooled Tokens</Trans>
+											</Typography>
+											<Box
+												display="flex"
+												alignItems="center"
+												component={props => (
+													<Typography
+														{...props}
+														variant="h5"
+														color="textPrimary"
+														gutterBottom
+													/>
+												)}
+											>
+												<Box mr={1} component="span" display="inline-flex">
+													<TokenIcon mintAddress={mintA} />
+												</Box>{' '}
+												<Link
+													underline="none"
+													color="inherit"
+													component="button"
+													variant={matches ? 'h6' : 'h5'}
+													onClick={() => history.push(`/token/${mintA}`)}
+													style={{ display: 'flex', alignItems: 'baseline' }}
+												>
+													{formatPriceNumberSmall.format(pool.liquidityA)} {symbolA}
+													<Box mr={1} />
+													{!matches && (
+														<Typography component="span" color="textSecondary">
+															{formatUSD.format(pool.liquidityAinUsd)}
+														</Typography>
+													)}
+												</Link>
+											</Box>
+											<Box
+												display="flex"
+												alignItems="center"
+												component={props => (
+													<Typography {...props} variant="h5" color="textPrimary" />
+												)}
+											>
+												<Box mr={1} component="span" display="inline-flex">
+													<TokenIcon mintAddress={mintB} />
+												</Box>{' '}
+												<Link
+													underline="none"
+													color="inherit"
+													component="button"
+													variant={matches ? 'h6' : 'h5'}
+													onClick={() => history.push(`/token/${mintB}`)}
+													style={{ display: 'flex', alignItems: 'baseline' }}
+												>
+													{formatPriceNumberSmall.format(pool.liquidityB)} {symbolB}
+													<Box mr={1} />
+													{!matches && (
+														<Typography component="span" color="textSecondary">
+															{formatUSD.format(pool.liquidityBinUsd)}
+														</Typography>
+													)}
+												</Link>
+											</Box>
+										</Grid>
+									</CardBase>
+								</Grid>
+							</Grid>
 						</Grid>
-						<Grid item xs={12} md={6} lg={3}>
-							<CardBase p={2.5}>
-								<Grid item>
-									<Typography variant="body1" color="textSecondary" gutterBottom>
-										<Trans>Volume (24hr)</Trans>
-									</Typography>
-									<Typography variant="h5" color="textPrimary">
-										<Box component="span" display="flex">
-											{formatUSD.format(pool.volume24h)}
-										</Box>
-									</Typography>
+						<Grid item xs={12} md={8}>
+							<Grid container spacing={1}>
+								<Grid item xs={12}>
+									<CardBase p={2.5} height={1}>
+										<PairChart
+											pool={pool}
+											color={theme.palette.primary.main}
+											type={ChartView.LIQUIDITY}
+										/>
+									</CardBase>
 								</Grid>
-							</CardBase>
-						</Grid>
-						<Grid item xs={12} md={6} lg={3}>
-							<CardBase p={2.5}>
-								<Grid item>
-									<Typography variant="body1" color="textSecondary" gutterBottom>
-										<Trans>Fees (24hr)</Trans>
-									</Typography>
-									<Typography variant="h5" color="textPrimary">
-										<Box component="span" display="flex">
-											{formatUSD.format(pool.fees24h)}
-										</Box>
-									</Typography>
+								<Grid item xs={12}>
+									<CardBase p={2.5} height={1}>
+										<PairChart
+											pool={pool}
+											color={theme.palette.primary.main}
+											type={ChartView.VOLUME}
+										/>
+									</CardBase>
 								</Grid>
-							</CardBase>
-						</Grid>
-						<Grid item xs={12} md={6} lg={3}>
-							<CardBase p={2.5}>
-								<Grid item>
-									<Typography variant="body1" color="textSecondary" gutterBottom>
-										<Trans>Annual Percentage Yield</Trans>
-									</Typography>
-									<Typography variant="h5" color="textPrimary">
-										<Box component="span" display="flex">
-											{formatPct.format(pool.apy)}
-										</Box>
-									</Typography>
-								</Grid>
-							</CardBase>
-						</Grid>
-						<Grid item xs={12} lg={6}>
-							<CardBase p={2.5}>
-								<Grid item>
-									<Typography variant="body1" color="textSecondary" gutterBottom>
-										<Trans>Pooled Tokens</Trans>
-									</Typography>
-									<Box
-										display="flex"
-										alignItems="center"
-										component={props => (
-											<Typography {...props} variant="h5" color="textPrimary" gutterBottom />
-										)}
-									>
-										<Box mr={1} component="span" display="inline-flex">
-											<TokenIcon mintAddress={mintA} />
-										</Box>{' '}
-										<Link
-											underline="none"
-											color="inherit"
-											component="button"
-											variant={matches ? 'h6' : 'h5'}
-											onClick={() => history.push(`/token/${mintA}`)}
-											style={{ display: 'flex', alignItems: 'baseline' }}
-										>
-											{formatPriceNumberSmall.format(pool.liquidityA)} {symbolA}
-											<Box mr={1} />
-											{!matches && (
-												<Typography component="span" color="textSecondary">
-													{formatUSD.format(pool.liquidityAinUsd)}
-												</Typography>
-											)}
-										</Link>
-									</Box>
-									<Box
-										display="flex"
-										alignItems="center"
-										component={props => <Typography {...props} variant="h5" color="textPrimary" />}
-									>
-										<Box mr={1} component="span" display="inline-flex">
-											<TokenIcon mintAddress={mintB} />
-										</Box>{' '}
-										<Link
-											underline="none"
-											color="inherit"
-											component="button"
-											variant={matches ? 'h6' : 'h5'}
-											onClick={() => history.push(`/token/${mintB}`)}
-											style={{ display: 'flex', alignItems: 'baseline' }}
-										>
-											{formatPriceNumberSmall.format(pool.liquidityB)} {symbolB}
-											<Box mr={1} />
-											{!matches && (
-												<Typography component="span" color="textSecondary">
-													{formatUSD.format(pool.liquidityBinUsd)}
-												</Typography>
-											)}
-										</Link>
-									</Box>
-								</Grid>
-							</CardBase>
+							</Grid>
 						</Grid>
 					</Grid>
 				</Grid>

@@ -17,7 +17,6 @@ import { TokenIcon } from '../tokenIcon';
 import ExploreOutlinedIcon from '@material-ui/icons/ExploreOutlined';
 import Popover from '@material-ui/core/Popover/Popover';
 import { Trans } from '@lingui/macro';
-import { PublicKey } from '@solana/web3.js';
 
 const Address = (props: { address: string; mint?: string; style?: React.CSSProperties; label?: string }) => {
 	return (

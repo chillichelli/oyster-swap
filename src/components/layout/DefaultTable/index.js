@@ -4,7 +4,6 @@ import { Box, Table, TableBody, TableCell, TableHead, TableRow, TableSortLabel }
 import TablePagination from '@material-ui/core/TablePagination';
 import ExpandMoreRoundedIcon from '@material-ui/icons/ExpandMoreRounded';
 import TableContainer from '@material-ui/core/TableContainer';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import LogoLoader from '../LogoLoader';
 
 const DefaultTable = ({ columns, data, initialState = {}, disablePagination = false }) => {
