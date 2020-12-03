@@ -8,7 +8,7 @@ msgstr ""
 "Language: ru\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-02 08:26\n"
+"PO-Revision-Date: 2020-12-03 11:46\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "APY"
 msgstr ""
 
-#: src/utils/pools.tsx:509
+#: src/utils/pools.tsx:517
 msgid "Accounts created"
 msgstr ""
 
@@ -36,8 +36,8 @@ msgstr ""
 msgid "Add Liquidity"
 msgstr ""
 
-#: src/utils/pools.tsx:317
-#: src/utils/pools.tsx:517
+#: src/utils/pools.tsx:325
+#: src/utils/pools.tsx:525
 msgid "Adding Liquidity..."
 msgstr ""
 
@@ -50,11 +50,11 @@ msgstr ""
 msgid "Address"
 msgstr ""
 
-#: src/components/pool/address.tsx:72
+#: src/components/pool/address.tsx:77
 msgid "Addresses"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:185
+#: src/screens/PairScreen.tsx:188
 msgid "Annual Percentage Yield"
 msgstr ""
 
@@ -94,7 +94,7 @@ msgstr ""
 msgid "Create Liquidity Pool"
 msgstr ""
 
-#: src/utils/pools.tsx:452
+#: src/utils/pools.tsx:460
 msgid "Creating new pool..."
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "Fees (24h)"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:171
+#: src/screens/PairScreen.tsx:174
 msgid "Fees (24hr)"
 msgstr ""
 
@@ -140,7 +140,7 @@ msgstr ""
 msgid "From"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:34
+#: src/screens/PairScreen.tsx:35
 msgid "From Token"
 msgstr ""
 
@@ -165,6 +165,7 @@ msgstr ""
 msgid "LPs Trading Fee"
 msgstr ""
 
+#: src/components/PairChart.tsx:65
 #: src/components/TopPairs.tsx:62
 #: src/components/TopTokens.tsx:58
 #: src/components/pool/quickView.tsx:70
@@ -175,7 +176,7 @@ msgstr ""
 msgid "Liquidity Pool"
 msgstr ""
 
-#: src/utils/pools.tsx:55
+#: src/utils/pools.tsx:63
 msgid "Liquidity Returned. Thank you for your support."
 msgstr ""
 
@@ -209,7 +210,7 @@ msgstr ""
 msgid "No liquidity found."
 msgstr ""
 
-#: src/utils/pools.tsx:395
+#: src/utils/pools.tsx:403
 msgid "Not possible"
 msgstr ""
 
@@ -225,23 +226,23 @@ msgstr ""
 msgid "Owner Trading Fee"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:101
+#: src/screens/PairScreen.tsx:102
 msgid "Pair"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:260
+#: src/screens/PairScreen.tsx:279
 msgid "Pair Address"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:246
+#: src/screens/PairScreen.tsx:265
 msgid "Pair Name"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:240
+#: src/screens/PairScreen.tsx:259
 msgid "Pair information"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:136
+#: src/screens/PairScreen.tsx:137
 msgid "Pair statistics"
 msgstr ""
 
@@ -253,14 +254,14 @@ msgstr ""
 msgid "Please install solong wallet from Chrome"
 msgstr ""
 
-#: src/utils/pools.tsx:459
+#: src/utils/pools.tsx:467
 msgid "Please review inputs."
 msgstr ""
 
-#: src/utils/pools.tsx:28
-#: src/utils/pools.tsx:318
-#: src/utils/pools.tsx:453
-#: src/utils/pools.tsx:518
+#: src/utils/pools.tsx:29
+#: src/utils/pools.tsx:326
+#: src/utils/pools.tsx:461
+#: src/utils/pools.tsx:526
 msgid "Please review transactions to approve."
 msgstr ""
 
@@ -275,8 +276,8 @@ msgstr ""
 msgid "Pool"
 msgstr ""
 
-#: src/utils/pools.tsx:359
-#: src/utils/pools.tsx:547
+#: src/utils/pools.tsx:367
+#: src/utils/pools.tsx:555
 msgid "Pool Funded. Happy trading."
 msgstr ""
 
@@ -284,7 +285,7 @@ msgstr ""
 #~ msgid "Pool Liquidity"
 #~ msgstr ""
 
-#: src/utils/pools.tsx:68
+#: src/utils/pools.tsx:76
 msgid "Pool doesn't exist."
 msgstr ""
 
@@ -296,7 +297,7 @@ msgstr ""
 msgid "Pool {tokenA}/{tokenB} doesn't exist"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:199
+#: src/screens/PairScreen.tsx:202
 msgid "Pooled Tokens"
 msgstr ""
 
@@ -313,7 +314,7 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: src/utils/pools.tsx:27
+#: src/utils/pools.tsx:28
 msgid "Removing Liquidity..."
 msgstr ""
 
@@ -363,7 +364,7 @@ msgstr ""
 msgid "Swap is unaudited software. Use at your own risk"
 msgstr ""
 
-#: src/utils/pools.tsx:69
+#: src/utils/pools.tsx:77
 msgid "Swap trade cancelled"
 msgstr ""
 
@@ -383,7 +384,7 @@ msgstr ""
 msgid "The difference between the market price and estimated price due to trade size."
 msgstr ""
 
-#: src/screens/PairScreen.tsx:50
+#: src/screens/PairScreen.tsx:51
 msgid "Time"
 msgstr ""
 
@@ -391,7 +392,7 @@ msgstr ""
 msgid "To (Estimate)"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:42
+#: src/screens/PairScreen.tsx:43
 msgid "To Token"
 msgstr ""
 
@@ -414,7 +415,7 @@ msgid "Top Tokens"
 msgstr ""
 
 #: src/screens/ChartsScreen.tsx:76
-#: src/screens/PairScreen.tsx:143
+#: src/screens/PairScreen.tsx:146
 #: src/screens/TokenScreen.tsx:65
 msgid "Total Liquidity"
 msgstr ""
@@ -423,7 +424,7 @@ msgstr ""
 msgid "Trade"
 msgstr ""
 
-#: src/utils/pools.tsx:104
+#: src/utils/pools.tsx:112
 msgid "Trade executed."
 msgstr ""
 
@@ -443,7 +444,7 @@ msgstr ""
 msgid "Transaction failed..."
 msgstr ""
 
-#: src/screens/PairScreen.tsx:232
+#: src/screens/PairScreen.tsx:251
 msgid "Transactions"
 msgstr ""
 
@@ -455,6 +456,10 @@ msgstr ""
 msgid "Value per token"
 msgstr ""
 
+#: src/components/PairChart.tsx:66
+msgid "Volume"
+msgstr ""
+
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:132
 #: src/components/TopPairs.tsx:82
 #: src/components/TopTokens.tsx:65
@@ -462,7 +467,7 @@ msgstr ""
 msgid "Volume (24h)"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:157
+#: src/screens/PairScreen.tsx:160
 #: src/screens/TokenScreen.tsx:79
 msgid "Volume (24hr)"
 msgstr ""
@@ -480,7 +485,7 @@ msgstr ""
 msgid "Withdraw Fee"
 msgstr ""
 
-#: src/utils/pools.tsx:458
+#: src/utils/pools.tsx:466
 msgid "You need to have balance for all legs in the basket..."
 msgstr ""
 
@@ -506,11 +511,11 @@ msgid "Your quantity"
 msgstr ""
 
 #: src/utils/connection.tsx:177
-#: src/utils/pools.tsx:58
-#: src/utils/pools.tsx:107
-#: src/utils/pools.tsx:362
-#: src/utils/pools.tsx:511
-#: src/utils/pools.tsx:550
+#: src/utils/pools.tsx:66
+#: src/utils/pools.tsx:115
+#: src/utils/pools.tsx:370
+#: src/utils/pools.tsx:519
+#: src/utils/pools.tsx:558
 #: src/utils/wallet.tsx:39
 msgid "explorer"
 msgstr ""
@@ -522,11 +527,11 @@ msgstr ""
 msgid "per"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:268
+#: src/screens/PairScreen.tsx:287
 msgid "{symbolA} Address"
 msgstr ""
 
-#: src/screens/PairScreen.tsx:276
+#: src/screens/PairScreen.tsx:295
 msgid "{symbolB} Address"
 msgstr ""
 
