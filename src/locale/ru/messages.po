@@ -8,7 +8,7 @@ msgstr ""
 "Language: ru\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-03 22:33\n"
+"PO-Revision-Date: 2020-12-03 23:40\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
@@ -26,7 +26,7 @@ msgstr "Процент от каждой сделки ({0}%) выплачива�
 
 #: src/components/TopPairs.tsx:105
 msgid "APY"
-msgstr "APY"
+msgstr "ГПД"
 
 #: src/utils/pools.tsx:517
 msgid "Accounts created"
@@ -57,11 +57,11 @@ msgstr "Адреса"
 
 #: src/screens/PairScreen.tsx:188
 msgid "Annual Percentage Yield"
-msgstr ""
+msgstr "Годовая процентная доходность"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:148
 msgid "Approx. APY (24h)"
-msgstr ""
+msgstr "Примерная ГПД (24 ч)"
 
 #: src/components/currencyInput/index.tsx:126
 msgid "Balance"
@@ -89,7 +89,7 @@ msgstr "Для просмотра ликвидности подключитес�
 
 #: src/components/pool/config.tsx:58
 msgid "Constant Product"
-msgstr ""
+msgstr "Постоянный продукт"
 
 #: src/components/labels.tsx:3
 msgid "Create Liquidity Pool"
@@ -183,12 +183,12 @@ msgstr "Ликвидность возвращена. Спасибо за под�
 
 #: src/components/pool/view.tsx:36
 msgid "Liquidity provider rewards"
-msgstr ""
+msgstr "Вознаграждения для поставщиков ликвидности"
 
 #: src/components/pool/add.tsx:111
 #: src/components/pool/view.tsx:44
 msgid "Liquidity providers earn a fixed percentage fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
-msgstr ""
+msgstr "Поставщики ликвидности получают фиксированную комиссию по всем сделкам пропорционально своим долям в пуле. Комиссии добавляются в пул, копятся в реальном времени и могут выводиться путем снятия внесенной ликвидности."
 
 #: src/components/trade/index.tsx:209
 msgid "Minimum Received"
@@ -253,34 +253,34 @@ msgstr "Пары"
 
 #: src/utils/solong_adapter.tsx:36
 msgid "Please install solong wallet from Chrome"
-msgstr ""
+msgstr "Установите кошелек Solong через Chrome"
 
 #: src/utils/pools.tsx:467
 msgid "Please review inputs."
-msgstr ""
+msgstr "Проверьте вводные данные."
 
 #: src/utils/pools.tsx:29
 #: src/utils/pools.tsx:326
 #: src/utils/pools.tsx:461
 #: src/utils/pools.tsx:526
 msgid "Please review transactions to approve."
-msgstr ""
+msgstr "Проверьте транзакции для подтверждения."
 
 #: src/components/pool/add.tsx:78
 #: src/components/pool/remove.tsx:31
 #: src/components/trade/index.tsx:79
 msgid "Please try again and approve transactions from your wallet"
-msgstr ""
+msgstr "Повторите попытку и подтвердите транзакции из своего кошелька"
 
 #: src/components/appBar/index.tsx:62
 #: src/components/pool/quickView.tsx:67
 msgid "Pool"
-msgstr ""
+msgstr "Пул"
 
 #: src/utils/pools.tsx:367
 #: src/utils/pools.tsx:555
 msgid "Pool Funded. Happy trading."
-msgstr ""
+msgstr "Пул наполнен. Удачной торговли."
 
 #: src/components/pool/card.tsx:78
 #~ msgid "Pool Liquidity"
@@ -288,69 +288,69 @@ msgstr ""
 
 #: src/utils/pools.tsx:76
 msgid "Pool doesn't exist."
-msgstr ""
+msgstr "Пул не существует."
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:86
 msgid "Pool liquidity"
-msgstr ""
+msgstr "Ликвидность в пуле"
 
 #: src/components/labels.tsx:5
 msgid "Pool {tokenA}/{tokenB} doesn't exist"
-msgstr ""
+msgstr "Пул {tokenA}/{tokenB} не существует"
 
 #: src/screens/PairScreen.tsx:202
 msgid "Pooled Tokens"
-msgstr ""
+msgstr "Токены в пулах"
 
 #: src/components/TopTokens.tsx:72
 #: src/components/trade/index.tsx:141
 msgid "Price"
-msgstr ""
+msgstr "Цена"
 
 #: src/components/labels.tsx:6
 msgid "Provide Liquidity"
-msgstr ""
+msgstr "Предоставить ликвидность"
 
 #: src/components/pool/remove.tsx:43
 msgid "Remove"
-msgstr ""
+msgstr "Удалить"
 
 #: src/utils/pools.tsx:28
 msgid "Removing Liquidity..."
-msgstr ""
+msgstr "Удаление ликвидности..."
 
 #: src/components/pool/remove.tsx:32
 msgid "Removing liquidity cancelled."
-msgstr ""
+msgstr "Удаление ликвидности отменено."
 
 #: src/screens/ChartsScreen.tsx:129
 #: src/screens/ChartsScreen.tsx:149
 msgid "See All"
-msgstr ""
+msgstr "Посмотреть все"
 
 #: src/components/labels.tsx:9
 msgid "Select a token"
-msgstr ""
+msgstr "Выберите токен"
 
 #: src/components/pool/add.tsx:211
 msgid "Share of pool"
-msgstr ""
+msgstr "Доля в пуле"
 
 #: src/components/settings.tsx:41
 msgid "Slippage"
-msgstr ""
+msgstr "Проскальзывание"
 
 #: src/components/trade/index.tsx:127
 msgid "Slippage Tolerance"
-msgstr ""
+msgstr "Допустимое проскальзывание"
 
 #: src/utils/solong_adapter.tsx:35
 msgid "Solong Error"
-msgstr ""
+msgstr "Ошибка Solong"
 
 #: src/screens/ChartsScreen.tsx:69
 msgid "Statistics"
-msgstr ""
+msgstr "Статистика"
 
 #: src/components/TopPairs.tsx:57
 #~ msgid "Supply"
@@ -359,79 +359,79 @@ msgstr ""
 #: src/components/appBar/index.tsx:54
 #: src/components/labels.tsx:7
 msgid "Swap"
-msgstr ""
+msgstr "Swap"
 
 #: src/components/layout/FormBase.tsx:36
 msgid "Swap is unaudited software. Use at your own risk"
-msgstr ""
+msgstr "Swap — это сторонняя программа, которую вы используете на свой страх и риск"
 
 #: src/utils/pools.tsx:77
 msgid "Swap trade cancelled"
-msgstr ""
+msgstr "Торговый обмен отменен"
 
 #: src/components/trade/index.tsx:80
 msgid "Swap trade cancelled."
-msgstr ""
+msgstr "Обмен валют отменен."
 
 #: src/screens/TokenScreen.tsx:105
 msgid "Symbol"
-msgstr ""
+msgstr "Символ"
 
 #: src/components/MoreInfo.tsx:52
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: src/components/trade/index.tsx:268
 msgid "The difference between the market price and estimated price due to trade size."
-msgstr ""
+msgstr "Разница между рыночной ценой и расчетной ценой из-за размера сделки."
 
 #: src/screens/PairScreen.tsx:51
 msgid "Time"
-msgstr ""
+msgstr "Время"
 
 #: src/components/trade/index.tsx:114
 msgid "To (Estimate)"
-msgstr ""
+msgstr "В (расчет)"
 
 #: src/screens/PairScreen.tsx:43
 msgid "To Token"
-msgstr ""
+msgstr "В токен"
 
 #: src/components/settings.tsx:79
 msgid "Toggle dark mode"
-msgstr ""
+msgstr "Включить темный режим"
 
 #: src/screens/TokenScreen.tsx:99
 msgid "Token information"
-msgstr ""
+msgstr "Информация о токене"
 
 #: src/screens/ChartsScreen.tsx:141
 #: src/screens/PairsScreen.tsx:20
 msgid "Top Pairs"
-msgstr ""
+msgstr "Ведущие пары"
 
 #: src/screens/ChartsScreen.tsx:121
 #: src/screens/TokensScreen.tsx:23
 msgid "Top Tokens"
-msgstr ""
+msgstr "Ведущие токены"
 
 #: src/screens/ChartsScreen.tsx:76
 #: src/screens/PairScreen.tsx:146
 #: src/screens/TokenScreen.tsx:65
 msgid "Total Liquidity"
-msgstr ""
+msgstr "Суммарная ликвидность"
 
 #: src/components/appBar/index.tsx:76
 msgid "Trade"
-msgstr ""
+msgstr "Сделка"
 
 #: src/utils/pools.tsx:112
 msgid "Trade executed."
-msgstr ""
+msgstr "Сделка исполнена."
 
 #: src/components/settings.tsx:33
 msgid "Transaction Settings"
-msgstr ""
+msgstr "Настройки транзакций"
 
 #: src/screens/PairScreen.tsx:223
 #~ msgid "Transaction Signature"
@@ -439,7 +439,7 @@ msgstr ""
 
 #: src/components/pool/add.tsx:76
 msgid "Transaction failed"
-msgstr ""
+msgstr "Ошибка транзакции"
 
 #: src/utils/connection.tsx:171
 msgid "Transaction failed..."
