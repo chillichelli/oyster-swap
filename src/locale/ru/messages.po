@@ -8,7 +8,7 @@ msgstr ""
 "Language: ru\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-03 11:46\n"
+"PO-Revision-Date: 2020-12-03 21:27\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
@@ -21,38 +21,39 @@ msgstr ""
 #: src/components/trade/index.tsx:296
 msgid "A portion of each trade ({0}%) goes to liquidity\n"
 "providers as a protocol incentive."
-msgstr ""
+msgstr "Процент от каждой сделки ({0}%) выплачивается поставщикам\n"
+"ликвидности как стандартное вознаграждение."
 
 #: src/components/TopPairs.tsx:105
 msgid "APY"
-msgstr ""
+msgstr "APY"
 
 #: src/utils/pools.tsx:517
 msgid "Accounts created"
-msgstr ""
+msgstr "Аккаунты созданы"
 
 #: src/components/pool/add.tsx:106
 #: src/components/pool/view.tsx:64
 msgid "Add Liquidity"
-msgstr ""
+msgstr "Добавить ликвидность"
 
 #: src/utils/pools.tsx:325
 #: src/utils/pools.tsx:525
 msgid "Adding Liquidity..."
-msgstr ""
+msgstr "Добавление ликвидности..."
 
 #: src/components/pool/add.tsx:79
 msgid "Adding liquidity cancelled."
-msgstr ""
+msgstr "Добавление ликвидности отменено."
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:162
 #: src/screens/TokenScreen.tsx:111
 msgid "Address"
-msgstr ""
+msgstr "Адрес"
 
 #: src/components/pool/address.tsx:77
 msgid "Addresses"
-msgstr ""
+msgstr "Адреса"
 
 #: src/screens/PairScreen.tsx:188
 msgid "Annual Percentage Yield"
@@ -64,27 +65,27 @@ msgstr ""
 
 #: src/components/currencyInput/index.tsx:126
 msgid "Balance"
-msgstr ""
+msgstr "Баланс"
 
 #: src/components/appBar/index.tsx:70
 msgid "Charts"
-msgstr ""
+msgstr "Диаграммы"
 
 #: src/components/MoreInfo.tsx:28
 msgid "Code"
-msgstr ""
+msgstr "Код"
 
 #: src/components/appBar/right.tsx:18
 msgid "Connect"
-msgstr ""
+msgstr "Подключение"
 
 #: src/components/labels.tsx:8
 msgid "Connect Wallet"
-msgstr ""
+msgstr "Подключить кошелек"
 
 #: src/components/pool/view.tsx:72
 msgid "Connect to a wallet to view your liquidity"
-msgstr ""
+msgstr "Для просмотра ликвидности подключитесь к кошельку"
 
 #: src/components/pool/config.tsx:58
 msgid "Constant Product"
@@ -92,41 +93,41 @@ msgstr ""
 
 #: src/components/labels.tsx:3
 msgid "Create Liquidity Pool"
-msgstr ""
+msgstr "Создать пул ликвидности"
 
 #: src/utils/pools.tsx:460
 msgid "Creating new pool..."
-msgstr ""
+msgstr "Создание нового пула..."
 
 #: src/components/pool/config.tsx:54
 msgid "Curve Type"
-msgstr ""
+msgstr "Тип кривой"
 
 #: src/utils/wallet.tsx:48
 msgid "Disconnected from wallet"
-msgstr ""
+msgstr "Отключено от кошелька"
 
 #: src/components/MoreInfo.tsx:36
 msgid "Discord"
-msgstr ""
+msgstr "Discord"
 
 #: src/components/labels.tsx:10
 msgid "Enter an amount"
-msgstr ""
+msgstr "Введите сумму"
 
 #: src/components/pool/quickView.tsx:73
 msgid "Fees"
-msgstr ""
+msgstr "Комиссии"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:140
 #: src/components/TopPairs.tsx:90
 #: src/screens/ChartsScreen.tsx:104
 msgid "Fees (24h)"
-msgstr ""
+msgstr "Комиссии (24 ч)"
 
 #: src/screens/PairScreen.tsx:174
 msgid "Fees (24hr)"
-msgstr ""
+msgstr "Комиссии (24 ч)"
 
 #: src/components/charts/index.tsx:54
 #~ msgid "Filter"
@@ -134,19 +135,19 @@ msgstr ""
 
 #: src/components/pool/config.tsx:61
 msgid "Flat"
-msgstr ""
+msgstr "Фикс."
 
 #: src/components/trade/index.tsx:94
 msgid "From"
-msgstr ""
+msgstr "Из"
 
 #: src/screens/PairScreen.tsx:35
 msgid "From Token"
-msgstr ""
+msgstr "Из токена"
 
 #: src/components/appBar/index.tsx:82
 msgid "Help"
-msgstr ""
+msgstr "Справка"
 
 #: src/components/pool/add.tsx:124
 #: src/components/pool/add.tsx:143
