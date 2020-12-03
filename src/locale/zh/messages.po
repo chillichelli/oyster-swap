@@ -8,7 +8,7 @@ msgstr ""
 "Language: zh\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-03 11:46\n"
+"PO-Revision-Date: 2020-12-03 23:40\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -21,8 +21,7 @@ msgstr ""
 #: src/components/trade/index.tsx:296
 msgid "A portion of each trade ({0}%) goes to liquidity\n"
 "providers as a protocol incentive."
-msgstr "作为协议激励，每笔交易的一部分 ({0}%) 会流向流动性\n"
-"提供者。"
+msgstr "作为协议激励，每笔交易的一部分 ({0}%) 会流向流动性供应商。"
 
 #: src/components/TopPairs.tsx:105
 msgid "APY"
@@ -30,7 +29,7 @@ msgstr "年收益率"
 
 #: src/utils/pools.tsx:517
 msgid "Accounts created"
-msgstr "帐户已创建"
+msgstr "已创建账户"
 
 #: src/components/pool/add.tsx:106
 #: src/components/pool/view.tsx:64
@@ -40,11 +39,11 @@ msgstr "添加流动性"
 #: src/utils/pools.tsx:325
 #: src/utils/pools.tsx:525
 msgid "Adding Liquidity..."
-msgstr "正在添加流动性..."
+msgstr "正在添加流动性…"
 
 #: src/components/pool/add.tsx:79
 msgid "Adding liquidity cancelled."
-msgstr "添加流动性已取消。"
+msgstr "已取消添加流动性。"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:162
 #: src/screens/TokenScreen.tsx:111
@@ -61,11 +60,11 @@ msgstr "年收益率"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:148
 msgid "Approx. APY (24h)"
-msgstr "近似年收益率（24小时）"
+msgstr "近似年收益率（24 小时）"
 
 #: src/components/currencyInput/index.tsx:126
 msgid "Balance"
-msgstr "平衡"
+msgstr "余额"
 
 #: src/components/appBar/index.tsx:70
 msgid "Charts"
@@ -89,7 +88,7 @@ msgstr "连接到钱包以查看您的流动性"
 
 #: src/components/pool/config.tsx:58
 msgid "Constant Product"
-msgstr "恒定产品"
+msgstr "恒定乘积"
 
 #: src/components/labels.tsx:3
 msgid "Create Liquidity Pool"
@@ -97,7 +96,7 @@ msgstr "创建流动性池"
 
 #: src/utils/pools.tsx:460
 msgid "Creating new pool..."
-msgstr "正在创建新池..."
+msgstr "正在创建新池…"
 
 #: src/components/pool/config.tsx:54
 msgid "Curve Type"
@@ -105,7 +104,7 @@ msgstr "曲线类型"
 
 #: src/utils/wallet.tsx:48
 msgid "Disconnected from wallet"
-msgstr "断开钱包"
+msgstr "与钱包断开连接"
 
 #: src/components/MoreInfo.tsx:36
 msgid "Discord"
@@ -123,11 +122,11 @@ msgstr "费用"
 #: src/components/TopPairs.tsx:90
 #: src/screens/ChartsScreen.tsx:104
 msgid "Fees (24h)"
-msgstr "费用（24小时）"
+msgstr "费用（24 小时）"
 
 #: src/screens/PairScreen.tsx:174
 msgid "Fees (24hr)"
-msgstr "费用（24小时）"
+msgstr "费用（24 小时）"
 
 #: src/components/charts/index.tsx:54
 #~ msgid "Filter"
@@ -179,16 +178,16 @@ msgstr "流动性池"
 
 #: src/utils/pools.tsx:63
 msgid "Liquidity Returned. Thank you for your support."
-msgstr "流动性已回归。感谢您的支持。"
+msgstr "已恢复流动性。感谢您的支持。"
 
 #: src/components/pool/view.tsx:36
 msgid "Liquidity provider rewards"
-msgstr "流动性提供者奖励"
+msgstr "流动性供应商奖励"
 
 #: src/components/pool/add.tsx:111
 #: src/components/pool/view.tsx:44
 msgid "Liquidity providers earn a fixed percentage fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
-msgstr "流动性提供者在所有交易中按其在池中的份额赚取固定比率的费用。费用会加到池中，实时累积，并可以通过提取您的流动性来索偿。"
+msgstr "流动性供应商在所有交易中按其在池中的份额赚取固定比率的费用。费用会加到池中，实时累积，并可以通过提取您的流动性来索偿。"
 
 #: src/components/trade/index.tsx:209
 msgid "Minimum Received"
@@ -229,31 +228,31 @@ msgstr "所有者交易费"
 
 #: src/screens/PairScreen.tsx:102
 msgid "Pair"
-msgstr "配对"
+msgstr "货币对"
 
 #: src/screens/PairScreen.tsx:279
 msgid "Pair Address"
-msgstr "配对地址"
+msgstr "货币对地址"
 
 #: src/screens/PairScreen.tsx:265
 msgid "Pair Name"
-msgstr "配对名称"
+msgstr "货币对名称"
 
 #: src/screens/PairScreen.tsx:259
 msgid "Pair information"
-msgstr "配对信息"
+msgstr "货币对信息"
 
 #: src/screens/PairScreen.tsx:137
 msgid "Pair statistics"
-msgstr "配对统计"
+msgstr "货币对统计"
 
 #: src/screens/TokenScreen.tsx:93
 msgid "Pairs"
-msgstr "对"
+msgstr "货币对"
 
 #: src/utils/solong_adapter.tsx:36
 msgid "Please install solong wallet from Chrome"
-msgstr "请从 Chrome 安装 Solong 钱包"
+msgstr "请在 Chrome 中安装 Solong 钱包"
 
 #: src/utils/pools.tsx:467
 msgid "Please review inputs."
@@ -280,7 +279,7 @@ msgstr "池"
 #: src/utils/pools.tsx:367
 #: src/utils/pools.tsx:555
 msgid "Pool Funded. Happy trading."
-msgstr "池已注入资金。交易愉快。"
+msgstr "已向池注入资金。交易愉快。"
 
 #: src/components/pool/card.tsx:78
 #~ msgid "Pool Liquidity"
@@ -296,11 +295,11 @@ msgstr "池流动性"
 
 #: src/components/labels.tsx:5
 msgid "Pool {tokenA}/{tokenB} doesn't exist"
-msgstr "池 {tokenA}/{tokenB} 不存在"
+msgstr "{tokenA}/{tokenB} 池不存在"
 
 #: src/screens/PairScreen.tsx:202
 msgid "Pooled Tokens"
-msgstr "加入池的令牌"
+msgstr "已加入池的代币"
 
 #: src/components/TopTokens.tsx:72
 #: src/components/trade/index.tsx:141
@@ -313,15 +312,15 @@ msgstr "提供流动性"
 
 #: src/components/pool/remove.tsx:43
 msgid "Remove"
-msgstr "删除"
+msgstr "移除"
 
 #: src/utils/pools.tsx:28
 msgid "Removing Liquidity..."
-msgstr "正在删除流动性..."
+msgstr "正在移除流动性…"
 
 #: src/components/pool/remove.tsx:32
 msgid "Removing liquidity cancelled."
-msgstr "删除流动性已取消。"
+msgstr "已取消移除流动性。"
 
 #: src/screens/ChartsScreen.tsx:129
 #: src/screens/ChartsScreen.tsx:149
@@ -330,11 +329,11 @@ msgstr "全部查看"
 
 #: src/components/labels.tsx:9
 msgid "Select a token"
-msgstr "选择令牌"
+msgstr "选择代币"
 
 #: src/components/pool/add.tsx:211
 msgid "Share of pool"
-msgstr "池所占份额"
+msgstr "池份额"
 
 #: src/components/settings.tsx:41
 msgid "Slippage"
@@ -350,7 +349,7 @@ msgstr "Solong 错误"
 
 #: src/screens/ChartsScreen.tsx:69
 msgid "Statistics"
-msgstr "统计"
+msgstr "统计信息"
 
 #: src/components/TopPairs.tsx:57
 #~ msgid "Supply"
@@ -367,11 +366,11 @@ msgstr "Swap 是未经审核的软件。请自行承担使用风险"
 
 #: src/utils/pools.tsx:77
 msgid "Swap trade cancelled"
-msgstr "Swap 交易已取消"
+msgstr "已取消 Swap 交易"
 
 #: src/components/trade/index.tsx:80
 msgid "Swap trade cancelled."
-msgstr "Swap 交易已取消。"
+msgstr "已取消 Swap 交易。"
 
 #: src/screens/TokenScreen.tsx:105
 msgid "Symbol"
@@ -391,15 +390,15 @@ msgstr "时间"
 
 #: src/components/trade/index.tsx:114
 msgid "To (Estimate)"
-msgstr "至（估计）"
+msgstr "目标（估计）"
 
 #: src/screens/PairScreen.tsx:43
 msgid "To Token"
-msgstr "至令牌"
+msgstr "目标代币"
 
 #: src/components/settings.tsx:79
 msgid "Toggle dark mode"
-msgstr "切换夜间模式"
+msgstr "切换深色模式"
 
 #: src/screens/TokenScreen.tsx:99
 msgid "Token information"
@@ -443,7 +442,7 @@ msgstr "交易失败"
 
 #: src/utils/connection.tsx:171
 msgid "Transaction failed..."
-msgstr "交易失败..."
+msgstr "交易失败…"
 
 #: src/screens/PairScreen.tsx:251
 msgid "Transactions"
@@ -488,7 +487,7 @@ msgstr "提取费"
 
 #: src/utils/pools.tsx:466
 msgid "You need to have balance for all legs in the basket..."
-msgstr "您需要平衡篮筐中的所有腿..."
+msgstr "您需要平衡篮筐中的所有腿…"
 
 #: src/components/trade/index.tsx:240
 msgid "You transaction will revert if there is a large, unfavorable price movement before it is confirmed."
