@@ -293,7 +293,7 @@ export const TradeInfo = (props: { pool?: PoolInfo }) => {
 		} else {
 			setExchangeRate(parseFloat(A.amount) / parseFloat(B.amount));
 		}
-	}, [A, B, priceAccount]);
+	}, [A, B, slippage, pool, enriched, priceAccount]);
 
 	return !!parseFloat(B.amount) ? (
 		<Box p={2}>
@@ -398,4 +398,35 @@ export const TradeInfo = (props: { pool?: PoolInfo }) => {
 			</Box>
 		</Box>
 	) : null;
+};
+
+export const TradeView = () => {
+  return (
+    <>
+      <AppBar
+        right={
+          <Popover
+            placement="topRight"
+            title="Settings"
+            content={<Settings />}
+            trigger="click"
+          >
+            <Button
+              shape="circle"
+              size="large"
+              type="text"
+              icon={<SettingOutlined />}
+            />
+          </Popover>
+        }
+      />
+      <Card
+        className="exchange-card"
+        headStyle={{ padding: 0 }}
+        bodyStyle={{ position: "relative" }}
+      >
+        <TradeEntry />
+      </Card>
+    </>
+  );
 };

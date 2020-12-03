@@ -4,7 +4,7 @@ import { Dropdown } from 'antd';
 import { useWallet } from '../../utils/wallet';
 import { useConnection, useConnectionConfig, useSlippageConfig } from '../../utils/connection';
 import { Spin } from 'antd';
-import { LoadingOutlined } from '@ant-design/icons';
+import { LoadingOutlined, SettingOutlined } from '@ant-design/icons';
 import { notify } from '../../utils/notifications';
 import { CurrencyInput } from '../currencyInput';
 import { DEFAULT_DENOMINATOR, PoolConfigCard } from './config';
@@ -23,6 +23,8 @@ import { t, Trans } from '@lingui/macro';
 import { formatPriceNumber } from '../../utils/utils';
 import { useEnrichedPools } from '../../context/market';
 import { useMint, useUserAccounts } from '../../utils/accounts';
+import { AppBar } from "../appBar";
+import { Settings } from "../settings";
 
 const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
 
@@ -369,4 +371,35 @@ export const YourPosition = (props: { pool?: PoolInfo }) => {
 			</Box>
 		</Box>
 	);
+};
+
+export const AddToLiquidityView = () => {
+  return (
+    <>
+      <AppBar
+        right={
+          <Popover
+            placement="topRight"
+            title="Settings"
+            content={<Settings />}
+            trigger="click"
+          >
+            <Button
+              shape="circle"
+              size="large"
+              type="text"
+              icon={<SettingOutlined />}
+            />
+          </Popover>
+        }
+      />
+      <Card
+        className="exchange-card"
+        headStyle={{ padding: 0 }}
+        bodyStyle={{ position: "relative" }}
+      >
+        <AddToLiquidity />
+      </Card>
+    </>
+  );
 };

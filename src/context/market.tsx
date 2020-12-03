@@ -380,7 +380,8 @@ function createEnrichedPools(
 
 						apy = apy + Math.max(apy0, apy1);
 
-						const apy24h0 = parseFloat((volume24h * 0.003 * 356) as any) / baseReserveUSD;
+						const apy24h0 = parseFloat((volume24h * 0.003 * 356) as any) /
+              baseReserveUSD;
 						apy24h = apy24h + apy24h0;
 					}
 				}

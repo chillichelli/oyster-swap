@@ -126,7 +126,7 @@ export const removeLiquidity = async (
     );
   }let tx = await sendTransaction(connection, wallet, instructions.concat(cleanupInstructions), signers);
 
-	if(deleteAccount) {
+	if (deleteAccount) {
     cache.deleteAccount(account.pubkey);
   }notify({
 		message: t`Liquidity Returned. Thank you for your support.`,
@@ -310,7 +310,7 @@ export const usePools = () => {
 						data: undefined as any,
 						account: item.account,
 						pubkey: item.pubkey,
-						init: async () => { },
+						init: async () => {},
 					};
 
 					// handling of legacy layout can be removed soon...
