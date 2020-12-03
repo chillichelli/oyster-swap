@@ -8,7 +8,7 @@ msgstr ""
 "Language: hi\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-03 11:46\n"
+"PO-Revision-Date: 2020-12-03 23:40\n"
 "Last-Translator: \n"
 "Language-Team: Hindi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: src/components/TopPairs.tsx:105
 msgid "APY"
-msgstr ""
+msgstr "APY"
 
 #: src/utils/pools.tsx:517
 msgid "Accounts created"
@@ -34,29 +34,29 @@ msgstr ""
 #: src/components/pool/add.tsx:106
 #: src/components/pool/view.tsx:64
 msgid "Add Liquidity"
-msgstr ""
+msgstr "लिक्विडिटी जोड़ें"
 
 #: src/utils/pools.tsx:325
 #: src/utils/pools.tsx:525
 msgid "Adding Liquidity..."
-msgstr ""
+msgstr "लिक्विडिटी जोड़ी जा रही है..."
 
 #: src/components/pool/add.tsx:79
 msgid "Adding liquidity cancelled."
-msgstr ""
+msgstr "लिक्विडिटी जोड़ना कैंसल किया।"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:162
 #: src/screens/TokenScreen.tsx:111
 msgid "Address"
-msgstr ""
+msgstr "पता"
 
 #: src/components/pool/address.tsx:77
 msgid "Addresses"
-msgstr ""
+msgstr "पते"
 
 #: src/screens/PairScreen.tsx:188
 msgid "Annual Percentage Yield"
-msgstr ""
+msgstr "वार्षिक उत्पादन (प्रतिशत में)"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:148
 msgid "Approx. APY (24h)"
@@ -64,27 +64,27 @@ msgstr ""
 
 #: src/components/currencyInput/index.tsx:126
 msgid "Balance"
-msgstr ""
+msgstr "बैलेंस"
 
 #: src/components/appBar/index.tsx:70
 msgid "Charts"
-msgstr ""
+msgstr "चार्ट"
 
 #: src/components/MoreInfo.tsx:28
 msgid "Code"
-msgstr ""
+msgstr "कोड"
 
 #: src/components/appBar/right.tsx:18
 msgid "Connect"
-msgstr ""
+msgstr "कनेक्ट करें"
 
 #: src/components/labels.tsx:8
 msgid "Connect Wallet"
-msgstr ""
+msgstr "वॉलेट कनेक्ट करें"
 
 #: src/components/pool/view.tsx:72
 msgid "Connect to a wallet to view your liquidity"
-msgstr ""
+msgstr "अपनी लिक्विडिटी देखने के लिए किसी वॉलेट से कनेक्ट करें"
 
 #: src/components/pool/config.tsx:58
 msgid "Constant Product"
@@ -92,41 +92,41 @@ msgstr ""
 
 #: src/components/labels.tsx:3
 msgid "Create Liquidity Pool"
-msgstr ""
+msgstr "लिक्विडिटी पूल बनाएं"
 
 #: src/utils/pools.tsx:460
 msgid "Creating new pool..."
-msgstr ""
+msgstr "नया पूल बनाया जा रहा है..."
 
 #: src/components/pool/config.tsx:54
 msgid "Curve Type"
-msgstr ""
+msgstr "कर्व किस तरह का है"
 
 #: src/utils/wallet.tsx:48
 msgid "Disconnected from wallet"
-msgstr ""
+msgstr "वॉलेट से डिस्कनेक्ट किया"
 
 #: src/components/MoreInfo.tsx:36
 msgid "Discord"
-msgstr ""
+msgstr "डिस्कॉर्ड"
 
 #: src/components/labels.tsx:10
 msgid "Enter an amount"
-msgstr ""
+msgstr "कोई राशि दर्ज करें"
 
 #: src/components/pool/quickView.tsx:73
 msgid "Fees"
-msgstr ""
+msgstr "फीस"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:140
 #: src/components/TopPairs.tsx:90
 #: src/screens/ChartsScreen.tsx:104
 msgid "Fees (24h)"
-msgstr ""
+msgstr "फीस (24घं)"
 
 #: src/screens/PairScreen.tsx:174
 msgid "Fees (24hr)"
-msgstr ""
+msgstr "फीस (24घं)"
 
 #: src/components/charts/index.tsx:54
 #~ msgid "Filter"
@@ -134,97 +134,97 @@ msgstr ""
 
 #: src/components/pool/config.tsx:61
 msgid "Flat"
-msgstr ""
+msgstr "फ्लैट"
 
 #: src/components/trade/index.tsx:94
 msgid "From"
-msgstr ""
+msgstr "से"
 
 #: src/screens/PairScreen.tsx:35
 msgid "From Token"
-msgstr ""
+msgstr "टोकन से"
 
 #: src/components/appBar/index.tsx:82
 msgid "Help"
-msgstr ""
+msgstr "सहायता"
 
 #: src/components/pool/add.tsx:124
 #: src/components/pool/add.tsx:143
 msgid "Input"
-msgstr ""
+msgstr "इनपुट"
 
 #: src/components/labels.tsx:4
 msgid "Insufficient {tokenName} funds"
-msgstr ""
+msgstr "अपर्याप्त {tokenName} फंड"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:116
 msgid "LP Supply"
-msgstr ""
+msgstr "LP सप्लाई"
 
 #: src/components/pool/config.tsx:36
 msgid "LPs Trading Fee"
-msgstr ""
+msgstr "LP की ट्रेडिंग फीस"
 
 #: src/components/PairChart.tsx:65
 #: src/components/TopPairs.tsx:62
 #: src/components/TopTokens.tsx:58
 #: src/components/pool/quickView.tsx:70
 msgid "Liquidity"
-msgstr ""
+msgstr "लिक्विडिटी"
 
 #: src/components/OwnedPoolTable/index.tsx:18
 msgid "Liquidity Pool"
-msgstr ""
+msgstr "लिक्विडिटी पूल"
 
 #: src/utils/pools.tsx:63
 msgid "Liquidity Returned. Thank you for your support."
-msgstr ""
+msgstr "लिक्विडिटी वापस हो गई। सपोर्ट के लिए आपका धन्यवाद।"
 
 #: src/components/pool/view.tsx:36
 msgid "Liquidity provider rewards"
-msgstr ""
+msgstr "लिक्विडिटी प्रोवाइडर वाले इनाम"
 
 #: src/components/pool/add.tsx:111
 #: src/components/pool/view.tsx:44
 msgid "Liquidity providers earn a fixed percentage fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
-msgstr ""
+msgstr "लिक्विडिटी प्रोवाइडर को पूल में मौजूद उनके हिस्से के अनुपात में, सभी ट्रेड पर एक तय प्रतिशत के तौर पर अपना हिस्सा मिलता है। फीस को पूल में जोड़ा जाता हैं, रियल टाइम में उन्हें जमा किया जाता है और अपनी लिक्विडिटी को वापस लेकर उन्हें क्लेम किया जा सकता है।"
 
 #: src/components/trade/index.tsx:209
 msgid "Minimum Received"
-msgstr ""
+msgstr "न्यूनतम प्राप्त"
 
 #: src/components/TopPairs.tsx:28
 #: src/components/TopTokens.tsx:29
 msgid "Name"
-msgstr ""
+msgstr "नाम"
 
 #: src/components/settings.tsx:51
 msgid "Network"
-msgstr ""
+msgstr "नेटवर्क"
 
 #: src/components/pool/view.tsx:82
 msgid "No liquidity found"
-msgstr ""
+msgstr "कोई लिक्विडिटी नहीं मिली।"
 
 #: src/components/pool/quickView.tsx:62
 msgid "No liquidity found."
-msgstr ""
+msgstr "कोई लिक्विडिटी नहीं मिली।"
 
 #: src/utils/pools.tsx:403
 msgid "Not possible"
-msgstr ""
+msgstr "संभव नहीं है"
 
 #: src/components/settings.tsx:88
 msgid "Off"
-msgstr ""
+msgstr "बंद"
 
 #: src/components/settings.tsx:85
 msgid "On"
-msgstr ""
+msgstr "चालू"
 
 #: src/components/pool/config.tsx:42
 msgid "Owner Trading Fee"
-msgstr ""
+msgstr "ओनर ट्रेडिंग फीस"
 
 #: src/screens/PairScreen.tsx:102
 msgid "Pair"
@@ -291,65 +291,65 @@ msgstr ""
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:86
 msgid "Pool liquidity"
-msgstr ""
+msgstr "पूल लिक्विडिटी"
 
 #: src/components/labels.tsx:5
 msgid "Pool {tokenA}/{tokenB} doesn't exist"
-msgstr ""
+msgstr "पूल {tokenA}/{tokenB} मौजूद नहीं है"
 
 #: src/screens/PairScreen.tsx:202
 msgid "Pooled Tokens"
-msgstr ""
+msgstr "पूल किए गए टोकन"
 
 #: src/components/TopTokens.tsx:72
 #: src/components/trade/index.tsx:141
 msgid "Price"
-msgstr ""
+msgstr "कीमत"
 
 #: src/components/labels.tsx:6
 msgid "Provide Liquidity"
-msgstr ""
+msgstr "लिक्विडिटी डालें"
 
 #: src/components/pool/remove.tsx:43
 msgid "Remove"
-msgstr ""
+msgstr "हटाएं"
 
 #: src/utils/pools.tsx:28
 msgid "Removing Liquidity..."
-msgstr ""
+msgstr "लिक्विडिटी हटाई जा रही है..."
 
 #: src/components/pool/remove.tsx:32
 msgid "Removing liquidity cancelled."
-msgstr ""
+msgstr "लिक्विडिटी हटाना कैंसल किया।"
 
 #: src/screens/ChartsScreen.tsx:129
 #: src/screens/ChartsScreen.tsx:149
 msgid "See All"
-msgstr ""
+msgstr "सभी देखें"
 
 #: src/components/labels.tsx:9
 msgid "Select a token"
-msgstr ""
+msgstr "टोकन चुनें"
 
 #: src/components/pool/add.tsx:211
 msgid "Share of pool"
-msgstr ""
+msgstr "पूल का शेयर"
 
 #: src/components/settings.tsx:41
 msgid "Slippage"
-msgstr ""
+msgstr "स्लिपेज"
 
 #: src/components/trade/index.tsx:127
 msgid "Slippage Tolerance"
-msgstr ""
+msgstr "स्लिपेज टॉलरेंस"
 
 #: src/utils/solong_adapter.tsx:35
 msgid "Solong Error"
-msgstr ""
+msgstr "Solong एरर"
 
 #: src/screens/ChartsScreen.tsx:69
 msgid "Statistics"
-msgstr ""
+msgstr "आंंकड़े"
 
 #: src/components/TopPairs.tsx:57
 #~ msgid "Supply"
@@ -358,27 +358,27 @@ msgstr ""
 #: src/components/appBar/index.tsx:54
 #: src/components/labels.tsx:7
 msgid "Swap"
-msgstr ""
+msgstr "Swap"
 
 #: src/components/layout/FormBase.tsx:36
 msgid "Swap is unaudited software. Use at your own risk"
-msgstr ""
+msgstr "Swap सॉफ्टवेयर को जांचा नहीं गया। अपने जोखिम पर इस्तेमाल करें"
 
 #: src/utils/pools.tsx:77
 msgid "Swap trade cancelled"
-msgstr ""
+msgstr "Swap ट्रेड कैंसिल की गई"
 
 #: src/components/trade/index.tsx:80
 msgid "Swap trade cancelled."
-msgstr ""
+msgstr "Swap ट्रेड कैंसिल की गई।"
 
 #: src/screens/TokenScreen.tsx:105
 msgid "Symbol"
-msgstr ""
+msgstr "सिंबल"
 
 #: src/components/MoreInfo.tsx:52
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: src/components/trade/index.tsx:268
 msgid "The difference between the market price and estimated price due to trade size."
@@ -398,39 +398,39 @@ msgstr ""
 
 #: src/components/settings.tsx:79
 msgid "Toggle dark mode"
-msgstr ""
+msgstr "डार्क मोड टॉगल करें"
 
 #: src/screens/TokenScreen.tsx:99
 msgid "Token information"
-msgstr ""
+msgstr "टोकन की जानकारी"
 
 #: src/screens/ChartsScreen.tsx:141
 #: src/screens/PairsScreen.tsx:20
 msgid "Top Pairs"
-msgstr ""
+msgstr "टॉप पेयर"
 
 #: src/screens/ChartsScreen.tsx:121
 #: src/screens/TokensScreen.tsx:23
 msgid "Top Tokens"
-msgstr ""
+msgstr "टॉप टोकन"
 
 #: src/screens/ChartsScreen.tsx:76
 #: src/screens/PairScreen.tsx:146
 #: src/screens/TokenScreen.tsx:65
 msgid "Total Liquidity"
-msgstr ""
+msgstr "कुल लिक्विडिटी"
 
 #: src/components/appBar/index.tsx:76
 msgid "Trade"
-msgstr ""
+msgstr "ट्रेड"
 
 #: src/utils/pools.tsx:112
 msgid "Trade executed."
-msgstr ""
+msgstr "ट्रेड की।"
 
 #: src/components/settings.tsx:33
 msgid "Transaction Settings"
-msgstr ""
+msgstr "ट्रांजेक्शन सेटिंग"
 
 #: src/screens/PairScreen.tsx:223
 #~ msgid "Transaction Signature"
@@ -438,52 +438,52 @@ msgstr ""
 
 #: src/components/pool/add.tsx:76
 msgid "Transaction failed"
-msgstr ""
+msgstr "ट्रांजेक्शन विफल"
 
 #: src/utils/connection.tsx:171
 msgid "Transaction failed..."
-msgstr ""
+msgstr "ट्रांजेक्शन विफल..."
 
 #: src/screens/PairScreen.tsx:251
 msgid "Transactions"
-msgstr ""
+msgstr "ट्रांजेक्शन"
 
 #: src/components/MoreInfo.tsx:44
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:124
 msgid "Value per token"
-msgstr ""
+msgstr "मूल्य प्रति टोकन"
 
 #: src/components/PairChart.tsx:66
 msgid "Volume"
-msgstr ""
+msgstr "वॉल्यूम"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:132
 #: src/components/TopPairs.tsx:82
 #: src/components/TopTokens.tsx:65
 #: src/screens/ChartsScreen.tsx:90
 msgid "Volume (24h)"
-msgstr ""
+msgstr "वॉल्यूम (24घं)"
 
 #: src/screens/PairScreen.tsx:160
 #: src/screens/TokenScreen.tsx:79
 msgid "Volume (24hr)"
-msgstr ""
+msgstr "वॉल्यूम (24घं)"
 
 #: src/components/settings.tsx:65
 msgid "Wallet"
-msgstr ""
+msgstr "वॉलेट"
 
 #: src/utils/wallet.tsx:37
 #: src/utils/wallet.tsx:47
 msgid "Wallet update"
-msgstr ""
+msgstr "वॉलेट अपडेट"
 
 #: src/components/pool/config.tsx:48
 msgid "Withdraw Fee"
-msgstr ""
+msgstr "विदड्रॉ फीस"
 
 #: src/utils/pools.tsx:466
 msgid "You need to have balance for all legs in the basket..."
@@ -495,20 +495,20 @@ msgstr ""
 
 #: src/components/pool/quickView.tsx:60
 msgid "Your Liquidity"
-msgstr ""
+msgstr "आपकी लिक्विडिटी"
 
 #: src/components/OwnedPoolTable/index.tsx:27
 msgid "Your fees (24h)"
-msgstr ""
+msgstr "आपकी फीस (24घं)"
 
 #: src/components/OwnedPoolTable/index.tsx:21
 #: src/components/pool/view.tsx:58
 msgid "Your liquidity"
-msgstr ""
+msgstr "आपकी लिक्विडिटी"
 
 #: src/components/OwnedPoolTable/index.tsx:24
 msgid "Your quantity"
-msgstr ""
+msgstr "आपकी मात्रा"
 
 #: src/utils/connection.tsx:177
 #: src/utils/pools.tsx:66
@@ -518,20 +518,20 @@ msgstr ""
 #: src/utils/pools.tsx:558
 #: src/utils/wallet.tsx:39
 msgid "explorer"
-msgstr ""
+msgstr "एक्सप्लोरर"
 
 #: src/components/pool/add.tsx:201
 #: src/components/pool/add.tsx:206
 #: src/components/trade/index.tsx:152
 #: src/components/trade/index.tsx:163
 msgid "per"
-msgstr ""
+msgstr "प्रति"
 
 #: src/screens/PairScreen.tsx:287
 msgid "{symbolA} Address"
-msgstr ""
+msgstr "{symbolA} पता"
 
 #: src/screens/PairScreen.tsx:295
 msgid "{symbolB} Address"
-msgstr ""
+msgstr "{symbolB} पता"
 
