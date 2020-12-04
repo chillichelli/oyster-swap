@@ -8,7 +8,7 @@ msgstr ""
 "Language: ko\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-04 11:01\n"
+"PO-Revision-Date: 2020-12-04 14:09\n"
 "Last-Translator: \n"
 "Language-Team: Korean\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "A portion of each trade ({0}%) goes to liquidity\n"
 "providers as a protocol incentive."
 msgstr "프로토콜 인센티브로 각 거래의 일부({0}%)가\n"
-"유동성 공급자에게 전달됩니다."
+"유동성 공급자에게 제공됩니다."
 
 #: src/components/TopPairs.tsx:105
 msgid "APY"
@@ -188,11 +188,11 @@ msgstr "유동성 공급자 리워드"
 #: src/components/pool/add.tsx:111
 #: src/components/pool/view.tsx:44
 msgid "Liquidity providers earn a fixed percentage fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
-msgstr "유동성 공급자는 모든 거래에서 풀의 지분을 기준으로 고정 비율 수수료를 받습니다. 수수료는 풀에 추가되고 실시간으로 발생하며 유동성을 인출하여 클레임할 수 있습니다."
+msgstr "유동성 공급자는 모든 거래에서 풀 지분을 기준으로 고정 비율 수수료를 받습니다. 수수료는 풀에 추가되고, 실시간으로 발생하며, 유동성을 인출하여 클레임할 수 있습니다."
 
 #: src/components/trade/index.tsx:209
 msgid "Minimum Received"
-msgstr "받은 최소액"
+msgstr "최소액 받음"
 
 #: src/components/TopPairs.tsx:28
 #: src/components/TopTokens.tsx:29
@@ -229,27 +229,27 @@ msgstr "소유자 거래 수수료"
 
 #: src/screens/PairScreen.tsx:102
 msgid "Pair"
-msgstr ""
+msgstr "페어"
 
 #: src/screens/PairScreen.tsx:279
 msgid "Pair Address"
-msgstr ""
+msgstr "페어 주소"
 
 #: src/screens/PairScreen.tsx:265
 msgid "Pair Name"
-msgstr ""
+msgstr "페어 이름"
 
 #: src/screens/PairScreen.tsx:259
 msgid "Pair information"
-msgstr ""
+msgstr "페어 정보"
 
 #: src/screens/PairScreen.tsx:137
 msgid "Pair statistics"
-msgstr ""
+msgstr "페어 통계"
 
 #: src/screens/TokenScreen.tsx:93
 msgid "Pairs"
-msgstr ""
+msgstr "페어"
 
 #: src/utils/solong_adapter.tsx:36
 msgid "Please install solong wallet from Chrome"
@@ -408,12 +408,12 @@ msgstr "토큰 정보"
 #: src/screens/ChartsScreen.tsx:141
 #: src/screens/PairsScreen.tsx:20
 msgid "Top Pairs"
-msgstr ""
+msgstr "상위 페어"
 
 #: src/screens/ChartsScreen.tsx:121
 #: src/screens/TokensScreen.tsx:23
 msgid "Top Tokens"
-msgstr ""
+msgstr "상위 토큰"
 
 #: src/screens/ChartsScreen.tsx:76
 #: src/screens/PairScreen.tsx:146
