@@ -8,7 +8,7 @@ msgstr ""
 "Language: es_EM\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-04 13:09\n"
+"PO-Revision-Date: 2020-12-04 14:09\n"
 "Last-Translator: \n"
 "Language-Team: Spanish (Modern)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -179,7 +179,7 @@ msgstr "Fondo de liquidez"
 
 #: src/utils/pools.tsx:63
 msgid "Liquidity Returned. Thank you for your support."
-msgstr "Liquidez devuelta. Gracias por su apoyo."
+msgstr "Liquidez restablecida. Gracias por su apoyo."
 
 #: src/components/pool/view.tsx:36
 msgid "Liquidity provider rewards"
@@ -188,7 +188,7 @@ msgstr "Premios para proveedores de liquidez"
 #: src/components/pool/add.tsx:111
 #: src/components/pool/view.tsx:44
 msgid "Liquidity providers earn a fixed percentage fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
-msgstr "Los proveedores de liquidez ganan una comisión fija en todas las operaciones en proporción a su parte de liquidez. Las comisiones se añaden al fondo, se acumulan en tiempo real y se pueden retirar por medio del retiro de la liquidez proporcionada."
+msgstr "Los proveedores de liquidez ganan una comisión fija en todas las operaciones en función de su parte de liquidez. Las comisiones se añaden al fondo, se acumulan en tiempo real y se pueden retirar por medio del retiro de la liquidez proporcionada."
 
 #: src/components/trade/index.tsx:209
 msgid "Minimum Received"
@@ -280,7 +280,7 @@ msgstr "Fondo"
 #: src/utils/pools.tsx:367
 #: src/utils/pools.tsx:555
 msgid "Pool Funded. Happy trading."
-msgstr "Fondo llevo. Feliz trading."
+msgstr "Fondo lleno. Feliz trading."
 
 #: src/components/pool/card.tsx:78
 #~ msgid "Pool Liquidity"
@@ -300,7 +300,7 @@ msgstr "Fondo {tokenA}/{tokenB} no existe"
 
 #: src/screens/PairScreen.tsx:202
 msgid "Pooled Tokens"
-msgstr "Tokens en fondos"
+msgstr "Tokens en el fondo"
 
 #: src/components/TopTokens.tsx:72
 #: src/components/trade/index.tsx:141
@@ -326,31 +326,31 @@ msgstr "Eliminación de liquidez cancelada."
 #: src/screens/ChartsScreen.tsx:129
 #: src/screens/ChartsScreen.tsx:149
 msgid "See All"
-msgstr ""
+msgstr "Ver todo"
 
 #: src/components/labels.tsx:9
 msgid "Select a token"
-msgstr ""
+msgstr "Seleccione un token"
 
 #: src/components/pool/add.tsx:211
 msgid "Share of pool"
-msgstr ""
+msgstr "Parte en los fondos"
 
 #: src/components/settings.tsx:41
 msgid "Slippage"
-msgstr ""
+msgstr "Deslizamiento"
 
 #: src/components/trade/index.tsx:127
 msgid "Slippage Tolerance"
-msgstr ""
+msgstr "Deslizamiento permitido"
 
 #: src/utils/solong_adapter.tsx:35
 msgid "Solong Error"
-msgstr ""
+msgstr "Error Solong"
 
 #: src/screens/ChartsScreen.tsx:69
 msgid "Statistics"
-msgstr ""
+msgstr "Estadísticas"
 
 #: src/components/TopPairs.tsx:57
 #~ msgid "Supply"
@@ -363,7 +363,7 @@ msgstr ""
 
 #: src/components/layout/FormBase.tsx:36
 msgid "Swap is unaudited software. Use at your own risk"
-msgstr ""
+msgstr "Swap es un programa de terceros que usted usa bajo su propio riesgo"
 
 #: src/utils/pools.tsx:77
 msgid "Swap trade cancelled"
@@ -375,51 +375,51 @@ msgstr ""
 
 #: src/screens/TokenScreen.tsx:105
 msgid "Symbol"
-msgstr ""
+msgstr "Símbolo"
 
 #: src/components/MoreInfo.tsx:52
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: src/components/trade/index.tsx:268
 msgid "The difference between the market price and estimated price due to trade size."
-msgstr ""
+msgstr "La diferencia entre el precio de mercado y el precio estimado debido al tamaño de la operación."
 
 #: src/screens/PairScreen.tsx:51
 msgid "Time"
-msgstr ""
+msgstr "Hora"
 
 #: src/components/trade/index.tsx:114
 msgid "To (Estimate)"
-msgstr ""
+msgstr "A (estimado)"
 
 #: src/screens/PairScreen.tsx:43
 msgid "To Token"
-msgstr ""
+msgstr "A token"
 
 #: src/components/settings.tsx:79
 msgid "Toggle dark mode"
-msgstr ""
+msgstr "Cambiar al modo oscuro"
 
 #: src/screens/TokenScreen.tsx:99
 msgid "Token information"
-msgstr ""
+msgstr "Información del token"
 
 #: src/screens/ChartsScreen.tsx:141
 #: src/screens/PairsScreen.tsx:20
 msgid "Top Pairs"
-msgstr ""
+msgstr "Mejores pares"
 
 #: src/screens/ChartsScreen.tsx:121
 #: src/screens/TokensScreen.tsx:23
 msgid "Top Tokens"
-msgstr ""
+msgstr "Mejores tokens"
 
 #: src/screens/ChartsScreen.tsx:76
 #: src/screens/PairScreen.tsx:146
 #: src/screens/TokenScreen.tsx:65
 msgid "Total Liquidity"
-msgstr ""
+msgstr "Liquidez total"
 
 #: src/components/appBar/index.tsx:76
 msgid "Trade"
@@ -427,11 +427,11 @@ msgstr ""
 
 #: src/utils/pools.tsx:112
 msgid "Trade executed."
-msgstr ""
+msgstr "Operación ejecutada."
 
 #: src/components/settings.tsx:33
 msgid "Transaction Settings"
-msgstr ""
+msgstr "Ajustes de la transacción"
 
 #: src/screens/PairScreen.tsx:223
 #~ msgid "Transaction Signature"
@@ -439,77 +439,77 @@ msgstr ""
 
 #: src/components/pool/add.tsx:76
 msgid "Transaction failed"
-msgstr ""
+msgstr "Transacción fallida"
 
 #: src/utils/connection.tsx:171
 msgid "Transaction failed..."
-msgstr ""
+msgstr "Transacción fallida..."
 
 #: src/screens/PairScreen.tsx:251
 msgid "Transactions"
-msgstr ""
+msgstr "Transacciones"
 
 #: src/components/MoreInfo.tsx:44
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:124
 msgid "Value per token"
-msgstr ""
+msgstr "Valor por token"
 
 #: src/components/PairChart.tsx:66
 msgid "Volume"
-msgstr ""
+msgstr "Volumen"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:132
 #: src/components/TopPairs.tsx:82
 #: src/components/TopTokens.tsx:65
 #: src/screens/ChartsScreen.tsx:90
 msgid "Volume (24h)"
-msgstr ""
+msgstr "Volumen (24 h)"
 
 #: src/screens/PairScreen.tsx:160
 #: src/screens/TokenScreen.tsx:79
 msgid "Volume (24hr)"
-msgstr ""
+msgstr "Volumen (24 h)"
 
 #: src/components/settings.tsx:65
 msgid "Wallet"
-msgstr ""
+msgstr "Cartera"
 
 #: src/utils/wallet.tsx:37
 #: src/utils/wallet.tsx:47
 msgid "Wallet update"
-msgstr ""
+msgstr "Actualizar cartera"
 
 #: src/components/pool/config.tsx:48
 msgid "Withdraw Fee"
-msgstr ""
+msgstr "Comisión por retiro"
 
 #: src/utils/pools.tsx:466
 msgid "You need to have balance for all legs in the basket..."
-msgstr ""
+msgstr "Necesita tener saldo para todas las operaciones en la cesta..."
 
 #: src/components/trade/index.tsx:240
 msgid "You transaction will revert if there is a large, unfavorable price movement before it is confirmed."
-msgstr ""
+msgstr "La transacción será retirada antes de su confirmación si se produce un cambio de precio grande y poco rentable."
 
 #: src/components/pool/quickView.tsx:60
 msgid "Your Liquidity"
-msgstr ""
+msgstr "Su liquidez"
 
 #: src/components/OwnedPoolTable/index.tsx:27
 msgid "Your fees (24h)"
-msgstr ""
+msgstr "Sus comisiones (24 h)"
 
 #: src/components/OwnedPoolTable/index.tsx:21
 #: src/components/pool/view.tsx:58
 msgid "Your liquidity"
-msgstr ""
+msgstr "Su liquidez"
 
 #: src/components/OwnedPoolTable/index.tsx:24
 msgid "Your quantity"
-msgstr ""
+msgstr "Su cantidad"
 
 #: src/utils/connection.tsx:177
 #: src/utils/pools.tsx:66
@@ -530,9 +530,9 @@ msgstr ""
 
 #: src/screens/PairScreen.tsx:287
 msgid "{symbolA} Address"
-msgstr ""
+msgstr "Dirección de {symbolA}"
 
 #: src/screens/PairScreen.tsx:295
 msgid "{symbolB} Address"
-msgstr ""
+msgstr "Dirección de {symbolB}"
 
