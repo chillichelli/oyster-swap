@@ -8,7 +8,7 @@ msgstr ""
 "Language: ko\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-04 09:58\n"
+"PO-Revision-Date: 2020-12-04 11:01\n"
 "Last-Translator: \n"
 "Language-Team: Korean\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -160,72 +160,72 @@ msgstr "{tokenName} 자금 부족"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:116
 msgid "LP Supply"
-msgstr ""
+msgstr "LP 공급"
 
 #: src/components/pool/config.tsx:36
 msgid "LPs Trading Fee"
-msgstr ""
+msgstr "LP 거래 수수료"
 
 #: src/components/PairChart.tsx:65
 #: src/components/TopPairs.tsx:62
 #: src/components/TopTokens.tsx:58
 #: src/components/pool/quickView.tsx:70
 msgid "Liquidity"
-msgstr ""
+msgstr "유동성"
 
 #: src/components/OwnedPoolTable/index.tsx:18
 msgid "Liquidity Pool"
-msgstr ""
+msgstr "유동성 풀"
 
 #: src/utils/pools.tsx:63
 msgid "Liquidity Returned. Thank you for your support."
-msgstr ""
+msgstr "유동성이 반환되었습니다. 지원에 감사드립니다."
 
 #: src/components/pool/view.tsx:36
 msgid "Liquidity provider rewards"
-msgstr ""
+msgstr "유동성 공급자 리워드"
 
 #: src/components/pool/add.tsx:111
 #: src/components/pool/view.tsx:44
 msgid "Liquidity providers earn a fixed percentage fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
-msgstr ""
+msgstr "유동성 공급자는 모든 거래에서 풀의 지분을 기준으로 고정 비율 수수료를 받습니다. 수수료는 풀에 추가되고 실시간으로 발생하며 유동성을 인출하여 클레임할 수 있습니다."
 
 #: src/components/trade/index.tsx:209
 msgid "Minimum Received"
-msgstr ""
+msgstr "받은 최소액"
 
 #: src/components/TopPairs.tsx:28
 #: src/components/TopTokens.tsx:29
 msgid "Name"
-msgstr ""
+msgstr "이름"
 
 #: src/components/settings.tsx:51
 msgid "Network"
-msgstr ""
+msgstr "네트워크"
 
 #: src/components/pool/view.tsx:82
 msgid "No liquidity found"
-msgstr ""
+msgstr "유동성 없음"
 
 #: src/components/pool/quickView.tsx:62
 msgid "No liquidity found."
-msgstr ""
+msgstr "유동성이 없습니다."
 
 #: src/utils/pools.tsx:403
 msgid "Not possible"
-msgstr ""
+msgstr "불가능"
 
 #: src/components/settings.tsx:88
 msgid "Off"
-msgstr ""
+msgstr "끄기"
 
 #: src/components/settings.tsx:85
 msgid "On"
-msgstr ""
+msgstr "켜기"
 
 #: src/components/pool/config.tsx:42
 msgid "Owner Trading Fee"
-msgstr ""
+msgstr "소유자 거래 수수료"
 
 #: src/screens/PairScreen.tsx:102
 msgid "Pair"
@@ -253,34 +253,34 @@ msgstr ""
 
 #: src/utils/solong_adapter.tsx:36
 msgid "Please install solong wallet from Chrome"
-msgstr ""
+msgstr "Chrome에서 Solong 지갑을 설치하십시오"
 
 #: src/utils/pools.tsx:467
 msgid "Please review inputs."
-msgstr ""
+msgstr "입력을 검토하십시오."
 
 #: src/utils/pools.tsx:29
 #: src/utils/pools.tsx:326
 #: src/utils/pools.tsx:461
 #: src/utils/pools.tsx:526
 msgid "Please review transactions to approve."
-msgstr ""
+msgstr "승인할 트랜잭션을 검토하십시오."
 
 #: src/components/pool/add.tsx:78
 #: src/components/pool/remove.tsx:31
 #: src/components/trade/index.tsx:79
 msgid "Please try again and approve transactions from your wallet"
-msgstr ""
+msgstr "다시 시도한 후 지갑에서 트랜잭션을 승인하십시오"
 
 #: src/components/appBar/index.tsx:62
 #: src/components/pool/quickView.tsx:67
 msgid "Pool"
-msgstr ""
+msgstr "풀"
 
 #: src/utils/pools.tsx:367
 #: src/utils/pools.tsx:555
 msgid "Pool Funded. Happy trading."
-msgstr ""
+msgstr "풀에 자금이 추가되었습니다. 행복한 거래되시길 바랍니다."
 
 #: src/components/pool/card.tsx:78
 #~ msgid "Pool Liquidity"
@@ -288,69 +288,69 @@ msgstr ""
 
 #: src/utils/pools.tsx:76
 msgid "Pool doesn't exist."
-msgstr ""
+msgstr "풀이 없습니다."
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:86
 msgid "Pool liquidity"
-msgstr ""
+msgstr "풀 유동성"
 
 #: src/components/labels.tsx:5
 msgid "Pool {tokenA}/{tokenB} doesn't exist"
-msgstr ""
+msgstr "{tokenA}/{tokenB} 풀이 없습니다"
 
 #: src/screens/PairScreen.tsx:202
 msgid "Pooled Tokens"
-msgstr ""
+msgstr "풀 토큰"
 
 #: src/components/TopTokens.tsx:72
 #: src/components/trade/index.tsx:141
 msgid "Price"
-msgstr ""
+msgstr "가격"
 
 #: src/components/labels.tsx:6
 msgid "Provide Liquidity"
-msgstr ""
+msgstr "유동성 제공"
 
 #: src/components/pool/remove.tsx:43
 msgid "Remove"
-msgstr ""
+msgstr "제거"
 
 #: src/utils/pools.tsx:28
 msgid "Removing Liquidity..."
-msgstr ""
+msgstr "유동성 제거 중..."
 
 #: src/components/pool/remove.tsx:32
 msgid "Removing liquidity cancelled."
-msgstr ""
+msgstr "유동성 제거가 취소되었습니다."
 
 #: src/screens/ChartsScreen.tsx:129
 #: src/screens/ChartsScreen.tsx:149
 msgid "See All"
-msgstr ""
+msgstr "모두 보기"
 
 #: src/components/labels.tsx:9
 msgid "Select a token"
-msgstr ""
+msgstr "토큰 선택"
 
 #: src/components/pool/add.tsx:211
 msgid "Share of pool"
-msgstr ""
+msgstr "풀 지분"
 
 #: src/components/settings.tsx:41
 msgid "Slippage"
-msgstr ""
+msgstr "슬리피지"
 
 #: src/components/trade/index.tsx:127
 msgid "Slippage Tolerance"
-msgstr ""
+msgstr "슬리피지 허용 오차"
 
 #: src/utils/solong_adapter.tsx:35
 msgid "Solong Error"
-msgstr ""
+msgstr "Solong 오류"
 
 #: src/screens/ChartsScreen.tsx:69
 msgid "Statistics"
-msgstr ""
+msgstr "통계"
 
 #: src/components/TopPairs.tsx:57
 #~ msgid "Supply"
@@ -359,51 +359,51 @@ msgstr ""
 #: src/components/appBar/index.tsx:54
 #: src/components/labels.tsx:7
 msgid "Swap"
-msgstr ""
+msgstr "Swap"
 
 #: src/components/layout/FormBase.tsx:36
 msgid "Swap is unaudited software. Use at your own risk"
-msgstr ""
+msgstr "Swap은 감사를 받지 않는 소프트웨어입니다. 사용 시 책임은 사용자에게 있습니다"
 
 #: src/utils/pools.tsx:77
 msgid "Swap trade cancelled"
-msgstr ""
+msgstr "Swap 거래 취소됨"
 
 #: src/components/trade/index.tsx:80
 msgid "Swap trade cancelled."
-msgstr ""
+msgstr "Swap 거래가 취소되었습니다."
 
 #: src/screens/TokenScreen.tsx:105
 msgid "Symbol"
-msgstr ""
+msgstr "심볼"
 
 #: src/components/MoreInfo.tsx:52
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: src/components/trade/index.tsx:268
 msgid "The difference between the market price and estimated price due to trade size."
-msgstr ""
+msgstr "거래 규모로 인한 시장 가격과 예상 가격의 차이."
 
 #: src/screens/PairScreen.tsx:51
 msgid "Time"
-msgstr ""
+msgstr "시간"
 
 #: src/components/trade/index.tsx:114
 msgid "To (Estimate)"
-msgstr ""
+msgstr "대상(예상)"
 
 #: src/screens/PairScreen.tsx:43
 msgid "To Token"
-msgstr ""
+msgstr "대상 토큰"
 
 #: src/components/settings.tsx:79
 msgid "Toggle dark mode"
-msgstr ""
+msgstr "다크 모드 토글"
 
 #: src/screens/TokenScreen.tsx:99
 msgid "Token information"
-msgstr ""
+msgstr "토큰 정보"
 
 #: src/screens/ChartsScreen.tsx:141
 #: src/screens/PairsScreen.tsx:20
@@ -419,19 +419,19 @@ msgstr ""
 #: src/screens/PairScreen.tsx:146
 #: src/screens/TokenScreen.tsx:65
 msgid "Total Liquidity"
-msgstr ""
+msgstr "총 유동성"
 
 #: src/components/appBar/index.tsx:76
 msgid "Trade"
-msgstr ""
+msgstr "거래"
 
 #: src/utils/pools.tsx:112
 msgid "Trade executed."
-msgstr ""
+msgstr "거래가 실행되었습니다."
 
 #: src/components/settings.tsx:33
 msgid "Transaction Settings"
-msgstr ""
+msgstr "트랜잭션 설정"
 
 #: src/screens/PairScreen.tsx:223
 #~ msgid "Transaction Signature"
@@ -439,77 +439,77 @@ msgstr ""
 
 #: src/components/pool/add.tsx:76
 msgid "Transaction failed"
-msgstr ""
+msgstr "트랜잭션 실패"
 
 #: src/utils/connection.tsx:171
 msgid "Transaction failed..."
-msgstr ""
+msgstr "트랜잭션 실패..."
 
 #: src/screens/PairScreen.tsx:251
 msgid "Transactions"
-msgstr ""
+msgstr "트랜잭션"
 
 #: src/components/MoreInfo.tsx:44
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:124
 msgid "Value per token"
-msgstr ""
+msgstr "토큰당 가치"
 
 #: src/components/PairChart.tsx:66
 msgid "Volume"
-msgstr ""
+msgstr "볼륨"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:132
 #: src/components/TopPairs.tsx:82
 #: src/components/TopTokens.tsx:65
 #: src/screens/ChartsScreen.tsx:90
 msgid "Volume (24h)"
-msgstr ""
+msgstr "볼륨(24시간)"
 
 #: src/screens/PairScreen.tsx:160
 #: src/screens/TokenScreen.tsx:79
 msgid "Volume (24hr)"
-msgstr ""
+msgstr "볼륨(24시간)"
 
 #: src/components/settings.tsx:65
 msgid "Wallet"
-msgstr ""
+msgstr "지갑"
 
 #: src/utils/wallet.tsx:37
 #: src/utils/wallet.tsx:47
 msgid "Wallet update"
-msgstr ""
+msgstr "지갑 업데이트"
 
 #: src/components/pool/config.tsx:48
 msgid "Withdraw Fee"
-msgstr ""
+msgstr "인출 수수료"
 
 #: src/utils/pools.tsx:466
 msgid "You need to have balance for all legs in the basket..."
-msgstr ""
+msgstr "바스켓의 모든 레그에 대한 잔액이 있어야 합니다..."
 
 #: src/components/trade/index.tsx:240
 msgid "You transaction will revert if there is a large, unfavorable price movement before it is confirmed."
-msgstr ""
+msgstr "확인 전에 불리한 가격 변동이 큰 경우, 해당 트랜잭션이 되돌아갑니다."
 
 #: src/components/pool/quickView.tsx:60
 msgid "Your Liquidity"
-msgstr ""
+msgstr "내 유동성"
 
 #: src/components/OwnedPoolTable/index.tsx:27
 msgid "Your fees (24h)"
-msgstr ""
+msgstr "내 수수료(24시간)"
 
 #: src/components/OwnedPoolTable/index.tsx:21
 #: src/components/pool/view.tsx:58
 msgid "Your liquidity"
-msgstr ""
+msgstr "내 유동성"
 
 #: src/components/OwnedPoolTable/index.tsx:24
 msgid "Your quantity"
-msgstr ""
+msgstr "내 수량"
 
 #: src/utils/connection.tsx:177
 #: src/utils/pools.tsx:66
@@ -519,20 +519,20 @@ msgstr ""
 #: src/utils/pools.tsx:558
 #: src/utils/wallet.tsx:39
 msgid "explorer"
-msgstr ""
+msgstr "익스플로러"
 
 #: src/components/pool/add.tsx:201
 #: src/components/pool/add.tsx:206
 #: src/components/trade/index.tsx:152
 #: src/components/trade/index.tsx:163
 msgid "per"
-msgstr ""
+msgstr "/"
 
 #: src/screens/PairScreen.tsx:287
 msgid "{symbolA} Address"
-msgstr ""
+msgstr "{symbolA} 주소"
 
 #: src/screens/PairScreen.tsx:295
 msgid "{symbolB} Address"
-msgstr ""
+msgstr "{symbolB} 주소"
 
