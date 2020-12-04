@@ -8,7 +8,7 @@ msgstr ""
 "Language: es_EM\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-04 12:09\n"
+"PO-Revision-Date: 2020-12-04 13:09\n"
 "Last-Translator: \n"
 "Language-Team: Spanish (Modern)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -113,21 +113,21 @@ msgstr ""
 
 #: src/components/labels.tsx:10
 msgid "Enter an amount"
-msgstr ""
+msgstr "Introduzca un importe"
 
 #: src/components/pool/quickView.tsx:73
 msgid "Fees"
-msgstr ""
+msgstr "Comisiones"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:140
 #: src/components/TopPairs.tsx:90
 #: src/screens/ChartsScreen.tsx:104
 msgid "Fees (24h)"
-msgstr ""
+msgstr "Comisiones (24 h)"
 
 #: src/screens/PairScreen.tsx:174
 msgid "Fees (24hr)"
-msgstr ""
+msgstr "Comisiones (24 h)"
 
 #: src/components/charts/index.tsx:54
 #~ msgid "Filter"
@@ -135,28 +135,28 @@ msgstr ""
 
 #: src/components/pool/config.tsx:61
 msgid "Flat"
-msgstr ""
+msgstr "Plana"
 
 #: src/components/trade/index.tsx:94
 msgid "From"
-msgstr ""
+msgstr "De"
 
 #: src/screens/PairScreen.tsx:35
 msgid "From Token"
-msgstr ""
+msgstr "De token"
 
 #: src/components/appBar/index.tsx:82
 msgid "Help"
-msgstr ""
+msgstr "Ayuda"
 
 #: src/components/pool/add.tsx:124
 #: src/components/pool/add.tsx:143
 msgid "Input"
-msgstr ""
+msgstr "Entrada"
 
 #: src/components/labels.tsx:4
 msgid "Insufficient {tokenName} funds"
-msgstr ""
+msgstr "Fondos insuficientes en {tokenName}"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:116
 msgid "LP Supply"
@@ -164,123 +164,123 @@ msgstr ""
 
 #: src/components/pool/config.tsx:36
 msgid "LPs Trading Fee"
-msgstr ""
+msgstr "Comisión de trading con fondos de liquidez"
 
 #: src/components/PairChart.tsx:65
 #: src/components/TopPairs.tsx:62
 #: src/components/TopTokens.tsx:58
 #: src/components/pool/quickView.tsx:70
 msgid "Liquidity"
-msgstr ""
+msgstr "Liquidez"
 
 #: src/components/OwnedPoolTable/index.tsx:18
 msgid "Liquidity Pool"
-msgstr ""
+msgstr "Fondo de liquidez"
 
 #: src/utils/pools.tsx:63
 msgid "Liquidity Returned. Thank you for your support."
-msgstr ""
+msgstr "Liquidez devuelta. Gracias por su apoyo."
 
 #: src/components/pool/view.tsx:36
 msgid "Liquidity provider rewards"
-msgstr ""
+msgstr "Premios para proveedores de liquidez"
 
 #: src/components/pool/add.tsx:111
 #: src/components/pool/view.tsx:44
 msgid "Liquidity providers earn a fixed percentage fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
-msgstr ""
+msgstr "Los proveedores de liquidez ganan una comisión fija en todas las operaciones en proporción a su parte de liquidez. Las comisiones se añaden al fondo, se acumulan en tiempo real y se pueden retirar por medio del retiro de la liquidez proporcionada."
 
 #: src/components/trade/index.tsx:209
 msgid "Minimum Received"
-msgstr ""
+msgstr "Mínimo recibido"
 
 #: src/components/TopPairs.tsx:28
 #: src/components/TopTokens.tsx:29
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: src/components/settings.tsx:51
 msgid "Network"
-msgstr ""
+msgstr "Red"
 
 #: src/components/pool/view.tsx:82
 msgid "No liquidity found"
-msgstr ""
+msgstr "No se encontró liquidez"
 
 #: src/components/pool/quickView.tsx:62
 msgid "No liquidity found."
-msgstr ""
+msgstr "No se encontró liquidez."
 
 #: src/utils/pools.tsx:403
 msgid "Not possible"
-msgstr ""
+msgstr "No se puede realizar"
 
 #: src/components/settings.tsx:88
 msgid "Off"
-msgstr ""
+msgstr "OFF"
 
 #: src/components/settings.tsx:85
 msgid "On"
-msgstr ""
+msgstr "ON"
 
 #: src/components/pool/config.tsx:42
 msgid "Owner Trading Fee"
-msgstr ""
+msgstr "Comisión de trading del titular"
 
 #: src/screens/PairScreen.tsx:102
 msgid "Pair"
-msgstr ""
+msgstr "Par"
 
 #: src/screens/PairScreen.tsx:279
 msgid "Pair Address"
-msgstr ""
+msgstr "Dirección del par"
 
 #: src/screens/PairScreen.tsx:265
 msgid "Pair Name"
-msgstr ""
+msgstr "Nombre del par"
 
 #: src/screens/PairScreen.tsx:259
 msgid "Pair information"
-msgstr ""
+msgstr "Información del par"
 
 #: src/screens/PairScreen.tsx:137
 msgid "Pair statistics"
-msgstr ""
+msgstr "Estadísticas del par"
 
 #: src/screens/TokenScreen.tsx:93
 msgid "Pairs"
-msgstr ""
+msgstr "Pares"
 
 #: src/utils/solong_adapter.tsx:36
 msgid "Please install solong wallet from Chrome"
-msgstr ""
+msgstr "Por favor, instale la cartera Solong desde Chrome"
 
 #: src/utils/pools.tsx:467
 msgid "Please review inputs."
-msgstr ""
+msgstr "Por favor, revise los datos introducidos."
 
 #: src/utils/pools.tsx:29
 #: src/utils/pools.tsx:326
 #: src/utils/pools.tsx:461
 #: src/utils/pools.tsx:526
 msgid "Please review transactions to approve."
-msgstr ""
+msgstr "Por favor, revise las transacciones para aprobar."
 
 #: src/components/pool/add.tsx:78
 #: src/components/pool/remove.tsx:31
 #: src/components/trade/index.tsx:79
 msgid "Please try again and approve transactions from your wallet"
-msgstr ""
+msgstr "Por favor, inténtelo de nuevo y apruebe las transacciones desde su cartera"
 
 #: src/components/appBar/index.tsx:62
 #: src/components/pool/quickView.tsx:67
 msgid "Pool"
-msgstr ""
+msgstr "Fondo"
 
 #: src/utils/pools.tsx:367
 #: src/utils/pools.tsx:555
 msgid "Pool Funded. Happy trading."
-msgstr ""
+msgstr "Fondo llevo. Feliz trading."
 
 #: src/components/pool/card.tsx:78
 #~ msgid "Pool Liquidity"
@@ -288,40 +288,40 @@ msgstr ""
 
 #: src/utils/pools.tsx:76
 msgid "Pool doesn't exist."
-msgstr ""
+msgstr "El fondo no existe."
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:86
 msgid "Pool liquidity"
-msgstr ""
+msgstr "Liquidez de fondo"
 
 #: src/components/labels.tsx:5
 msgid "Pool {tokenA}/{tokenB} doesn't exist"
-msgstr ""
+msgstr "Fondo {tokenA}/{tokenB} no existe"
 
 #: src/screens/PairScreen.tsx:202
 msgid "Pooled Tokens"
-msgstr ""
+msgstr "Tokens en fondos"
 
 #: src/components/TopTokens.tsx:72
 #: src/components/trade/index.tsx:141
 msgid "Price"
-msgstr ""
+msgstr "Precio"
 
 #: src/components/labels.tsx:6
 msgid "Provide Liquidity"
-msgstr ""
+msgstr "Proporcionar liquidez"
 
 #: src/components/pool/remove.tsx:43
 msgid "Remove"
-msgstr ""
+msgstr "Eliminar"
 
 #: src/utils/pools.tsx:28
 msgid "Removing Liquidity..."
-msgstr ""
+msgstr "Eliminando liquidez..."
 
 #: src/components/pool/remove.tsx:32
 msgid "Removing liquidity cancelled."
-msgstr ""
+msgstr "Eliminación de liquidez cancelada."
 
 #: src/screens/ChartsScreen.tsx:129
 #: src/screens/ChartsScreen.tsx:149
