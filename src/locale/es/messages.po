@@ -8,7 +8,7 @@ msgstr ""
 "Language: es_EM\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-03 11:46\n"
+"PO-Revision-Date: 2020-12-04 12:09\n"
 "Last-Translator: \n"
 "Language-Team: Spanish (Modern)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -21,90 +21,91 @@ msgstr ""
 #: src/components/trade/index.tsx:296
 msgid "A portion of each trade ({0}%) goes to liquidity\n"
 "providers as a protocol incentive."
-msgstr ""
+msgstr "Una parte de cada operación ({0} %) se paga a los proveedores \n"
+"de liquidez como incentivo de protocolo."
 
 #: src/components/TopPairs.tsx:105
 msgid "APY"
-msgstr ""
+msgstr "PRA"
 
 #: src/utils/pools.tsx:517
 msgid "Accounts created"
-msgstr ""
+msgstr "Cuentas creadas"
 
 #: src/components/pool/add.tsx:106
 #: src/components/pool/view.tsx:64
 msgid "Add Liquidity"
-msgstr ""
+msgstr "Añadir liquidez"
 
 #: src/utils/pools.tsx:325
 #: src/utils/pools.tsx:525
 msgid "Adding Liquidity..."
-msgstr ""
+msgstr "Añadiendo liquidez..."
 
 #: src/components/pool/add.tsx:79
 msgid "Adding liquidity cancelled."
-msgstr ""
+msgstr "Adición de liquidez cancelada."
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:162
 #: src/screens/TokenScreen.tsx:111
 msgid "Address"
-msgstr ""
+msgstr "Dirección"
 
 #: src/components/pool/address.tsx:77
 msgid "Addresses"
-msgstr ""
+msgstr "Direcciones"
 
 #: src/screens/PairScreen.tsx:188
 msgid "Annual Percentage Yield"
-msgstr ""
+msgstr "Porcentaje de rendimiento anual"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:148
 msgid "Approx. APY (24h)"
-msgstr ""
+msgstr "PRA aproximado (24 h)"
 
 #: src/components/currencyInput/index.tsx:126
 msgid "Balance"
-msgstr ""
+msgstr "Saldo"
 
 #: src/components/appBar/index.tsx:70
 msgid "Charts"
-msgstr ""
+msgstr "Gráficas"
 
 #: src/components/MoreInfo.tsx:28
 msgid "Code"
-msgstr ""
+msgstr "Código"
 
 #: src/components/appBar/right.tsx:18
 msgid "Connect"
-msgstr ""
+msgstr "Conectar"
 
 #: src/components/labels.tsx:8
 msgid "Connect Wallet"
-msgstr ""
+msgstr "Conectar cartera"
 
 #: src/components/pool/view.tsx:72
 msgid "Connect to a wallet to view your liquidity"
-msgstr ""
+msgstr "Conéctese a una cartera para ver su liquidez"
 
 #: src/components/pool/config.tsx:58
 msgid "Constant Product"
-msgstr ""
+msgstr "Producto constante"
 
 #: src/components/labels.tsx:3
 msgid "Create Liquidity Pool"
-msgstr ""
+msgstr "Crear fondo de liquidez"
 
 #: src/utils/pools.tsx:460
 msgid "Creating new pool..."
-msgstr ""
+msgstr "Creando nuevo fondo..."
 
 #: src/components/pool/config.tsx:54
 msgid "Curve Type"
-msgstr ""
+msgstr "Tipo de curva"
 
 #: src/utils/wallet.tsx:48
 msgid "Disconnected from wallet"
-msgstr ""
+msgstr "Desconectado de la cartera"
 
 #: src/components/MoreInfo.tsx:36
 msgid "Discord"
