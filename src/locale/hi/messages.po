@@ -8,7 +8,7 @@ msgstr ""
 "Language: hi\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-03 23:40\n"
+"PO-Revision-Date: 2020-12-04 00:38\n"
 "Last-Translator: \n"
 "Language-Team: Hindi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -21,7 +21,8 @@ msgstr ""
 #: src/components/trade/index.tsx:296
 msgid "A portion of each trade ({0}%) goes to liquidity\n"
 "providers as a protocol incentive."
-msgstr ""
+msgstr "प्रोटोकॉल इंसेटिव के तौर पर हर ट्रेड का एक हिस्सा ({0}%)\n"
+"लिक्विडिटी प्रोवाइडर्स को दिया जाता है।"
 
 #: src/components/TopPairs.tsx:105
 msgid "APY"
@@ -29,7 +30,7 @@ msgstr "APY"
 
 #: src/utils/pools.tsx:517
 msgid "Accounts created"
-msgstr ""
+msgstr "अकाउंट बनाए"
 
 #: src/components/pool/add.tsx:106
 #: src/components/pool/view.tsx:64
@@ -60,7 +61,7 @@ msgstr "वार्षिक उत्पादन (प्रतिशत म�
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:148
 msgid "Approx. APY (24h)"
-msgstr ""
+msgstr "APY की मोटी-मोटी संख्या (24घं)"
 
 #: src/components/currencyInput/index.tsx:126
 msgid "Balance"
@@ -88,7 +89,7 @@ msgstr "अपनी लिक्विडिटी देखने के ल�
 
 #: src/components/pool/config.tsx:58
 msgid "Constant Product"
-msgstr ""
+msgstr "परमानेंट प्रोडक्ट"
 
 #: src/components/labels.tsx:3
 msgid "Create Liquidity Pool"
@@ -228,58 +229,58 @@ msgstr "ओनर ट्रेडिंग फीस"
 
 #: src/screens/PairScreen.tsx:102
 msgid "Pair"
-msgstr ""
+msgstr "पेयर"
 
 #: src/screens/PairScreen.tsx:279
 msgid "Pair Address"
-msgstr ""
+msgstr "पेयर एड्रेस"
 
 #: src/screens/PairScreen.tsx:265
 msgid "Pair Name"
-msgstr ""
+msgstr "पेयर का नाम"
 
 #: src/screens/PairScreen.tsx:259
 msgid "Pair information"
-msgstr ""
+msgstr "पेयर की जानकारी"
 
 #: src/screens/PairScreen.tsx:137
 msgid "Pair statistics"
-msgstr ""
+msgstr "पेयर के आंकड़े"
 
 #: src/screens/TokenScreen.tsx:93
 msgid "Pairs"
-msgstr ""
+msgstr "पेयर"
 
 #: src/utils/solong_adapter.tsx:36
 msgid "Please install solong wallet from Chrome"
-msgstr ""
+msgstr "कृपया Chrome से Solong वॉलेट इंस्टॉल करें"
 
 #: src/utils/pools.tsx:467
 msgid "Please review inputs."
-msgstr ""
+msgstr "कृपया इनपुट को रिव्यू करें।"
 
 #: src/utils/pools.tsx:29
 #: src/utils/pools.tsx:326
 #: src/utils/pools.tsx:461
 #: src/utils/pools.tsx:526
 msgid "Please review transactions to approve."
-msgstr ""
+msgstr "मंजूरी देने के लिए ट्रांजेक्शन रिव्यू करें।"
 
 #: src/components/pool/add.tsx:78
 #: src/components/pool/remove.tsx:31
 #: src/components/trade/index.tsx:79
 msgid "Please try again and approve transactions from your wallet"
-msgstr ""
+msgstr "कृपया फिर कोशिश करें और अपने वॉलेट से ट्रांजेक्शन को मंजूरी दें"
 
 #: src/components/appBar/index.tsx:62
 #: src/components/pool/quickView.tsx:67
 msgid "Pool"
-msgstr ""
+msgstr "पूल"
 
 #: src/utils/pools.tsx:367
 #: src/utils/pools.tsx:555
 msgid "Pool Funded. Happy trading."
-msgstr ""
+msgstr "पूल फंड किया। ट्रेडिंग का आनंद लें।"
 
 #: src/components/pool/card.tsx:78
 #~ msgid "Pool Liquidity"
@@ -287,7 +288,7 @@ msgstr ""
 
 #: src/utils/pools.tsx:76
 msgid "Pool doesn't exist."
-msgstr ""
+msgstr "पूल मौजूद नहीं है।"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:86
 msgid "Pool liquidity"
@@ -382,19 +383,19 @@ msgstr "Telegram"
 
 #: src/components/trade/index.tsx:268
 msgid "The difference between the market price and estimated price due to trade size."
-msgstr ""
+msgstr "ट्रेड के आकार के चलते बाजार मूल्य और अनुमानित कीमत के बीच का अंतर।"
 
 #: src/screens/PairScreen.tsx:51
 msgid "Time"
-msgstr ""
+msgstr "समय"
 
 #: src/components/trade/index.tsx:114
 msgid "To (Estimate)"
-msgstr ""
+msgstr "प्रति (अनुमानित)"
 
 #: src/screens/PairScreen.tsx:43
 msgid "To Token"
-msgstr ""
+msgstr "प्रति (टोकन)"
 
 #: src/components/settings.tsx:79
 msgid "Toggle dark mode"
@@ -487,11 +488,11 @@ msgstr "विदड्रॉ फीस"
 
 #: src/utils/pools.tsx:466
 msgid "You need to have balance for all legs in the basket..."
-msgstr ""
+msgstr "बास्केट में मौजूद सभी चीजों के लिए आपके पास बैलेंस होना जरूरी है..."
 
 #: src/components/trade/index.tsx:240
 msgid "You transaction will revert if there is a large, unfavorable price movement before it is confirmed."
-msgstr ""
+msgstr "अगर ट्रांजेक्शन के कंफर्म होने से पहले कीमत में कोई बड़ा और नकारात्मक बदलाव होता है, तो ट्रांजेक्शन कैंसिल कर दिया जाएगा।"
 
 #: src/components/pool/quickView.tsx:60
 msgid "Your Liquidity"
