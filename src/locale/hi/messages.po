@@ -8,7 +8,7 @@ msgstr ""
 "Language: hi\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-04 00:38\n"
+"PO-Revision-Date: 2020-12-04 07:25\n"
 "Last-Translator: \n"
 "Language-Team: Hindi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -57,11 +57,11 @@ msgstr "पते"
 
 #: src/screens/PairScreen.tsx:188
 msgid "Annual Percentage Yield"
-msgstr "वार्षिक उत्पादन (प्रतिशत में)"
+msgstr "एनुअल परसेंटेज यील्ड"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:148
 msgid "Approx. APY (24h)"
-msgstr "APY की मोटी-मोटी संख्या (24घं)"
+msgstr "अनुमानित APY (24घं)"
 
 #: src/components/currencyInput/index.tsx:126
 msgid "Balance"
@@ -101,7 +101,7 @@ msgstr "नया पूल बनाया जा रहा है..."
 
 #: src/components/pool/config.tsx:54
 msgid "Curve Type"
-msgstr "कर्व किस तरह का है"
+msgstr "कर्व का प्रकार"
 
 #: src/utils/wallet.tsx:48
 msgid "Disconnected from wallet"
@@ -109,7 +109,7 @@ msgstr "वॉलेट से डिस्कनेक्ट किया"
 
 #: src/components/MoreInfo.tsx:36
 msgid "Discord"
-msgstr "डिस्कॉर्ड"
+msgstr "Discord"
 
 #: src/components/labels.tsx:10
 msgid "Enter an amount"
@@ -164,7 +164,7 @@ msgstr "LP सप्लाई"
 
 #: src/components/pool/config.tsx:36
 msgid "LPs Trading Fee"
-msgstr "LP की ट्रेडिंग फीस"
+msgstr "LP ट्रेडिंग फीस"
 
 #: src/components/PairChart.tsx:65
 #: src/components/TopPairs.tsx:62
@@ -179,7 +179,7 @@ msgstr "लिक्विडिटी पूल"
 
 #: src/utils/pools.tsx:63
 msgid "Liquidity Returned. Thank you for your support."
-msgstr "लिक्विडिटी वापस हो गई। सपोर्ट के लिए आपका धन्यवाद।"
+msgstr "लिक्विडिटी रिटर्न हुई। सपोर्ट के लिए आपका धन्यवाद।"
 
 #: src/components/pool/view.tsx:36
 msgid "Liquidity provider rewards"
@@ -188,7 +188,7 @@ msgstr "लिक्विडिटी प्रोवाइडर वाले 
 #: src/components/pool/add.tsx:111
 #: src/components/pool/view.tsx:44
 msgid "Liquidity providers earn a fixed percentage fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
-msgstr "लिक्विडिटी प्रोवाइडर को पूल में मौजूद उनके हिस्से के अनुपात में, सभी ट्रेड पर एक तय प्रतिशत के तौर पर अपना हिस्सा मिलता है। फीस को पूल में जोड़ा जाता हैं, रियल टाइम में उन्हें जमा किया जाता है और अपनी लिक्विडिटी को वापस लेकर उन्हें क्लेम किया जा सकता है।"
+msgstr "लिक्विडिटी प्रोवाइडर को पूल में मौजूद उनके हिस्से के अनुपात में, सभी ट्रेड पर एक तय प्रतिशत के तौर पर अपना हिस्सा मिलता है। फीस को पूल में जोड़ा जाता हैं, रियल टाइम में उन्हें जमा किया जाता है और अपनी लिक्विडिटी को विद्ड्रॉ कर उन्हें क्लेम किया जा सकता है।"
 
 #: src/components/trade/index.tsx:209
 msgid "Minimum Received"
@@ -205,7 +205,7 @@ msgstr "नेटवर्क"
 
 #: src/components/pool/view.tsx:82
 msgid "No liquidity found"
-msgstr "कोई लिक्विडिटी नहीं मिली।"
+msgstr "कोई लिक्विडिटी नहीं मिली"
 
 #: src/components/pool/quickView.tsx:62
 msgid "No liquidity found."
