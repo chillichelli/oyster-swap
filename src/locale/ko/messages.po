@@ -8,7 +8,7 @@ msgstr ""
 "Language: ko\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-03 11:46\n"
+"PO-Revision-Date: 2020-12-04 09:58\n"
 "Last-Translator: \n"
 "Language-Team: Korean\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -21,112 +21,113 @@ msgstr ""
 #: src/components/trade/index.tsx:296
 msgid "A portion of each trade ({0}%) goes to liquidity\n"
 "providers as a protocol incentive."
-msgstr ""
+msgstr "프로토콜 인센티브로 각 거래의 일부({0}%)가\n"
+"유동성 공급자에게 전달됩니다."
 
 #: src/components/TopPairs.tsx:105
 msgid "APY"
-msgstr ""
+msgstr "APY"
 
 #: src/utils/pools.tsx:517
 msgid "Accounts created"
-msgstr ""
+msgstr "생성된 계정"
 
 #: src/components/pool/add.tsx:106
 #: src/components/pool/view.tsx:64
 msgid "Add Liquidity"
-msgstr ""
+msgstr "유동성 추가"
 
 #: src/utils/pools.tsx:325
 #: src/utils/pools.tsx:525
 msgid "Adding Liquidity..."
-msgstr ""
+msgstr "유동성 추가 중..."
 
 #: src/components/pool/add.tsx:79
 msgid "Adding liquidity cancelled."
-msgstr ""
+msgstr "유동성 추가가 취소되었습니다."
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:162
 #: src/screens/TokenScreen.tsx:111
 msgid "Address"
-msgstr ""
+msgstr "주소"
 
 #: src/components/pool/address.tsx:77
 msgid "Addresses"
-msgstr ""
+msgstr "주소"
 
 #: src/screens/PairScreen.tsx:188
 msgid "Annual Percentage Yield"
-msgstr ""
+msgstr "연간 수익률"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:148
 msgid "Approx. APY (24h)"
-msgstr ""
+msgstr "대략적인 APY(24시간)"
 
 #: src/components/currencyInput/index.tsx:126
 msgid "Balance"
-msgstr ""
+msgstr "잔액"
 
 #: src/components/appBar/index.tsx:70
 msgid "Charts"
-msgstr ""
+msgstr "차트"
 
 #: src/components/MoreInfo.tsx:28
 msgid "Code"
-msgstr ""
+msgstr "코드"
 
 #: src/components/appBar/right.tsx:18
 msgid "Connect"
-msgstr ""
+msgstr "연결"
 
 #: src/components/labels.tsx:8
 msgid "Connect Wallet"
-msgstr ""
+msgstr "지갑 연결"
 
 #: src/components/pool/view.tsx:72
 msgid "Connect to a wallet to view your liquidity"
-msgstr ""
+msgstr "지갑에 연결하여 유동성 보기"
 
 #: src/components/pool/config.tsx:58
 msgid "Constant Product"
-msgstr ""
+msgstr "영구 제품"
 
 #: src/components/labels.tsx:3
 msgid "Create Liquidity Pool"
-msgstr ""
+msgstr "유동성 풀 생성"
 
 #: src/utils/pools.tsx:460
 msgid "Creating new pool..."
-msgstr ""
+msgstr "유동성 풀 생성 중..."
 
 #: src/components/pool/config.tsx:54
 msgid "Curve Type"
-msgstr ""
+msgstr "곡선 유형"
 
 #: src/utils/wallet.tsx:48
 msgid "Disconnected from wallet"
-msgstr ""
+msgstr "지갑에서 연결 끊김"
 
 #: src/components/MoreInfo.tsx:36
 msgid "Discord"
-msgstr ""
+msgstr "Discord"
 
 #: src/components/labels.tsx:10
 msgid "Enter an amount"
-msgstr ""
+msgstr "금액 입력"
 
 #: src/components/pool/quickView.tsx:73
 msgid "Fees"
-msgstr ""
+msgstr "수수료"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:140
 #: src/components/TopPairs.tsx:90
 #: src/screens/ChartsScreen.tsx:104
 msgid "Fees (24h)"
-msgstr ""
+msgstr "수수료(24시간)"
 
 #: src/screens/PairScreen.tsx:174
 msgid "Fees (24hr)"
-msgstr ""
+msgstr "수수료(24시간)"
 
 #: src/components/charts/index.tsx:54
 #~ msgid "Filter"
@@ -134,28 +135,28 @@ msgstr ""
 
 #: src/components/pool/config.tsx:61
 msgid "Flat"
-msgstr ""
+msgstr "균일"
 
 #: src/components/trade/index.tsx:94
 msgid "From"
-msgstr ""
+msgstr "소스"
 
 #: src/screens/PairScreen.tsx:35
 msgid "From Token"
-msgstr ""
+msgstr "소스 토큰"
 
 #: src/components/appBar/index.tsx:82
 msgid "Help"
-msgstr ""
+msgstr "도움말"
 
 #: src/components/pool/add.tsx:124
 #: src/components/pool/add.tsx:143
 msgid "Input"
-msgstr ""
+msgstr "입력"
 
 #: src/components/labels.tsx:4
 msgid "Insufficient {tokenName} funds"
-msgstr ""
+msgstr "{tokenName} 자금 부족"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:116
 msgid "LP Supply"
