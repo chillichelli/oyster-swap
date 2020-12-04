@@ -8,7 +8,7 @@ msgstr ""
 "Language: zh\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-03 23:40\n"
+"PO-Revision-Date: 2020-12-04 00:38\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: src/components/trade/index.tsx:296
 msgid "A portion of each trade ({0}%) goes to liquidity\n"
 "providers as a protocol incentive."
-msgstr "作为协议激励，每笔交易的一部分 ({0}%) 会流向流动性供应商。"
+msgstr "作为协议激励，每笔交易都有一部分 ({0}%) 流向流动性供应商。"
 
 #: src/components/TopPairs.tsx:105
 msgid "APY"
@@ -402,17 +402,17 @@ msgstr "切换深色模式"
 
 #: src/screens/TokenScreen.tsx:99
 msgid "Token information"
-msgstr "令牌信息"
+msgstr "代币信息"
 
 #: src/screens/ChartsScreen.tsx:141
 #: src/screens/PairsScreen.tsx:20
 msgid "Top Pairs"
-msgstr "顶部对"
+msgstr "热门货币对"
 
 #: src/screens/ChartsScreen.tsx:121
 #: src/screens/TokensScreen.tsx:23
 msgid "Top Tokens"
-msgstr "顶部令牌"
+msgstr "热门代币"
 
 #: src/screens/ChartsScreen.tsx:76
 #: src/screens/PairScreen.tsx:146
@@ -426,7 +426,7 @@ msgstr "交易"
 
 #: src/utils/pools.tsx:112
 msgid "Trade executed."
-msgstr "交易已执行。"
+msgstr "已执行交易。"
 
 #: src/components/settings.tsx:33
 msgid "Transaction Settings"
@@ -450,27 +450,27 @@ msgstr "交易"
 
 #: src/components/MoreInfo.tsx:44
 msgid "Twitter"
-msgstr "推特"
+msgstr "Twitter"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:124
 msgid "Value per token"
-msgstr "每个令牌的价值"
+msgstr "每个代币的价值"
 
 #: src/components/PairChart.tsx:66
 msgid "Volume"
-msgstr ""
+msgstr "交易量"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:132
 #: src/components/TopPairs.tsx:82
 #: src/components/TopTokens.tsx:65
 #: src/screens/ChartsScreen.tsx:90
 msgid "Volume (24h)"
-msgstr "量（24小时）"
+msgstr "交易量（24 小时）"
 
 #: src/screens/PairScreen.tsx:160
 #: src/screens/TokenScreen.tsx:79
 msgid "Volume (24hr)"
-msgstr "量（24小时）"
+msgstr "交易量（24 小时）"
 
 #: src/components/settings.tsx:65
 msgid "Wallet"
@@ -483,15 +483,15 @@ msgstr "钱包更新"
 
 #: src/components/pool/config.tsx:48
 msgid "Withdraw Fee"
-msgstr "提取费"
+msgstr "出金费"
 
 #: src/utils/pools.tsx:466
 msgid "You need to have balance for all legs in the basket..."
-msgstr "您需要平衡篮筐中的所有腿…"
+msgstr "篮子中的所有边都需要有余额…"
 
 #: src/components/trade/index.tsx:240
 msgid "You transaction will revert if there is a large, unfavorable price movement before it is confirmed."
-msgstr "如果在确认之前出现较大的不利价格波动，您的交易将会恢复。"
+msgstr "如果在确认之前出现较大的不利价格波动，您的交易将恢复。"
 
 #: src/components/pool/quickView.tsx:60
 msgid "Your Liquidity"
@@ -499,7 +499,7 @@ msgstr "您的流动性"
 
 #: src/components/OwnedPoolTable/index.tsx:27
 msgid "Your fees (24h)"
-msgstr "您的费用（24小时）"
+msgstr "您的费用（24 小时）"
 
 #: src/components/OwnedPoolTable/index.tsx:21
 #: src/components/pool/view.tsx:58
