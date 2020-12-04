@@ -8,7 +8,7 @@ msgstr ""
 "Language: zh\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-04 00:38\n"
+"PO-Revision-Date: 2020-12-04 01:43\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -142,7 +142,7 @@ msgstr "自"
 
 #: src/screens/PairScreen.tsx:35
 msgid "From Token"
-msgstr "自令牌"
+msgstr "原始代币"
 
 #: src/components/appBar/index.tsx:82
 msgid "Help"
@@ -178,7 +178,7 @@ msgstr "流动性池"
 
 #: src/utils/pools.tsx:63
 msgid "Liquidity Returned. Thank you for your support."
-msgstr "已恢复流动性。感谢您的支持。"
+msgstr "已退回流动性。感谢您的支持。"
 
 #: src/components/pool/view.tsx:36
 msgid "Liquidity provider rewards"
@@ -187,7 +187,7 @@ msgstr "流动性供应商奖励"
 #: src/components/pool/add.tsx:111
 #: src/components/pool/view.tsx:44
 msgid "Liquidity providers earn a fixed percentage fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
-msgstr "流动性供应商在所有交易中按其在池中的份额赚取固定比率的费用。费用会加到池中，实时累积，并可以通过提取您的流动性来索偿。"
+msgstr "流动性供应商在所有交易中按其在池中的份额赚取固定比率的费用。费用会加到池中，实时累积，并且可以通过提取您的流动性来索偿。"
 
 #: src/components/trade/index.tsx:209
 msgid "Minimum Received"
@@ -279,7 +279,7 @@ msgstr "池"
 #: src/utils/pools.tsx:367
 #: src/utils/pools.tsx:555
 msgid "Pool Funded. Happy trading."
-msgstr "已向池注入资金。交易愉快。"
+msgstr "已向池注入资金。祝您交易愉快。"
 
 #: src/components/pool/card.tsx:78
 #~ msgid "Pool Liquidity"
@@ -299,7 +299,7 @@ msgstr "{tokenA}/{tokenB} 池不存在"
 
 #: src/screens/PairScreen.tsx:202
 msgid "Pooled Tokens"
-msgstr "已加入池的代币"
+msgstr "池代币"
 
 #: src/components/TopTokens.tsx:72
 #: src/components/trade/index.tsx:141
@@ -483,7 +483,7 @@ msgstr "钱包更新"
 
 #: src/components/pool/config.tsx:48
 msgid "Withdraw Fee"
-msgstr "出金费"
+msgstr "提取费用"
 
 #: src/utils/pools.tsx:466
 msgid "You need to have balance for all legs in the basket..."
