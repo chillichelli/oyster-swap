@@ -8,7 +8,7 @@ msgstr ""
 "Language: hi\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-04 07:25\n"
+"PO-Revision-Date: 2020-12-04 08:23\n"
 "Last-Translator: \n"
 "Language-Team: Hindi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -270,7 +270,7 @@ msgstr "मंजूरी देने के लिए ट्रांजे�
 #: src/components/pool/remove.tsx:31
 #: src/components/trade/index.tsx:79
 msgid "Please try again and approve transactions from your wallet"
-msgstr "कृपया फिर कोशिश करें और अपने वॉलेट से ट्रांजेक्शन को मंजूरी दें"
+msgstr "कृपया फिर से कोशिश करें और अपने वॉलेट से ट्रांजेक्शन को मंजूरी दें"
 
 #: src/components/appBar/index.tsx:62
 #: src/components/pool/quickView.tsx:67
@@ -280,7 +280,7 @@ msgstr "पूल"
 #: src/utils/pools.tsx:367
 #: src/utils/pools.tsx:555
 msgid "Pool Funded. Happy trading."
-msgstr "पूल फंड किया। ट्रेडिंग का आनंद लें।"
+msgstr "पूल में फंड डाला गया है। ट्रेडिंग का आनंद लें।"
 
 #: src/components/pool/card.tsx:78
 #~ msgid "Pool Liquidity"
@@ -309,7 +309,7 @@ msgstr "कीमत"
 
 #: src/components/labels.tsx:6
 msgid "Provide Liquidity"
-msgstr "लिक्विडिटी डालें"
+msgstr "लिक्विडिटी प्रदान करें"
 
 #: src/components/pool/remove.tsx:43
 msgid "Remove"
@@ -363,15 +363,15 @@ msgstr "Swap"
 
 #: src/components/layout/FormBase.tsx:36
 msgid "Swap is unaudited software. Use at your own risk"
-msgstr "Swap सॉफ्टवेयर को जांचा नहीं गया। अपने जोखिम पर इस्तेमाल करें"
+msgstr "Swap सॉफ्टवेयर को जांचा नहीं गया है। अपने जोखिम पर इस्तेमाल करें"
 
 #: src/utils/pools.tsx:77
 msgid "Swap trade cancelled"
-msgstr "Swap ट्रेड कैंसिल की गई"
+msgstr "Swap ट्रेड कैंसल की गई"
 
 #: src/components/trade/index.tsx:80
 msgid "Swap trade cancelled."
-msgstr "Swap ट्रेड कैंसिल की गई।"
+msgstr "Swap ट्रेड कैंसल की गई।"
 
 #: src/screens/TokenScreen.tsx:105
 msgid "Symbol"
@@ -383,7 +383,7 @@ msgstr "Telegram"
 
 #: src/components/trade/index.tsx:268
 msgid "The difference between the market price and estimated price due to trade size."
-msgstr "ट्रेड के आकार के चलते बाजार मूल्य और अनुमानित कीमत के बीच का अंतर।"
+msgstr "ट्रेड के आकार के चलते मार्केट कीमत और अनुमानित कीमत के बीच का अंतर।"
 
 #: src/screens/PairScreen.tsx:51
 msgid "Time"
@@ -391,11 +391,11 @@ msgstr "समय"
 
 #: src/components/trade/index.tsx:114
 msgid "To (Estimate)"
-msgstr "प्रति (अनुमानित)"
+msgstr "इनको (अनुमानित)"
 
 #: src/screens/PairScreen.tsx:43
 msgid "To Token"
-msgstr "प्रति (टोकन)"
+msgstr "टोकन को"
 
 #: src/components/settings.tsx:79
 msgid "Toggle dark mode"
@@ -427,7 +427,7 @@ msgstr "ट्रेड"
 
 #: src/utils/pools.tsx:112
 msgid "Trade executed."
-msgstr "ट्रेड की।"
+msgstr "ट्रेड को अंजाम दिया।"
 
 #: src/components/settings.tsx:33
 msgid "Transaction Settings"
@@ -455,7 +455,7 @@ msgstr "Twitter"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:124
 msgid "Value per token"
-msgstr "मूल्य प्रति टोकन"
+msgstr "वैल्यू प्रति टोकन"
 
 #: src/components/PairChart.tsx:66
 msgid "Volume"
@@ -484,15 +484,15 @@ msgstr "वॉलेट अपडेट"
 
 #: src/components/pool/config.tsx:48
 msgid "Withdraw Fee"
-msgstr "विदड्रॉ फीस"
+msgstr "विद्ड्रॉ फीस"
 
 #: src/utils/pools.tsx:466
 msgid "You need to have balance for all legs in the basket..."
-msgstr "बास्केट में मौजूद सभी चीजों के लिए आपके पास बैलेंस होना जरूरी है..."
+msgstr "बास्केट में मौजूद सभी लेग्स के लिए आपके पास बैलेंस होना जरूरी है..."
 
 #: src/components/trade/index.tsx:240
 msgid "You transaction will revert if there is a large, unfavorable price movement before it is confirmed."
-msgstr "अगर ट्रांजेक्शन के कंफर्म होने से पहले कीमत में कोई बड़ा और नकारात्मक बदलाव होता है, तो ट्रांजेक्शन कैंसिल कर दिया जाएगा।"
+msgstr "अगर ट्रांजेक्शन के कंफर्म होने से पहले कीमत में कोई बड़ा और नकारात्मक बदलाव होता है, तो ट्रांजेक्शन को रिवर्ट कर दिया जाएगा।"
 
 #: src/components/pool/quickView.tsx:60
 msgid "Your Liquidity"
