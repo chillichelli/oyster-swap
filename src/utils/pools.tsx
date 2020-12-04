@@ -33,7 +33,7 @@ export const removeLiquidity = async (
 	pool?: PoolInfo
 ) => {
 	if (!pool) {
-		return;
+		throw new Error("Pool is required");
 	}
 
 	notify({
@@ -138,6 +138,11 @@ export const removeLiquidity = async (
 			</Button>
 		),
 	});
+
+  return [
+    accountA.info.mint.equals(WRAPPED_SOL_MINT) ? wallet.publicKey as PublicKey : toAccounts[0],
+    accountB.info.mint.equals(WRAPPED_SOL_MINT) ? wallet.publicKey as PublicKey : toAccounts[1],
+  ];
 };
 
 export const swap = async (
@@ -468,8 +473,8 @@ export const usePoolForBasket = (mints: (string | undefined)[]) => {
 	return pool;
 };
 
-export const useOwnedPools = () => {
-	const { pools } = useCachedPool();
+export const useOwnedPools = (legacy = false) => {
+	const { pools } = useCachedPool(legacy);
 	const { userAccounts } = useUserAccounts();
 
 	const ownedPools = useMemo(() => {
@@ -480,7 +485,7 @@ export const useOwnedPools = () => {
 		}, new Map<string, TokenAccount[]>());
 
 		return pools
-			.filter(p => map.has(p.pubkeys.mint.toBase58()))
+			.filter(p => map.has(p.pubkeys.mint.toBase58()) && p.legacy === legacy)
 			.map(item => {
 				let feeAccount = item.pubkeys.feeAccount?.toBase58();
 				return map.get(item.pubkeys.mint.toBase58())?.map(a => {
@@ -496,7 +501,7 @@ export const useOwnedPools = () => {
 				}[];
 			})
 			.flat();
-	}, [pools, userAccounts]);
+	}, [pools, userAccounts, legacy]);
 
 	return ownedPools;
 };
