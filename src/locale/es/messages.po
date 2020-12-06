@@ -8,7 +8,7 @@ msgstr ""
 "Language: es_EM\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-06 13:46\n"
+"PO-Revision-Date: 2020-12-06 14:47\n"
 "Last-Translator: \n"
 "Language-Team: Spanish (Modern)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -188,7 +188,7 @@ msgstr "Premios para proveedores de liquidez"
 #: src/components/pool/add.tsx:111
 #: src/components/pool/view.tsx:44
 msgid "Liquidity providers earn a fixed percentage fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
-msgstr "Los proveedores de liquidez ganan una comisión fija en todas las operaciones en función de su parte de liquidez. Las comisiones se añaden al fondo, se acumulan en tiempo real y se pueden retirar por medio del retiro de la liquidez proporcionada."
+msgstr "Los proveedores de liquidez ganan una comisión fija en todas las operaciones en función de su parte de liquidez. Las comisiones se añaden al fondo, se acumulan en tiempo real y se pueden reclamar retirando la liquidez."
 
 #: src/components/trade/index.tsx:209
 msgid "Minimum Received"
@@ -205,15 +205,15 @@ msgstr "Red"
 
 #: src/components/pool/view.tsx:82
 msgid "No liquidity found"
-msgstr "No se encontró liquidez"
+msgstr "No se ha encontrado liquidez"
 
 #: src/components/pool/quickView.tsx:62
 msgid "No liquidity found."
-msgstr "No se encontró liquidez."
+msgstr "No se ha encontrado liquidez."
 
 #: src/utils/pools.tsx:403
 msgid "Not possible"
-msgstr "No se puede realizar"
+msgstr "No es posible"
 
 #: src/components/settings.tsx:88
 msgid "Off"
@@ -334,7 +334,7 @@ msgstr "Seleccione un token"
 
 #: src/components/pool/add.tsx:211
 msgid "Share of pool"
-msgstr "Parte en los fondos"
+msgstr "Parte en el fondo"
 
 #: src/components/settings.tsx:41
 msgid "Slippage"
@@ -367,11 +367,11 @@ msgstr "Swap es un programa de terceros que usted usa bajo su propio riesgo"
 
 #: src/utils/pools.tsx:77
 msgid "Swap trade cancelled"
-msgstr ""
+msgstr "Trading de intercambio cancelado"
 
 #: src/components/trade/index.tsx:80
 msgid "Swap trade cancelled."
-msgstr ""
+msgstr "Trading de intercambio cancelado."
 
 #: src/screens/TokenScreen.tsx:105
 msgid "Symbol"
@@ -526,7 +526,7 @@ msgstr "explorador"
 #: src/components/trade/index.tsx:152
 #: src/components/trade/index.tsx:163
 msgid "per"
-msgstr ""
+msgstr "por"
 
 #: src/screens/PairScreen.tsx:287
 msgid "{symbolA} Address"
