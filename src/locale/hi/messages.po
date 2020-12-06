@@ -8,7 +8,7 @@ msgstr ""
 "Language: hi\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-04 08:23\n"
+"PO-Revision-Date: 2020-12-06 23:56\n"
 "Last-Translator: \n"
 "Language-Team: Hindi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -30,7 +30,7 @@ msgstr "APY"
 
 #: src/utils/pools.tsx:517
 msgid "Accounts created"
-msgstr "अकाउंट बनाए"
+msgstr "अकाउंट बनाए गए"
 
 #: src/components/pool/add.tsx:106
 #: src/components/pool/view.tsx:64
@@ -89,7 +89,7 @@ msgstr "अपनी लिक्विडिटी देखने के ल�
 
 #: src/components/pool/config.tsx:58
 msgid "Constant Product"
-msgstr "परमानेंट प्रोडक्ट"
+msgstr "कॉन्सटेंट प्रोडक्ट"
 
 #: src/components/labels.tsx:3
 msgid "Create Liquidity Pool"
@@ -359,7 +359,7 @@ msgstr "आंंकड़े"
 #: src/components/appBar/index.tsx:54
 #: src/components/labels.tsx:7
 msgid "Swap"
-msgstr "Swap"
+msgstr "अदलाबदली"
 
 #: src/components/layout/FormBase.tsx:36
 msgid "Swap is unaudited software. Use at your own risk"
@@ -423,7 +423,7 @@ msgstr "कुल लिक्विडिटी"
 
 #: src/components/appBar/index.tsx:76
 msgid "Trade"
-msgstr "ट्रेड"
+msgstr "ट्रेड करें"
 
 #: src/utils/pools.tsx:112
 msgid "Trade executed."
@@ -519,7 +519,7 @@ msgstr "आपकी मात्रा"
 #: src/utils/pools.tsx:558
 #: src/utils/wallet.tsx:39
 msgid "explorer"
-msgstr "एक्सप्लोरर"
+msgstr "explorer"
 
 #: src/components/pool/add.tsx:201
 #: src/components/pool/add.tsx:206
