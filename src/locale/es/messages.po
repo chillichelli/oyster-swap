@@ -8,7 +8,7 @@ msgstr ""
 "Language: es_EM\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-04 14:09\n"
+"PO-Revision-Date: 2020-12-06 13:46\n"
 "Last-Translator: \n"
 "Language-Team: Spanish (Modern)\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -109,7 +109,7 @@ msgstr "Desconectado de la cartera"
 
 #: src/components/MoreInfo.tsx:36
 msgid "Discord"
-msgstr ""
+msgstr "Discord"
 
 #: src/components/labels.tsx:10
 msgid "Enter an amount"
@@ -160,7 +160,7 @@ msgstr "Fondos insuficientes en {tokenName}"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:116
 msgid "LP Supply"
-msgstr ""
+msgstr "Provisión de fondo de liquidez"
 
 #: src/components/pool/config.tsx:36
 msgid "LPs Trading Fee"
@@ -359,7 +359,7 @@ msgstr "Estadísticas"
 #: src/components/appBar/index.tsx:54
 #: src/components/labels.tsx:7
 msgid "Swap"
-msgstr ""
+msgstr "Intercambiar"
 
 #: src/components/layout/FormBase.tsx:36
 msgid "Swap is unaudited software. Use at your own risk"
@@ -423,7 +423,7 @@ msgstr "Liquidez total"
 
 #: src/components/appBar/index.tsx:76
 msgid "Trade"
-msgstr ""
+msgstr "Operar"
 
 #: src/utils/pools.tsx:112
 msgid "Trade executed."
@@ -519,7 +519,7 @@ msgstr "Su cantidad"
 #: src/utils/pools.tsx:558
 #: src/utils/wallet.tsx:39
 msgid "explorer"
-msgstr ""
+msgstr "explorador"
 
 #: src/components/pool/add.tsx:201
 #: src/components/pool/add.tsx:206
