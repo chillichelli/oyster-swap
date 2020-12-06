@@ -8,7 +8,7 @@ msgstr ""
 "Language: zh\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-04 01:43\n"
+"PO-Revision-Date: 2020-12-06 22:57\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -134,11 +134,11 @@ msgstr "费用（24 小时）"
 
 #: src/components/pool/config.tsx:61
 msgid "Flat"
-msgstr "固定"
+msgstr "平滑"
 
 #: src/components/trade/index.tsx:94
 msgid "From"
-msgstr "自"
+msgstr "原始"
 
 #: src/screens/PairScreen.tsx:35
 msgid "From Token"
@@ -159,11 +159,11 @@ msgstr "{tokenName} 资金不足"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:116
 msgid "LP Supply"
-msgstr "LP 供应"
+msgstr "流动性池供应"
 
 #: src/components/pool/config.tsx:36
 msgid "LPs Trading Fee"
-msgstr "LP 交易费"
+msgstr "流动性池交易费"
 
 #: src/components/PairChart.tsx:65
 #: src/components/TopPairs.tsx:62
@@ -212,7 +212,7 @@ msgstr "未找到流动性。"
 
 #: src/utils/pools.tsx:403
 msgid "Not possible"
-msgstr "不可能"
+msgstr "无法执行"
 
 #: src/components/settings.tsx:88
 msgid "Off"
@@ -358,7 +358,7 @@ msgstr "统计信息"
 #: src/components/appBar/index.tsx:54
 #: src/components/labels.tsx:7
 msgid "Swap"
-msgstr "Swap"
+msgstr "交换"
 
 #: src/components/layout/FormBase.tsx:36
 msgid "Swap is unaudited software. Use at your own risk"
@@ -366,11 +366,11 @@ msgstr "Swap 是未经审核的软件。请自行承担使用风险"
 
 #: src/utils/pools.tsx:77
 msgid "Swap trade cancelled"
-msgstr "已取消 Swap 交易"
+msgstr "已取消掉期交易"
 
 #: src/components/trade/index.tsx:80
 msgid "Swap trade cancelled."
-msgstr "已取消 Swap 交易。"
+msgstr "已取消掉期交易。"
 
 #: src/screens/TokenScreen.tsx:105
 msgid "Symbol"
