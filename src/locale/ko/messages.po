@@ -8,7 +8,7 @@ msgstr ""
 "Language: ko\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-04 14:09\n"
+"PO-Revision-Date: 2020-12-07 01:58\n"
 "Last-Translator: \n"
 "Language-Team: Korean\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -30,7 +30,7 @@ msgstr "APY"
 
 #: src/utils/pools.tsx:517
 msgid "Accounts created"
-msgstr "생성된 계정"
+msgstr "계정 생성됨"
 
 #: src/components/pool/add.tsx:106
 #: src/components/pool/view.tsx:64
@@ -89,7 +89,7 @@ msgstr "지갑에 연결하여 유동성 보기"
 
 #: src/components/pool/config.tsx:58
 msgid "Constant Product"
-msgstr "영구 제품"
+msgstr "컨스턴트 제품"
 
 #: src/components/labels.tsx:3
 msgid "Create Liquidity Pool"
@@ -135,7 +135,7 @@ msgstr "수수료(24시간)"
 
 #: src/components/pool/config.tsx:61
 msgid "Flat"
-msgstr "균일"
+msgstr "플랫"
 
 #: src/components/trade/index.tsx:94
 msgid "From"
@@ -359,7 +359,7 @@ msgstr "통계"
 #: src/components/appBar/index.tsx:54
 #: src/components/labels.tsx:7
 msgid "Swap"
-msgstr "Swap"
+msgstr "스왑"
 
 #: src/components/layout/FormBase.tsx:36
 msgid "Swap is unaudited software. Use at your own risk"
@@ -367,7 +367,7 @@ msgstr "Swap은 감사를 받지 않는 소프트웨어입니다. 사용 시 책
 
 #: src/utils/pools.tsx:77
 msgid "Swap trade cancelled"
-msgstr "Swap 거래 취소됨"
+msgstr "스왑 거래 취소됨"
 
 #: src/components/trade/index.tsx:80
 msgid "Swap trade cancelled."
@@ -519,7 +519,7 @@ msgstr "내 수량"
 #: src/utils/pools.tsx:558
 #: src/utils/wallet.tsx:39
 msgid "explorer"
-msgstr "익스플로러"
+msgstr "explorer"
 
 #: src/components/pool/add.tsx:201
 #: src/components/pool/add.tsx:206
