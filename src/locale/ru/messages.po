@@ -8,7 +8,7 @@ msgstr ""
 "Language: ru\n"
 "Project-Id-Version: traderdome\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2020-12-04 14:09\n"
+"PO-Revision-Date: 2020-12-08 02:39\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
@@ -135,7 +135,7 @@ msgstr "Комиссии (24 ч)"
 
 #: src/components/pool/config.tsx:61
 msgid "Flat"
-msgstr "Фикс."
+msgstr "Пологая"
 
 #: src/components/trade/index.tsx:94
 msgid "From"
@@ -160,11 +160,11 @@ msgstr "Недостаточно средств в {tokenName}"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:116
 msgid "LP Supply"
-msgstr "Резерв LP"
+msgstr "Резерв ПЛ"
 
 #: src/components/pool/config.tsx:36
 msgid "LPs Trading Fee"
-msgstr "Комиссия за торговлю LP"
+msgstr "Комиссия за торговлю ПЛ"
 
 #: src/components/PairChart.tsx:65
 #: src/components/TopPairs.tsx:62
@@ -213,7 +213,7 @@ msgstr "Ликвидность не найдена."
 
 #: src/utils/pools.tsx:403
 msgid "Not possible"
-msgstr "Невозможно выполнить"
+msgstr "Невыполнимо"
 
 #: src/components/settings.tsx:88
 msgid "Off"
@@ -359,7 +359,7 @@ msgstr "Статистика"
 #: src/components/appBar/index.tsx:54
 #: src/components/labels.tsx:7
 msgid "Swap"
-msgstr "Swap"
+msgstr "Обмен"
 
 #: src/components/layout/FormBase.tsx:36
 msgid "Swap is unaudited software. Use at your own risk"
@@ -423,7 +423,7 @@ msgstr "Суммарная ликвидность"
 
 #: src/components/appBar/index.tsx:76
 msgid "Trade"
-msgstr "Сделка"
+msgstr "Торговать"
 
 #: src/utils/pools.tsx:112
 msgid "Trade executed."
@@ -455,7 +455,7 @@ msgstr "Twitter"
 
 #: src/components/OwnedPoolTable/OwnedPoolTableRow.tsx:124
 msgid "Value per token"
-msgstr "Значение по токенам"
+msgstr "Значение на токен"
 
 #: src/components/PairChart.tsx:66
 msgid "Volume"
