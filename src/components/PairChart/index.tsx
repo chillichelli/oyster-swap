@@ -1,77 +1,80 @@
-import React, { useEffect, useState } from 'react';
-import { Area, XAxis, YAxis, ResponsiveContainer, Tooltip, AreaChart, BarChart, Bar } from 'recharts';
+import React, { useCallback, useEffect, useState } from 'react';
+import { Area, AreaChart, Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
-import { formatNumber, formatShortDate, formatUSD, toK, toNiceDate } from '../utils/utils';
+import { formatNumber, formatShortDate, formatUSD, toK, toNiceDate } from '../../utils/utils';
 import { Box, darken, Typography, useMediaQuery, useTheme } from '@material-ui/core';
-import { PoolInfo } from '../models';
+import { PoolInfo } from '../../models';
 import { Trans } from '@lingui/macro';
-import LogoLoader from './layout/LogoLoader';
+import LogoLoader from '../layout/LogoLoader';
+import {
+	BonfidaLiquidityData,
+	BonfidaVolumeData,
+	ChartView,
+	LIQUIDITY_API,
+	TraderdomeLiquidityData,
+	VOLUME_API,
+} from './types';
 
-export const VOLUME_API = 'https://serum-api.bonfida.com/pools/volumes';
-export const LIQUIDITY_API = 'https://serum-api.bonfida.com/pools/liquidity';
-
-export enum ChartView {
-	VOLUME = 'VOLUME',
-	LIQUIDITY = 'LIQUIDITY',
+interface IPairChart {
+	color: string;
+	type: ChartView;
+	pool?: PoolInfo;
 }
 
-interface LiquidityData {
-	liquidityAinUsd: number;
-	liquidityBinUsd: number;
-	time: number;
-}
-
-interface VolumeData {
-	volume: number;
-	time: number;
-}
-
-const PairChart = ({ pool, color, type }: { pool: PoolInfo; color: string; type: ChartView }) => {
+const PairChart = ({ color, type, pool }: IPairChart) => {
 	const theme = useTheme();
 	const [chartView] = useState<ChartView>(type);
-	const [liquidityChartData, setLiquidityChartData] = useState<any[]>([]);
-	const [volumeChartData, setVolumeChartData] = useState<any[]>([]);
+	const [liquidityChartData, setLiquidityChartData] = useState<TraderdomeLiquidityData[]>([]);
+	const [volumeChartData, setVolumeChartData] = useState<BonfidaVolumeData[]>([]);
 
-	const baseMintAddress = pool.raw.pubkeys.holdingMints[0].toBase58();
-	const quoteMintAddress = pool.raw.pubkeys.holdingMints[1].toBase58();
+	let apiFilter: string = '';
+
+	if (pool) {
+		const baseMintAddress = pool.raw.pubkeys.holdingMints[0].toBase58();
+		const quoteMintAddress = pool.raw.pubkeys.holdingMints[1].toBase58();
+		apiFilter = `?mintA=${baseMintAddress}&mintB=${quoteMintAddress}`;
+	}
+
+	const bonfidaLiquidityQuery = useCallback(async filter => {
+		try {
+			const resp = await window.fetch(`${LIQUIDITY_API}${filter}`);
+			const data = await resp.json();
+			const liquidityData = data?.data.slice(0, 7) as BonfidaLiquidityData[];
+
+			const transformed = liquidityData.map<TraderdomeLiquidityData>(el => ({
+				date: el.time / 1000,
+				reserveUSD: el.liquidityAinUsd + el.liquidityBinUsd,
+			}));
+
+			setLiquidityChartData(transformed);
+		} catch (e) {
+			console.log(e);
+		}
+
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
+
+	const bonfidaVolumeQuery = useCallback(async filter => {
+		try {
+			const resp = await window.fetch(`${VOLUME_API}${filter}`);
+			const data = await resp.json();
+			const volumeData = data?.data.slice(0, 30) as BonfidaVolumeData[];
+
+			setVolumeChartData(volumeData);
+		} catch (e) {
+			console.log(e);
+		}
+
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, []);
 
 	useEffect(() => {
-		const bonfidaLiquidityQuery = async () => {
-			try {
-				const resp = await window.fetch(`${LIQUIDITY_API}?mintA=${baseMintAddress}&mintB=${quoteMintAddress}`);
-				const data = await resp.json();
-				const liquidityData = data?.data.slice(0, 7) as LiquidityData[];
-
-				const transformed = liquidityData.map(el => ({
-					date: el.time / 1000,
-					reserveUSD: el.liquidityAinUsd + el.liquidityBinUsd,
-				}));
-
-				setLiquidityChartData(transformed);
-			} catch {
-				// ignore
-			}
-		};
-
-		const bonfidaVolumeQuery = async () => {
-			try {
-				const resp = await window.fetch(`${VOLUME_API}?mintA=${baseMintAddress}&mintB=${quoteMintAddress}`);
-				const data = await resp.json();
-				const volumeData = data?.data as VolumeData[];
-
-				setVolumeChartData(volumeData);
-			} catch {
-				// ignore
-			}
-		};
-
-		bonfidaLiquidityQuery();
-		bonfidaVolumeQuery();
-	}, [baseMintAddress, quoteMintAddress]);
+		if (chartView === ChartView.VOLUME) bonfidaVolumeQuery(apiFilter);
+		if (chartView === ChartView.LIQUIDITY) bonfidaLiquidityQuery(apiFilter);
+	}, [apiFilter]);
 
 	const below1600 = useMediaQuery(theme.breakpoints.down('xl'));
 	const below1080 = useMediaQuery(theme.breakpoints.down('lg'));
-
 	const aspect = below1080 ? 60 / 20 : below1600 ? 60 / 28 : 60 / 22;
 
 	return (

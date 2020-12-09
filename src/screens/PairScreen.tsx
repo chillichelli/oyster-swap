@@ -16,7 +16,8 @@ import { useCurrencyPairState } from '../utils/currencyPair';
 import { EnrichedDataContext } from '../providers/EnrichedDataProvider';
 import usePoolHistory from '../hooks/useSwapHistory';
 import moment from 'moment';
-import PairChart, { ChartView } from '../components/PairChart';
+import PairChart from '../components/PairChart';
+import { ChartView } from '../components/PairChart/types';
 
 const columns = [
 	{

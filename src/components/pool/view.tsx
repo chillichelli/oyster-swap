@@ -22,7 +22,6 @@ const useStyles = makeStyles(theme => ({
 		border: `1px solid ${fade(theme.palette.text.primary, 0.5)}`,
 	},
 }));
-import { MigrationModal } from "../migration";
 
 export const PoolOverview = () => {
 	const owned = useOwnedPools();
